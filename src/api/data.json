@@ -1,0 +1,1500 @@
+[
+  {
+    "id": 1,
+    "name": "Ringroad",
+    "price": 120,
+    "salePrice": 200,
+    "discount": 50,
+    "pictures": ["/assets/images/kids/product/Ringroad.jpg", "/assets/images/fashion/product/21.jpg", "/assets/images/fashion/product/36.jpg", "/assets/images/fashion/product/12.jpg"],
+    "shortDetails": "Waytoplay Original RINGROAD 12pcs - Way to play Car Track Ring Road.",
+    "description": "The affordable waytoplay Ringroad is a great toy for imaginative play. Watch your children create their very own circuits and road maps for their favourite toys and vehicles. Flexible, durable road toy, 170cm length 8 curves, 2 straights, 1 intersection and 1 roundabout. Expand your road by purchasing additional sets later Can be used on almost any surface, inside or outside Easy to connect parts Encourages imaginative play Great to combine with other toys",
+    "stock": 0,
+    "new": true,
+    "sale": true,
+    "tags": ["WAY TO PLAY"],
+    "rating": 4,
+    "variants": [
+    {
+      "color": "pink",
+      "images": "/assets/images/fashion/product/5.jpg"
+    },
+    {
+      "color": "gray",
+      "images": "/assets/images/fashion/product/12.jpg"
+    },
+    {
+      "color": "green",
+      "images": "/assets/images/fashion/product/31.jpg"
+    }]
+  },
+  {
+    "id": 2,
+    "name": "King of the Road",
+    "price": 330.00,
+    "salePrice": 165.00,
+    "discount": 50,
+    "pictures": ["/assets/images/kids/product/King of the Road.jpg", "/assets/images/fashion/product/7.jpg", "/assets/images/fashion/product/9.jpg", "/assets/images/fashion/product/13.jpg"],
+    "shortDetails": "Waytoplay Original KING OF THE ROAD 40 PCS - Way to play Track King of The Road.",
+    "description": "If you want to be King of the Road, this is your set! It contains no less than 40 parts for maximum fun for everyone. This set is big and is highly recommended for kids that really love to play with cars but also for use at schools and daycare centers.  Flexible, durable road toy, 648cm length 16 curves, 16 straights, 4 intersections and 4 roundabouts Expand your road by purchasing additional sets later Can be used on almost any surface, inside or outside Easy to connect parts Encourages imaginative play Great to combine with other toys",
+    "stock": 0,
+    "new": true,
+    "sale": false,
+    "tags": ["WAY TO PLAY"],
+    "rating": 4,
+    "variants": [
+    {
+      "color": "pink",
+      "images": "/assets/images/fashion/product/5.jpg"
+    },
+    {
+      "color": "gray",
+      "images": "/assets/images/fashion/product/12.jpg"
+    },
+    {
+      "color": "green",
+      "images": "/assets/images/fashion/product/31.jpg"
+    }]
+  },
+  {
+    "id": 3,
+    "name": "Highway",
+    "price": 500.00,
+    "salePrice": 250.00,
+    "discount": 50,
+    "pictures": ["/assets/images/kids/product/Highway.jpg", "/assets/images/fashion/product/2.jpg", "/assets/images/fashion/product/25.jpg", "/assets/images/fashion/product/26.jpg"],
+    "shortDetails": "Waytoplay Original HIGHWAY 24 PCS - Way to play Track Mobil and high way.",
+    "description": "If you want to be King of the Road, this is your set! It contains no less than 40 parts for maximum fun for everyone. This set is big and is highly recommended for kids that really love to play with cars but also for use at schools and daycare centers.  Flexible, durable road toy, 648cm length 16 curves, 16 straights, 4 intersections and 4 roundabouts Expand your road by purchasing additional sets later Can be used on almost any surface, inside or outside Easy to connect parts Encourages imaginative play Great to combine with other toys.",
+    "stock": 0,
+    "new": false,
+    "sale": false,
+    "tags": ["WAY TO PLAY"],
+    "rating": 4,
+    "variants": [
+    {
+      "color": "pink",
+      "images": "/assets/images/fashion/product/5.jpg"
+    },
+    {
+      "color": "gray",
+      "images": "/assets/images/fashion/product/12.jpg"
+    },
+    {
+      "color": "green",
+      "images": "/assets/images/fashion/product/31.jpg"
+    }]
+  },
+  {
+    "id": 4,
+    "name": "240-Piece Classroom Kit",
+    "price": 180.00,
+    "salePrice": 360.00,
+    "discount": 50,
+    "pictures": ["/assets/images/kids/product/240-Piece Classroom Kit.jpg", "/assets/images/fashion/product/12.jpg", "/assets/images/fashion/product/31.jpg", "/assets/images/fashion/product/18.jpg"],
+    "shortDetails": "Waytoplay Original HIGHWAY 24 PCS - Way to play Track Mobil and high way.",
+    "description": "The waytoplay Highway is a great toy for imaginative play. Watch your children create their very own circuits and road maps for their favourite toys and vehicles. Flexible, durable road toy, 376cm length 12 curves, 8 straights, 2 intersections and 2 roundabouts. Expand your road by purchasing  additional sets later Can be used on almost any surface, inside or outside Easy to connect parts Encourages imaginative play Great to combine with other toys.",
+    "stock": 0,
+    "new": true,
+    "sale": true,
+    "category": "women",
+    "colors": ["pink", "gray", "green"],
+    "tags": ["TEGU"],
+    "rating": 4,
+    "variants": [
+    {
+      "color": "pink",
+      "images": "/assets/images/fashion/product/5.jpg"
+    },
+    {
+      "color": "gray",
+      "images": "/assets/images/fashion/product/12.jpg"
+    },
+    {
+      "color": "green",
+      "images": "/assets/images/fashion/product/31.jpg"
+    }]
+  },
+  {
+    "id": 5,
+    "name": "24-Piece Set",
+    "price": 420.00,
+    "salePrice": 840.00,
+    "discount": 50,
+    "pictures": ["/assets/images/kids/product/24-Piece Set.jpg", "/assets/images/fashion/product/10.jpg", "/assets/images/fashion/product/21.jpg", "/assets/images/fashion/product/15.jpg"],
+    "shortDetails": "Magnetic Wooden Blocks Tegu Classics. The 24-Piece Set is a medium building set that allows for big and tall creations.",
+    "description": "The 24-Piece Set is a medium building set that allows for big and tall creations. Includes 24 blocks in 6 shapes: 4 medium columns, 4 mega planks, 6 long planks, 4 short planks, 4 cubes and 2 parallelograms.",
+    "stock": 0,
+    "new": true,
+    "sale": false,
+    "category": "women",
+    "colors": ["pink", "yellow", "gray"],
+    "tags": ["TEGU"],
+    "rating": 5,
+    "variants": [
+    {
+      "color": "pink",
+      "images": "/assets/images/fashion/product/13.jpg"
+    },
+    {
+      "color": "yellow",
+      "images": "/assets/images/fashion/product/10.jpg"
+    },
+    {
+      "color": "gray",
+      "images": "/assets/images/fashion/product/21.jpg"
+    }]
+  },
+  {
+    "id": 6,
+    "name": "14-Piece Set",
+    "price": "290",
+    "salePrice": 580,
+    "discount": 50,
+    "pictures": ["/assets/images/kids/product/14-Piece Set.jpg", "/assets/images/fashion/product/29.jpg", "/assets/images/fashion/product/28.jpg", "/assets/images/fashion/product/9.jpg"],
+    "shortDetails": "Magnetic Wooden Blocks Tegu Classics.",
+    "description": "The 14-Piece Set is an introductory building set, perfect for getting to know and love the Tegu magnetic wooden block system. Includes 14 blocks in 5 shapes: 2 medium columns, 4 long planks, 4 short planks, 2 cubes and 2 parallelograms.",
+    "stock": 0,
+    "new": false,
+    "sale": true,
+    "category": "women",
+    "colors": ["blue", "gray", "orange"],
+    "tags": ["TEGU"],
+    "rating": 5,
+    "variants": [
+    {
+      "color": "blue",
+      "images": "/assets/images/fashion/product/30.jpg"
+    },
+    {
+      "color": "gray",
+      "images": "/assets/images/fashion/product/24.jpg"
+    },
+    {
+      "color": "orange",
+      "images": "/assets/images/fashion/product/9.jpg"
+    }]
+  },
+  {
+    "id": 7,
+    "name": "SumBlox Educational Set",
+    "price": 3950000,
+    "salePrice": 3800000,
+    "discount": 0,
+    "pictures": ["/assets/images/kids/product/SumBlox Educational Set.jpg", "/assets/images/fashion/product/4.jpg", "/assets/images/fashion/product/35.jpg", "/assets/images/fashion/product/32.jpg"],
+    "shortDetails": "Working together to build the largest tower, or to solve more difficult equations is a great way to develop communication between children using the SumBlox Educational Set.",
+    "description": "A large set of 100 solid hard beech wood SumBlox and 4 Supplemental Math Curriculum lesson books. The Educational Set of 100-wooden math blocks is designed for one child or small groups of children. To allow them to explore concepts such as multiplication, division and fractions. The books are developed to assist parents/teachers/guardians and guide kids to enjoy games that will further develop their math skills and enhance their interactions with the blocks."
+    ,"stock": 10,
+    "new": true,
+    "sale": true,
+    "category": "women",
+    "colors": ["red", "white", "blue"],
+    "tags": ["SUMBLOX"],
+    "rating": 4,
+    "variants": [
+    {
+      "color": "red",
+      "images": "/assets/images/fashion/product/20.jpg"
+    },
+    {
+      "color": "white",
+      "images": "/assets/images/fashion/product/4.jpg"
+    },
+    {
+      "color": "blue",
+      "images": "/assets/images/fashion/product/35.jpg"
+    }]
+  },
+  {
+    "id": 8,
+    "name": "SumBlox Basic Set",
+    "price": 1850000,
+    "salePrice": 1850000,
+    "discount": 0,
+    "pictures": ["/assets/images/kids/product/SumBlox Basic Set.jpg", "/assets/images/fashion/product/6.jpg", "/assets/images/fashion/product/22.jpg", "/assets/images/fashion/product/1.jpg"],
+    "shortDetails": "The Basic Set of SumBlox provides a good number of blocks to start working on different kinds of math problems with your children. ",
+    "description": "A Basic Set of 43 Solid Hard Beech Wood SumBlox with 4 Activity Cards & Math Guide. The 43-block set is designed for 1 or 2 kids below age 6, learning simple arithmetic skills. "
+,"stock": 10,
+    "new": true,
+    "sale": false,
+    "category": "women",
+    "colors": ["black", "yellow"],
+    "tags": ["SUMBLOX"],
+    "rating": 3,
+    "variants": [
+    {
+      "color": "black",
+      "images": "/assets/images/fashion/product/11.jpg"
+    },
+    {
+      "color": "yellow",
+      "images": "/assets/images/fashion/product/1.jpg"
+    }]
+  },
+  {
+    "id": 9,
+    "name": "SumBlox Starter Set",
+    "price": 1250000,
+    "salePrice": 1250000,
+    "discount": 0,
+    "pictures": ["/assets/images/kids/product/SumBlox Starter Set.jpg", "/assets/images/fashion/product/15.jpg", "/assets/images/fashion/product/4.jpg", "/assets/images/fashion/product/19.jpg"],
+    "shortDetails": "A great accessory for Montessori or Waldorf classrooms.",
+    "description": "The Starter Set is the perfect way to begin using SumBlox at home. A Starter Set of 27 SumBlox solid wood educational counting blocks to develop fundamental math skills."
+, "stock": 10,
+    "new": true,
+    "sale": false,
+    "category": "women",
+    "colors": ["pink", "gray"],
+    "tags": ["SUMBLOX"],
+    "rating": 4,
+    "variants": [
+    {
+      "color": "pink",
+      "images": "/assets/images/fashion/product/14.jpg"
+    },
+    {
+      "color": "gray",
+      "images": "/assets/images/fashion/product/4.jpg"
+    }]
+  },
+  {
+    "id": 10,
+    "name": "Counting with Colors",
+    "price": 110.00,
+    "salePrice": 220.00,
+    "discount": 50,
+    "pictures": ["/assets/images/kids/product/Counting with Colors.jpg", "/assets/images/fashion/product/22.jpg", "/assets/images/fashion/product/11.jpg", "/assets/images/fashion/product/2.jpg"],
+    "shortDetails": "Grimm's Counting With Colours",
+    "description": "Learning to count, complete sums, memorise prime numbers and master the times tables is made easy with this incredible wooden maths toy. This 200-piece block set is ideal for home educators but will be a hit with any parent looking for educational toys. The 200 wooden blocks sit in a tray in two layers - the tray is handy for storage and for containing the blocks when learning. The blocks can be used in a wide variety of ways - from the first attempts at learning numbers to making out simple sums and more. ",
+   "stock": 0,
+    "new": false,
+    "sale": false,
+    "category": "women",
+    "colors": ["red", "black", "white"],
+    "tags": ["GRIMMS"],
+    "rating": 3,
+    "variants": [
+    {
+      "color": "red",
+      "images": "/assets/images/fashion/product/23.jpg"
+    },
+    {
+      "color": "black",
+      "images": "/assets/images/fashion/product/22.jpg"
+    },
+    {
+      "color": "white",
+      "images": "/assets/images/fashion/product/2.jpg"
+    }]
+  },
+  {
+    "id": 11,
+    "name": "Large Rainbow",
+    "price": 330.00,
+    "salePrice": 660.00,
+    "discount": 50,
+    "pictures": ["/assets/images/kids/product/Large Rainbow.jpg", "/assets/images/fashion/product/12.jpg", "/assets/images/fashion/product/14.jpg", "/assets/images/fashion/product/19.jpg"],
+    "shortDetails": "Grimm's Large Rainbow 12 pieces",
+    "description": "This enormous wooden rainbow might just be the most amazing thing in your playroom. The possibilities for creative play are endless with this gorgeous wooden rainbow and the 12 blocks can be used in a myriad of ways - as tunnels and bridges for cars, cots for baby dolls, animal shelters or farm fences. They are even big enough for small children to crawl through and can be spread out to make mermaid tails for their young owners, and balanced one on top of another to make elaborate sculptures. Steiner educators, nurseries and playgroups will love how this natural toy can be used throughout the day in numerous ways.",
+    "stock": 0,
+    "new": true,
+    "sale": true,
+    "category": "women",
+    "colors": ["orange", "gray", "pink"],
+    "tags": ["GRIMMS"],
+    "rating": 5,
+    "variants": [
+    {
+      "color": "orange",
+      "images": "/assets/images/fashion/product/9.jpg"
+    },
+    {
+      "color": "gray",
+      "images": "/assets/images/fashion/product/12.jpg"
+    },
+    {
+      "color": "pink",
+      "images": "/assets/images/fashion/product/14.jpg"
+    }]
+  },
+  {
+    "id": 12,
+    "name": "Large Rainbow Pastel",
+    "price": 250.00,
+    "salePrice": 500.00,
+    "discount": 50,
+    "pictures": ["/assets/images/kids/product/Large Rainbow Pastel.jpg", "/assets/images/fashion/product/22.jpg", "/assets/images/fashion/product/24.jpg", "/assets/images/fashion/product/11.jpg"],
+    "shortDetails": "Grimm's Large Pastel Rainbow Tunnel 12 pieces",
+    "description": "Grimm's Large Pastel Rainbow Tunnel is absolutely versatile and an ideal toy even for the smallest child. Toddlers can stack, sort and build and children can use it as a cradle for dolls, as a fence for animals, or a tunnel, as a bridge for vehicles, a house for dwarfs and dolls. The possibilities with the world famous Grimm's Rainbows are endless and it is by far the most open-ended toy available. It will always be a toy that integrates play with the use of imagination and fantasy. ",
+   "stock": 0,
+    "new": true,
+    "sale": false,
+    "category": "women",
+    "colors": ["white", "black"],
+    "tags": ["GRIMMS"],
+    "rating": 3,
+    "variants": [
+    {
+      "color": "white",
+      "images": "/assets/images/fashion/product/2.jpg"
+    },
+    {
+      "color": "black",
+      "images": "/assets/images/fashion/product/22.jpg"
+    }]
+  },
+  {
+    "id": 13,
+    "name": "Mandala pink flowers",
+    "price": 660.00,
+    "salePrice": 1320.00,
+    "discount": 50,
+    "pictures": ["/assets/images/kids/product/Mandala pink flowers.jpg", "/assets/images/fashion/product/18.jpg", "/assets/images/fashion/product/24.jpg", "/assets/images/fashion/product/28.jpg"],
+    "shortDetails": "Grapat Mandala Pink Flowers",
+    "description": "The Grapat Mandala Pink Flowers is truly versatile and encourages open ended play. Designed in order to create a unique sensory experience, you can create beautiful mandala designs which encourage the development of fine motor skills as well as teaching little ones about symmetry. The possibilities are endless. Grapat Mandala sets are also brilliant for role play, counting and sorting. Grapat Mandala Pink Flowers include 36 mini flowers in 3 different shades of pink. Each item is about 4 cm.",
+   "stock": 0,
+    "new": false,
+    "sale": true,
+    "category": "women",
+    "colors": ["gray", "green"],
+    "tags": ["GRAPAT"],
+    "rating": 4,
+    "variants": [
+    {
+      "color": "green",
+      "images": "/assets/images/fashion/product/31.jpg"
+    },
+    {
+      "color": "gray",
+      "images": "/assets/images/fashion/product/24.jpg"
+    }]
+  },
+  {
+    "id": 14,
+    "name": "Mandala three fires",
+    "price": 950.00,
+    "salePrice": 425.00,
+    "discount": 50,
+    "pictures": ["/assets/images/kids/product/Mandala three fires.jpg", "/assets/images/fashion/product/22.jpg", "/assets/images/fashion/product/10.jpg", "/assets/images/fashion/product/1.jpg"],
+    "shortDetails": "Grapat Mandala Red Fire",
+    "description": "The Grapat Mandala Red Fire is truly versatile and encourages open ended play. Designed in order to create a unique sensory experience, you can create beautiful mandala designs which encourage the development of fine motor skills as well as teaching little ones about symmetry. The possibilities are endless. Grapat Mandala sets are also brilliant for role play, counting and sorting. Grapat Mandala Red Fire include 36 mini flames in 3 different shades of red. Each item is about 4 cm.",
+	 "stock": 0,
+    "new": true,
+    "sale": false,
+    "category": "women",
+    "colors": ["orange", "black", "yellow"],
+    "tags": ["GRAPAT"],
+    "rating": 4,
+    "variants": [
+    {
+      "color": "orange",
+      "images": "/assets/images/fashion/product/13.jpg"
+    },
+    {
+      "color": "black",
+      "images": "/assets/images/fashion/product/22.jpg"
+    },
+    {
+      "color": "yellow",
+      "images": "/assets/images/fashion/product/10.jpg"
+    }]
+  },
+  {
+    "id": 15,
+    "name": "Mandala Drops of water",
+    "price": 350.00,
+    "salePrice": 700.00,
+    "discount": 50,
+    "pictures": ["/assets/images/kids/product/Mandala Drops of water.jpg", "/assets/images/fashion/product/21.jpg", "/assets/images/fashion/product/15.jpg", "/assets/images/fashion/product/12.jpg"],
+    "shortDetails": "Grapat Mandala Drops of Water",
+    "description": "Grapat mandala pieces in the shape of little raindrops are going to make an amazing addition to your play collection. Use to decorate a scene and signify that it's raining, make rivers, splashes or anything else water related these really are perfect for imaginative play. Of course these rain drops are wonderful for mandala making too, add the element of water to your art. Sure to inspire all kinds of creativity and fire up imaginations young and old. ",
+  "stock": 0,
+    "new": false,
+    "sale": false,
+    "category": "women",
+    "colors": ["black", "white", "gray"],
+    "tags": ["GRAPAT"],
+    "rating": 5,
+    "variants": [
+    {
+      "color": "black",
+      "images": "/assets/images/fashion/product/17.jpg"
+    },
+    {
+      "color": "white",
+      "images": "/assets/images/fashion/product/21.jpg"
+    },
+    {
+      "color": "gray",
+      "images": "/assets/images/fashion/product/12.jpg"
+    },
+    {
+      "color": "gray",
+      "images": "/assets/images/fashion/product/15.jpg"
+    }]
+  },
+  {
+    "id": 16,
+    "name": "Full Flock.jpg",
+    "price": 556.00,
+    "salePrice": 278.00,
+    "discount": 50,
+    "pictures": ["/assets/images/kids/product/Full Flock (32pcs).jpg", "/assets/images/fashion/product/10.jpg", "/assets/images/fashion/product/24.jpg", "/assets/images/fashion/product/22.jpg"],
+    "shortDetails": "Flockmen Full Flock 32 pieces",
+    "description": "What's in the Flockmen Box? Your set of 32 Flockmen awaits you: each wooden ‘man’ is 50mm wide, 70mm tall and 15mm thick. Each individual Flockmen is designed to be impossible to swallow so it is safe to play with around babies. Portable storage bag: A practical and reinforced natural linen drawstring storage bag to keep your Flockmen safely stored when not in use. An inspiration card: with ideas and resources for how to challenge yourself with Flockmen.",
+   "stock": 0,
+    "new": false,
+    "sale": true,
+    "category": "women",
+    "colors": ["pink", "yellow", "gray"],
+    "tags": ["FLOCKMEN"],
+    "rating": 4,
+    "variants": [
+    {
+      "color": "pink",
+      "images": "/assets/images/fashion/product/3.jpg"
+    },
+    {
+      "color": "yellow",
+      "images": "/assets/images/fashion/product/10.jpg"
+    },
+    {
+      "color": "gray",
+      "images": "/assets/images/fashion/product/24.jpg"
+    }]
+  },
+  {
+    "id": 17,
+    "name": "Mega Flock (100pcs).jpg",
+    "price": 800.00,
+    "salePrice": 400.00,
+    "discount": 50,
+    "pictures": ["/assets/images/kids/product/Mega Flock (100pcs).jpg", "/assets/images/fashion/product/20.jpg", "/assets/images/fashion/product/24.jpg", "/assets/images/fashion/product/34.jpg"],
+    "shortDetails": "Flockmen Mega Flock 100 pieces",
+    "description": "What's in the Flockmen Box? Your set of 100 Flockmen awaits you: each wooden ‘man’ is 50mm wide, 70mm tall and 15mm thick. Each individual Flockmen is designed to be impossible to swallow so it is safe to play with around babies. Portable storage bag: You’ll receive a large practical and reinforced natural linen drawstring storage bag to keep your Flockmen safely stored when not in use. An inspiration card: with ideas and resources for how to challenge yourself with Flockmen.",
+   "stock": 0,
+    "new": false,
+    "sale": false,
+    "category": "women",
+    "colors": ["red", "gray", "pink"],
+    "tags": ["FLOCKMEN"],
+    "rating": 4,
+    "variants": [
+    {
+      "color": "red",
+      "images": "/assets/images/fashion/product/25.jpg"
+    },
+    {
+      "color": "gray",
+      "images": "/assets/images/fashion/product/24.jpg"
+    },
+    {
+      "color": "pink",
+      "images": "/assets/images/fashion/product/34.jpg"
+    }]
+  },
+  {
+    "id": 18,
+    "name": "Half Flock (16pcs)",
+    "price": 1050.00,
+    "salePrice": 2000.00,
+    "discount": 50,
+    "pictures": ["/assets/images/kids/product/Half Flock (16pcs).jpg", "/assets/images/fashion/product/6.jpg", "/assets/images/fashion/product/8.jpg", "/assets/images/fashion/product/20.jpg"],
+    "shortDetails": "Flockmen Half Flock 16 pieces",
+    "description": "What's in the Flockmen Box? Your set of 16 Flockmen awaits you: each wooden ‘man’ is 50mm wide, 70mm tall and 15mm thick. Each individual Flockmen is designed to be impossible to swallow so it is safe to play with around babies. Portable storage bag: A practical and reinforced natural linen drawstring storage bag to keep your Flockmen safely stored when not in use. An inspiration card: with ideas and resources for how to challenge yourself with Flockmen.",
+	 "stock": 0,
+    "new": true,
+    "sale": false,
+    "category": "women",
+    "colors": ["orange", "black", "red"],
+    "tags": ["FLOCKMEN"],
+    "rating": 5,
+    "variants": [
+    {
+      "color": "orange",
+      "images": "/assets/images/fashion/product/7.jpg"
+    },
+    {
+      "color": "black",
+      "images": "/assets/images/fashion/product/6.jpg"
+    },
+    {
+      "color": "red",
+      "images": "/assets/images/fashion/product/20.jpg"
+    }]
+  },
+  {
+    "id": 19,
+    "name": "24 Piece Car Pack.jpg",
+    "price": 250.00,
+    "salePrice": 500.00,
+    "discount": 50,
+    "pictures": ["/assets/images/kids/product/24 Piece Car Pack.jpg", "/assets/images/fashion/product/59.jpg", "/assets/images/fashion/product/42.jpg", "/assets/images/fashion/product/57.jpg"],
+    "shortDetails": "24 Piece Car Pack",
+    "description": "Our 24 piece car pack featuring Strong Magnets, Rubber Wheels and our Unique Beveled Design Each set includes: 2 Cars with Rubber Wheels 12 x Small squares 8 x Rectangle pieces 2 x Hollow square pieces (door frames) Idea Booklet",
+  "stock": 0,
+    "new": true,
+    "sale": true,
+    "category": "men",
+    "colors": ["white", "gray", "black"],
+    "tags": ["CONNETIX"],
+    "rating": 4,
+    "variants": [
+    {
+      "color": "white",
+      "images": "/assets/images/fashion/product/43.jpg"
+    },
+    {
+      "color": "gray",
+      "images": "/assets/images/fashion/product/59.jpg"
+    },
+    {
+      "color": "black",
+      "images": "/assets/images/fashion/product/42.jpg"
+    }]
+  },
+  {
+    "id": 20,
+    "name": "Connetix Tiles 100 Piece Set",
+    "price": 130.00,
+    "salePrice": 260.00,
+    "discount": 50,
+    "pictures": ["/assets/images/kids/product/Connetix Tiles 100 Piece Set.jpg", "/assets/images/fashion/product/47.jpg", "/assets/images/fashion/product/74.jpg", "/assets/images/fashion/product/46.jpg"],
+    "shortDetails": "Connetix Tiles 100 Piece Set",
+    "description": "Our 100 Piece set comprises 6 large tiles, making your buildings even BIGGER! Each set includes: 6 x Large squares (6×6 inch) 36 x Small squares 12 x Equilateral triangles 12 x Right angle triangles 12 x Isosceles triangles 6 x Window square pieces 6 x Hollow square pieces (door frames) 4 x Rectangles 6 x Square gates Idea Booklet A Bag to hold it all in!",
+    
+    "stock": 0,
+    "new": false,
+    "sale": true,
+    "category": "men",
+    "colors": ["orange", "green", "gray"],
+    "tags": ["CONNETIX"],
+    "rating": 5,
+    "variants": [
+    {
+      "color": "orange",
+      "images": "/assets/images/fashion/product/66.jpg"
+    },
+    {
+      "color": "green",
+      "images": "/assets/images/fashion/product/47.jpg"
+    },
+    {
+      "color": "gray",
+      "images": "/assets/images/fashion/product/74.jpg"
+    }]
+  },
+  {
+    "id": 21,
+    "name": "Connetix Tiles 62 Piece Set",
+    "price": 150.00,
+    "salePrice": 300.00,
+    "discount": 50,
+    "pictures": ["/assets/images/kids/product/Connetix Tiles 62 Piece Set.jpg", "/assets/images/fashion/product/49.jpg", "/assets/images/fashion/product/72.jpg", "/assets/images/fashion/product/74.jpg"],
+    "shortDetails": "Connetix Tiles 62 Piece Set",
+    "description": "Our 62 Piece set comprises 4 large tiles, making building BIG even easier! Each set includes: 4 x Large squares (6×6 inch) 24 x Small squares 12 x Equilateral triangles 8 x Right angle triangles 6 x Isosceles triangles 4 x Window square pieces 4 x Hollow square pieces (door frames) Idea Booklet", 
+    "stock": 0,
+    "new": true,
+    "sale": true,
+    "category": "men",
+    "colors": ["white", "gray"],
+    "tags": ["CONNETIX"],
+    "rating": 4,
+    "variants": [
+    {
+      "color": "white",
+      "images": "/assets/images/fashion/product/56.jpg"
+    },
+    {
+      "color": "gray",
+      "images": "/assets/images/fashion/product/72.jpg"
+    }]
+  },
+  {
+    "id": 22,
+    "name": "RAINBOW - Andy, Rocco, Charles, Will, Riku & Paul",
+    "price": 210.00,
+    "salePrice": 420.00,
+    "discount": 50,
+    "pictures": ["/assets/images/kids/product/RAINBOW - Andy, Rocco, Charles, Will, Riku & Paul.jpg", "/assets/images/fashion/product/46.jpg", "/assets/images/fashion/product/55.jpg", "/assets/images/fashion/product/52.jpg"],
+    "shortDetails": "We are delighted to bring you CLiCQUES, the gorgeous European magnetic mix-and-match figures that everybody is talking about! ",
+    "description": "CLiCQUES [clicks] are colourful, beautiful and fun wooden peg dolls made from high-quality European hornbeam. They are CE certified and hand-painted with certified child-safe paints and varnishes (EN-71/3 compliant). The handmade wooden toys consist of three elements that are held together with tiny magnets designed for you to mix them up, switch their clothes and use them as educational toys for teaching colours and different colour combinations. Since CLiCQUES have minimal facial features, these magnet toys stimulate children’s inner picturing abilities and do not set limitations to creative thinking.",
+  "stock": 0,
+    "new": false,
+    "sale": false,
+    "category": "men",
+    "colors": ["green", "gray", "black"],
+    "tags": ["CLICQUES"],
+    "rating": 5,
+    "variants": [
+    {
+      "color": "green",
+      "images": "/assets/images/fashion/product/47.jpg"
+    },
+    {
+      "color": "gray",
+      "images": "/assets/images/fashion/product/46.jpg"
+    },
+    {
+      "color": "black",
+      "images": "/assets/images/fashion/product/55.jpg"
+    }]
+  },
+  {
+    "id": 23,
+    "name": "RAINBOW - Ebony, Maya, Yui, Alice, Jasmine & Lizzie",
+    "price": 420.00,
+    "salePrice": 840.00,
+    "discount": 50,
+    "pictures": ["/assets/images/kids/product/RAINBOW - Ebony, Maya, Yui, Alice, Jasmine & Lizzie.jpg", "/assets/images/fashion/product/46.jpg", "/assets/images/fashion/product/51.jpg", "/assets/images/fashion/product/52.jpg"],
+    "shortDetails": "We are delighted to bring you CLiCQUES, the gorgeous European magnetic mix-and-match figures that everybody is talking about! ",
+    "description": "CLiCQUES [clicks] are colourful, beautiful and fun wooden peg dolls made from high-quality European hornbeam. They are CE certified and hand-painted with certified child-safe paints and varnishes (EN-71/3 compliant). The handmade wooden toys consist of three elements that are held together with tiny magnets designed for you to mix them up, switch their clothes and use them as educational toys for teaching colours and different colour combinations. Since CLiCQUES have minimal facial features, these magnet toys stimulate children’s inner picturing abilities and do not set limitations to creative thinking.",
+  "stock": 0,
+    "new": false,
+    "sale": true,
+    "category": "men",
+    "colors": ["pink", "green", "yellow"],
+    "tags": ["CLICQUES"],
+    "rating": 4,
+    "variants": [
+    {
+      "color": "pink",
+      "images": "/assets/images/fashion/product/63.jpg"
+    },
+    {
+      "color": "green",
+      "images": "/assets/images/fashion/product/46.jpg"
+    },
+    {
+      "color": "yellow",
+      "images": "/assets/images/fashion/product/51.jpg"
+    }]
+  },
+  {
+    "id": 24,
+    "name": "Wooden House - Wood",
+    "price": 360.00,
+    "salePrice": 720.00,
+    "discount": 50,
+    "pictures": ["/assets/images/kids/product/Wooden House - Wood.jpg", "/assets/images/fashion/product/72.jpg", "/assets/images/fashion/product/80.jpg", "/assets/images/fashion/product/42.jpg"],
+    "shortDetails": "We are delighted to bring you CLiCQUES, the gorgeous European magnetic mix-and-match figures that everybody is talking about! ",
+    "description": "CLiCQUES [clicks] are colourful, beautiful and fun wooden peg dolls made from high-quality European hornbeam. They are CE certified and hand-painted with certified child-safe paints and varnishes (EN-71/3 compliant). The handmade wooden toys consist of three elements that are held together with tiny magnets designed for you to mix them up, switch their clothes and use them as educational toys for teaching colours and different colour combinations. Since CLiCQUES have minimal facial features, these magnet toys stimulate children’s inner picturing abilities and do not set limitations to creative thinking.",
+  "stock": 0,
+    "new": true,
+    "sale": true,
+    "category": "men",
+    "colors": ["orange", "black", "white"],
+    "tags": ["CLICQUES"],
+    "rating": 4,
+    "variants": [
+    {
+      "color": "orange",
+      "images": "/assets/images/fashion/product/73.jpg"
+    },
+    {
+      "color": "black",
+      "images": "/assets/images/fashion/product/72.jpg"
+    },
+    {
+      "color": "white",
+      "images": "/assets/images/fashion/product/80.jpg"
+    }]
+  },
+  {
+    "id": 25,
+    "name": "The Lighthouse Puzzle block",
+    "price": 900.00,
+    "salePrice": 450.00,
+    "discount": 50,
+    "pictures": ["/assets/images/kids/product/The Lighthouse Puzzle block.jpeg", "/assets/images/fashion/product/57.jpg", "/assets/images/fashion/product/47.jpg", "/assets/images/fashion/product/76.jpg"],
+    "shortDetails": "The Lighthouse Puzzle block",
+    "description": "The Lighthouse Puzzle is a unique toy which has both puzzling and building functions.  It has 21 blocks with different shapes and blocks. Every block was cut, sanded and painted by hand from a solid wood.  And they have very smooth warm feeling, that help children's sensory development.  We use limewood and water based wax color to keep the original velvety feeling of wood, it also keeps the wood pattern visible. Our lighthouse puzzle is great for imaginative and open-ended play.",
+  "stock": 0,
+    "new": false,
+    "sale": false,
+    "category": "men",
+    "colors": ["black", "green"],
+    "tags": ["AVDAR"],
+    "rating": 5,
+    "variants": [
+    {
+      "color": "black",
+      "images": "/assets/images/fashion/product/55.jpg"
+    },
+    {
+      "color": "green",
+      "images": "/assets/images/fashion/product/47.jpg"
+    }]
+  },
+  {
+    "id": 26,
+    "name": "Fire Stacker",
+    "price": 680.00,
+    "salePrice": 1360.00,
+    "discount": 50,
+    "pictures": ["/assets/images/kids/product/Fire Stacker.jpeg", "/assets/images/fashion/product/66.jpg", "/assets/images/fashion/product/62.jpg", "/assets/images/fashion/product/77.jpg"],
+    "shortDetails": "Fire stacker",
+    "description": "Spark your little one's imagination with our Exclusive Fire Stacker from Avdar Toys. Sort, stack and tell stories around this highly detailed and hand-finished stacking campfire. Perfect for Small World play, the individual pieces will become houses, fences or anything else that a lit-up imagination can come up with.",
+   "stock": 0,
+    "new": false,
+    "sale": false,
+    "category": "men",
+    "colors": ["white", "pink", "gray"],
+    "tags": ["AVDAR"],
+    "rating": 4,
+    "variants": [
+    {
+      "color": "white",
+      "images": "/assets/images/fashion/product/51.jpg"
+    },
+    {
+      "color": "pink",
+      "images": "/assets/images/fashion/product/66.jpg"
+    },
+    {
+      "color": "gray",
+      "images": "/assets/images/fashion/product/62.jpg"
+    }]
+  },
+  {
+    "id": 27,
+    "name": "Rainbow Stacker",
+    "price": 500.00,
+    "salePrice": 1000.00,
+    "discount": 50,
+    "pictures": ["/assets/images/kids/product/Rainbow Stacker.jpg", "/assets/images/fashion/product/71.jpg", "/assets/images/fashion/product/72.jpg", "/assets/images/fashion/product/53.jpg"],
+    "shortDetails": "Big Rainbow Stacker",
+    "description": "We've partnered with Avdar toys to bring you this gorgeous small rainbow stacker that will become the centre of your little one's open-ended play (or the centrepiece of a drool-worthy #toyshelfie). This deluxe item is crafted from high quality wood and carefully treated with a carefully selected non-toxic finish. It's simply the best small stacker there is!",
+  "stock": 0,
+    "new": true,
+    "sale": false,
+    "category": "men",
+    "colors": ["blue", "black"],
+    "tags": ["AVDAR"],
+    "rating": 4,
+    "variants": [
+    {
+      "color": "blue",
+      "images": "/assets/images/fashion/product/78.jpg"
+    },
+    {
+      "color": "black",
+      "images": "/assets/images/fashion/product/71.jpg"
+    }]
+  },
+  {
+    "id": 28,
+    "name": "Animal set",
+    "price": 322.00,
+    "salePrice": 161.00,
+    "discount": 50,
+    "pictures": ["/assets/images/kids/product/Animal set.jpeg", "/assets/images/fashion/product/72.jpg", "/assets/images/fashion/product/60.jpg", "/assets/images/fashion/product/66.jpg"],
+    "shortDetails": "Five Wooden Animals by Avdar",
+    "description": "A set of five adorable natural wood animals. Adopt these stackable creatures and bring them home! Add them to your seasonal tables or small world playscapes, or enjoy them on their own. Can you name all five!? Each animal stands 5-7cm tall.",
+  "stock": 0,
+    "new": false,
+    "sale": true,
+    "category": "men",
+    "colors": ["white", "black", "red"],
+    "tags": ["AVDAR"],
+    "rating": 4,
+    "variants": [
+    {
+      "color": "white",
+      "images": "/assets/images/fashion/product/49.jpg"
+    },
+    {
+      "color": "black",
+      "images": "/assets/images/fashion/product/72.jpg"
+    },
+    {
+      "color": "red",
+      "images": "/assets/images/fashion/product/60.jpg"
+    }]
+  },
+  {
+    "id": 29,
+    "name": "Rainbow house blocks",
+    "price": 390.00,
+    "salePrice": 780.00,
+    "discount": 50,
+    "pictures": ["/assets/images/kids/product/Rainbow house blocks.jpeg", "/assets/images/fashion/product/79.jpg", "/assets/images/fashion/product/70.jpg", "/assets/images/fashion/product/42.jpg"],
+    "shortDetails": "Rainbow House Blocks by Avdar Toys",
+    "description": "Now we're blockin'! Rainbow coloured House Blocks by Avdar will take your open-ended play to a new level. Sort or stack them on their own, or combine them with other materials to create a whole neighbourhood of colourful fun. When it comes to beautiful, engaging wooden play materials, these montessori-inspired Rainbow House Blocks by Avdar really stack up! House Size: Approx 5cm (height) Materials: Lime wood, water-based non-toxic paint",
+  "stock": 0,
+    "new": true,
+    "sale": true,
+    "category": "men",
+    "colors": ["green", "yellow"],
+    "tags": ["AVDAR"],
+    "rating": 4,
+    "variants": [
+    {
+      "color": "green",
+      "images": "/assets/images/fashion/product/47.jpg"
+    },
+    {
+      "color": "yellow",
+      "images": "/assets/images/fashion/product/79.jpg"
+    }]
+  },
+  {
+    "id": 30,
+    "name": "Wave stacker",
+    "price": 600.00,
+    "salePrice": 1200.00,
+    "discount": 50,
+    "pictures": ["/assets/images/kids/product/Wave stacker.jpeg", "/assets/images/fashion/product/77.jpg", "/assets/images/fashion/product/65.jpg", "/assets/images/fashion/product/74.jpg"],
+    "shortDetails": "Stacking Wave Blocks by Avdar Toys",
+    "description": "Wave hello to our eight piece Wave Blocks set by Avdar. Four gently rippling waves and four colourful fishes play together in this set, which can be sorted or stacked any way that you can imagine. There's something fishy about this beautiful open-ended Montessori-inspired wooden play set, 'water' you going to build with it? Dimensions: 7 x 11 x 2cm ",
+   "stock": 0,
+    "new": false,
+    "sale": false,
+    "category": "men",
+    "colors": ["yellow", "gray", "black"],
+    "tags": ["AVDAR"],
+    "rating": 4,
+    "variants": [
+    {
+      "color": "yellow",
+      "images": "/assets/images/fashion/product/51.jpg"
+    },
+    {
+      "color": "gray",
+      "images": "/assets/images/fashion/product/77.jpg"
+    },
+    {
+      "color": "black",
+      "images": "/assets/images/fashion/product/65.jpg"
+    }]
+  },
+  {
+    "id": 31,
+    "name": "Sensory Play Stones",
+    "price": 450000,
+    "salePrice": 450000,
+    "discount": 50,
+    "pictures": ["/assets/images/kids/product/Fruit – Sensory Play Stones 2.jpg", "/assets/images/fashion/product/77.jpg", "/assets/images/fashion/product/65.jpg", "/assets/images/fashion/product/74.jpg"],
+    "shortDetails": "Stacking Wave Blocks by Avdar Toys",
+    "description": "Wave hello to our eight piece Wave Blocks set by Avdar. Four gently rippling waves and four colourful fishes play together in this set, which can be sorted or stacked any way that you can imagine. There's something fishy about this beautiful open-ended Montessori-inspired wooden play set, 'water' you going to build with it? Dimensions: 7 x 11 x 2cm ",
+   "stock": 10,
+    "new": false,
+    "sale": false,
+    "category": "men",
+    "colors": ["yellow", "gray", "black"],
+    "tags": ["YELLOW DOOR"],
+    "rating": 4,
+    "variants": [
+    {
+      "color": "yellow",
+      "images": "/assets/images/fashion/product/51.jpg"
+    },
+    {
+      "color": "gray",
+      "images": "/assets/images/fashion/product/77.jpg"
+    },
+    {
+      "color": "black",
+      "images": "/assets/images/fashion/product/65.jpg"
+    }]
+  },
+  {
+    "id": 32,
+    "name": "Sensory Play Stones: Vegetables",
+    "price": 450000,
+    "salePrice": 450000,
+    "discount": 0,
+    "pictures": ["/assets/images/kids/product/Vegetables – Sensory Play Stones. 2.jpg", "/assets/images/fashion/product/77.jpg", "/assets/images/fashion/product/65.jpg", "/assets/images/fashion/product/74.jpg"],
+    "shortDetails": "Stacking Wave Blocks by Avdar Toys",
+    "description": "Wave hello to our eight piece Wave Blocks set by Avdar. Four gently rippling waves and four colourful fishes play together in this set, which can be sorted or stacked any way that you can imagine. There's something fishy about this beautiful open-ended Montessori-inspired wooden play set, 'water' you going to build with it? Dimensions: 7 x 11 x 2cm ",
+   "stock": 10,
+    "new": false,
+    "sale": false,
+    "category": "men",
+    "colors": ["yellow", "gray", "black"],
+    "tags": ["YELLOW DOOR"],
+    "rating": 4,
+    "variants": [
+    {
+      "color": "yellow",
+      "images": "/assets/images/fashion/product/51.jpg"
+    },
+    {
+      "color": "gray",
+      "images": "/assets/images/fashion/product/77.jpg"
+    },
+    {
+      "color": "black",
+      "images": "/assets/images/fashion/product/65.jpg"
+    }]
+  },
+  {
+    "id": 33,
+    "name": "Alphabet Pebbles - Lowercase ",
+    "price": 480000,
+    "salePrice": 480000,
+    "discount": 0,
+    "pictures": ["/assets/images/kids/product/Lowercase Alphabet Pebbles 3.jpg", "/assets/images/fashion/product/77.jpg", "/assets/images/fashion/product/65.jpg", "/assets/images/fashion/product/74.jpg"],
+    "shortDetails": "Stacking Wave Blocks by Avdar Toys",
+    "description": "Wave hello to our eight piece Wave Blocks set by Avdar. Four gently rippling waves and four colourful fishes play together in this set, which can be sorted or stacked any way that you can imagine. There's something fishy about this beautiful open-ended Montessori-inspired wooden play set, 'water' you going to build with it? Dimensions: 7 x 11 x 2cm ",
+   "stock": 10,
+    "new": false,
+    "sale": false,
+    "category": "men",
+    "colors": ["yellow", "gray", "black"],
+    "tags": ["YELLOW DOOR"],
+    "rating": 4,
+    "variants": [
+    {
+      "color": "yellow",
+      "images": "/assets/images/fashion/product/51.jpg"
+    },
+    {
+      "color": "gray",
+      "images": "/assets/images/fashion/product/77.jpg"
+    },
+    {
+      "color": "black",
+      "images": "/assets/images/fashion/product/65.jpg"
+    }]
+  },
+  {
+    "id": 34,
+    "name": "Alphabet Pebbles - Word-building Set",
+    "price": 820000,
+    "salePrice": 820000,
+    "discount": 0,
+    "pictures": ["/assets/images/kids/product/Alphabet Pebble Word-Building Set 2.jpg", "/assets/images/fashion/product/77.jpg", "/assets/images/fashion/product/65.jpg", "/assets/images/fashion/product/74.jpg"],
+    "shortDetails": "Stacking Wave Blocks by Avdar Toys",
+    "description": "Wave hello to our eight piece Wave Blocks set by Avdar. Four gently rippling waves and four colourful fishes play together in this set, which can be sorted or stacked any way that you can imagine. There's something fishy about this beautiful open-ended Montessori-inspired wooden play set, 'water' you going to build with it? Dimensions: 7 x 11 x 2cm ",
+   "stock": 10,
+    "new": false,
+    "sale": false,
+    "category": "men",
+    "colors": ["yellow", "gray", "black"],
+    "tags": ["YELLOW DOOR"],
+    "rating": 4,
+    "variants": [
+    {
+      "color": "yellow",
+      "images": "/assets/images/fashion/product/51.jpg"
+    },
+    {
+      "color": "gray",
+      "images": "/assets/images/fashion/product/77.jpg"
+    },
+    {
+      "color": "black",
+      "images": "/assets/images/fashion/product/65.jpg"
+    }]
+  },
+  {
+    "id": 35,
+    "name": " Alphabet Pebbles - Uppercase",
+    "price": 480000,
+    "salePrice": 480000,
+    "discount": 0,
+    "pictures": ["/assets/images/kids/product/Uppercase Alphabet 2.jpg", "/assets/images/fashion/product/77.jpg", "/assets/images/fashion/product/65.jpg", "/assets/images/fashion/product/74.jpg"],
+    "shortDetails": "Stacking Wave Blocks by Avdar Toys",
+    "description": "Wave hello to our eight piece Wave Blocks set by Avdar. Four gently rippling waves and four colourful fishes play together in this set, which can be sorted or stacked any way that you can imagine. There's something fishy about this beautiful open-ended Montessori-inspired wooden play set, 'water' you going to build with it? Dimensions: 7 x 11 x 2cm ",
+   "stock": 10,
+    "new": false,
+    "sale": false,
+    "category": "men",
+    "colors": ["yellow", "gray", "black"],
+    "tags": ["YELLOW DOOR"],
+    "rating": 4,
+    "variants": [
+    {
+      "color": "yellow",
+      "images": "/assets/images/fashion/product/51.jpg"
+    },
+    {
+      "color": "gray",
+      "images": "/assets/images/fashion/product/77.jpg"
+    },
+    {
+      "color": "black",
+      "images": "/assets/images/fashion/product/65.jpg"
+    }]
+  },
+  {
+    "id": 36,
+    "name": "Let's Investigate - Woodland Footprints",
+    "price": 460000,
+    "salePrice": 460000,
+    "discount": 0,
+    "pictures": ["/assets/images/kids/product/Let’s Investigate – Woodland Footprints 2.jpg", "/assets/images/fashion/product/77.jpg", "/assets/images/fashion/product/65.jpg", "/assets/images/fashion/product/74.jpg"],
+    "shortDetails": "Stacking Wave Blocks by Avdar Toys",
+    "description": "Wave hello to our eight piece Wave Blocks set by Avdar. Four gently rippling waves and four colourful fishes play together in this set, which can be sorted or stacked any way that you can imagine. There's something fishy about this beautiful open-ended Montessori-inspired wooden play set, 'water' you going to build with it? Dimensions: 7 x 11 x 2cm ",
+   "stock": 10,
+    "new": false,
+    "sale": false,
+    "category": "men",
+    "colors": ["yellow", "gray", "black"],
+    "tags": ["YELLOW DOOR"],
+    "rating": 4,
+    "variants": [
+    {
+      "color": "yellow",
+      "images": "/assets/images/fashion/product/51.jpg"
+    },
+    {
+      "color": "gray",
+      "images": "/assets/images/fashion/product/77.jpg"
+    },
+    {
+      "color": "black",
+      "images": "/assets/images/fashion/product/65.jpg"
+    }]
+  },
+  {
+    "id": 37,
+    "name": "Let's Investigate - Fossils",
+    "price": 460000,
+    "salePrice": 460000,
+    "discount": 0,
+    "pictures": ["/assets/images/kids/product/Let’s Investigate Fossils.jpg", "/assets/images/fashion/product/Let’s Investigate Fossils 2.jpg", "/assets/images/fashion/product/Let’s Investigate Fossils 3.jpg", "/assets/images/fashion/product/Let’s Investigate Fossils 4.jpg"],
+    "shortDetails": "Stacking Wave Blocks by Avdar Toys",
+    "description": "Wave hello to our eight piece Wave Blocks set by Avdar. Four gently rippling waves and four colourful fishes play together in this set, which can be sorted or stacked any way that you can imagine. There's something fishy about this beautiful open-ended Montessori-inspired wooden play set, 'water' you going to build with it? Dimensions: 7 x 11 x 2cm ",
+   "stock": 10,
+    "new": false,
+    "sale": false,
+    "category": "men",
+    "colors": ["yellow", "gray", "black"],
+    "tags": ["YELLOW DOOR"],
+    "rating": 4,
+    "variants": [
+    {
+      "color": "yellow",
+      "images": "/assets/images/fashion/product/51.jpg"
+    },
+    {
+      "color": "gray",
+      "images": "/assets/images/fashion/product/77.jpg"
+    },
+    {
+      "color": "black",
+      "images": "/assets/images/fashion/product/65.jpg"
+    }]
+  },
+  {
+    "id": 38,
+    "name": "Let's Investigate - Bugs",
+    "price": 460000,
+    "salePrice": 460000,
+    "discount": 0,
+    "pictures": ["/assets/images/kids/product/Let’s Investigate Bugs.jpg", "/assets/images/fashion/product/Let’s Investigate Bugs 2.jpg", "/assets/images/fashion/product/Let’s Investigate Bugs 3.jpg", "/assets/images/fashion/product/74.jpg"],
+    "shortDetails": "Stacking Wave Blocks by Avdar Toys",
+    "description": "Wave hello to our eight piece Wave Blocks set by Avdar. Four gently rippling waves and four colourful fishes play together in this set, which can be sorted or stacked any way that you can imagine. There's something fishy about this beautiful open-ended Montessori-inspired wooden play set, 'water' you going to build with it? Dimensions: 7 x 11 x 2cm ",
+   "stock": 10,
+    "new": false,
+    "sale": false,
+    "category": "men",
+    "colors": ["yellow", "gray", "black"],
+    "tags": ["YELLOW DOOR"],
+    "rating": 4,
+    "variants": [
+    {
+      "color": "yellow",
+      "images": "/assets/images/fashion/product/51.jpg"
+    },
+    {
+      "color": "gray",
+      "images": "/assets/images/fashion/product/77.jpg"
+    },
+    {
+      "color": "black",
+      "images": "/assets/images/fashion/product/65.jpg"
+    }]
+  },
+  {
+    "id": 39,
+    "name": "Let's Investigate - Farmyard Footprints",
+    "price": 460000,
+    "salePrice": 460000,
+    "discount": 0,
+    "pictures": ["/assets/images/kids/product/Let’s Investigate – Dinosaur Footprints.jpg", "/assets/images/fashion/product/Let’s Investigate – Dinosaur Footprints 2.jpg", "/assets/images/fashion/product/Let’s Investigate – Dinosaur Footprints 3.jpg", "/assets/images/fashion/product/74.jpg"],
+    "shortDetails": "Stacking Wave Blocks by Avdar Toys",
+    "description": "Wave hello to our eight piece Wave Blocks set by Avdar. Four gently rippling waves and four colourful fishes play together in this set, which can be sorted or stacked any way that you can imagine. There's something fishy about this beautiful open-ended Montessori-inspired wooden play set, 'water' you going to build with it? Dimensions: 7 x 11 x 2cm ",
+   "stock": 10,
+    "new": false,
+    "sale": false,
+    "category": "men",
+    "colors": ["yellow", "gray", "black"],
+    "tags": ["YELLOW DOOR"],
+    "rating": 4,
+    "variants": [
+    {
+      "color": "yellow",
+      "images": "/assets/images/fashion/product/51.jpg"
+    },
+    {
+      "color": "gray",
+      "images": "/assets/images/fashion/product/77.jpg"
+    },
+    {
+      "color": "black",
+      "images": "/assets/images/fashion/product/65.jpg"
+    }]
+  },
+  {
+    "id": 40,
+    "name": "Let's Investigate - Dinosaur Footprints",
+    "price": 460000,
+    "salePrice": 460000,
+    "discount": 0,
+    "pictures": ["/assets/images/kids/product/Let’s Investigate – Dinosaur Footprints.jpg", "/assets/images/fashion/product/77.jpg", "/assets/images/fashion/product/65.jpg", "/assets/images/fashion/product/74.jpg"],
+    "shortDetails": "Stacking Wave Blocks by Avdar Toys",
+    "description": "Wave hello to our eight piece Wave Blocks set by Avdar. Four gently rippling waves and four colourful fishes play together in this set, which can be sorted or stacked any way that you can imagine. There's something fishy about this beautiful open-ended Montessori-inspired wooden play set, 'water' you going to build with it? Dimensions: 7 x 11 x 2cm ",
+   "stock": 10,
+    "new": false,
+    "sale": false,
+    "category": "men",
+    "colors": ["yellow", "gray", "black"],
+    "tags": ["YELLOW DOOR"],
+    "rating": 4,
+    "variants": [
+    {
+      "color": "yellow",
+      "images": "/assets/images/fashion/product/51.jpg"
+    },
+    {
+      "color": "gray",
+      "images": "/assets/images/fashion/product/77.jpg"
+    },
+    {
+      "color": "black",
+      "images": "/assets/images/fashion/product/65.jpg"
+    }]
+  },
+  {
+    "id": 41,
+    "name": "Let's Investigate - Safari Footprints",
+    "price": 460000,
+    "salePrice": 460000,
+    "discount": 0,
+    "pictures": ["/assets/images/kids/product/Let’s Investigate – Safari Footprints.jpg", "/assets/images/fashion/product/Let’s Investigate – Safari Footprints 2.jpg", "/assets/images/fashion/product/Let’s Investigate – Safari Footprints 3.jpg"],
+    "shortDetails": "Stacking Wave Blocks by Avdar Toys",
+    "description": "Wave hello to our eight piece Wave Blocks set by Avdar. Four gently rippling waves and four colourful fishes play together in this set, which can be sorted or stacked any way that you can imagine. There's something fishy about this beautiful open-ended Montessori-inspired wooden play set, 'water' you going to build with it? Dimensions: 7 x 11 x 2cm ",
+   "stock": 10,
+    "new": false,
+    "sale": false,
+    "category": "men",
+    "colors": ["yellow", "gray", "black"],
+    "tags": ["YELLOW DOOR"],
+    "rating": 4,
+    "variants": [
+    {
+      "color": "yellow",
+      "images": "/assets/images/fashion/product/51.jpg"
+    },
+    {
+      "color": "gray",
+      "images": "/assets/images/fashion/product/77.jpg"
+    },
+    {
+      "color": "black",
+      "images": "/assets/images/fashion/product/65.jpg"
+    }]
+  },
+  {
+    "id": 42,
+    "name": "Let's Investigate - Polar Footprints",
+    "price": 460000,
+    "salePrice": 460000,
+    "discount": 0,
+    "pictures": ["/assets/images/kids/product/Let’s Investigate – Polar Footprints.jpg", "/assets/images/fashion/product/Let’s Investigate – Polar Footprints 2.jpg"],
+    "shortDetails": "Stacking Wave Blocks by Avdar Toys",
+    "description": "Wave hello to our eight piece Wave Blocks set by Avdar. Four gently rippling waves and four colourful fishes play together in this set, which can be sorted or stacked any way that you can imagine. There's something fishy about this beautiful open-ended Montessori-inspired wooden play set, 'water' you going to build with it? Dimensions: 7 x 11 x 2cm ",
+   "stock": 10,
+    "new": false,
+    "sale": false,
+    "category": "men",
+    "colors": ["yellow", "gray", "black"],
+    "tags": ["YELLOW DOOR"],
+    "rating": 4,
+    "variants": [
+    {
+      "color": "yellow",
+      "images": "/assets/images/fashion/product/51.jpg"
+    },
+    {
+      "color": "gray",
+      "images": "/assets/images/fashion/product/77.jpg"
+    },
+    {
+      "color": "black",
+      "images": "/assets/images/fashion/product/65.jpg"
+    }]
+  },
+  {
+    "id": 43,
+    "name": "Natural Sorting Stones",
+    "price": 380000,
+    "salePrice": 380000,
+    "discount": 0,
+    "pictures": ["/assets/images/kids/product/Natural Sorting Stones.jpg", "/assets/images/fashion/product/Natural Sorting Stones 2.jpg", "/assets/images/fashion/product/Natural Sorting Stones 3.jpg"],
+    "shortDetails": "Stacking Wave Blocks by Avdar Toys",
+    "description": "Wave hello to our eight piece Wave Blocks set by Avdar. Four gently rippling waves and four colourful fishes play together in this set, which can be sorted or stacked any way that you can imagine. There's something fishy about this beautiful open-ended Montessori-inspired wooden play set, 'water' you going to build with it? Dimensions: 7 x 11 x 2cm ",
+   "stock": 10,
+    "new": false,
+    "sale": false,
+    "category": "men",
+    "colors": ["yellow", "gray", "black"],
+    "tags": ["YELLOW DOOR"],
+    "rating": 4,
+    "variants": [
+    {
+      "color": "yellow",
+      "images": "/assets/images/fashion/product/51.jpg"
+    },
+    {
+      "color": "gray",
+      "images": "/assets/images/fashion/product/77.jpg"
+    },
+    {
+      "color": "black",
+      "images": "/assets/images/fashion/product/65.jpg"
+    }]
+  },
+  {
+    "id": 44,
+    "name": "100pcs",
+    "price": 1300000,
+    "salePrice": 1300000,
+    "discount": 0,
+    "pictures": [ "/assets/images/kids/product/Playmag.jpg", "/assets/images/kids/product/Playmag 2.jpg"],
+    "shortDetails": "Stacking Wave Blocks by Avdar Toys",
+    "description": "Wave hello to our eight piece Wave Blocks set by Avdar. Four gently rippling waves and four colourful fishes play together in this set, which can be sorted or stacked any way that you can imagine. There's something fishy about this beautiful open-ended Montessori-inspired wooden play set, 'water' you going to build with it? Dimensions: 7 x 11 x 2cm ",
+   "stock": 10,
+    "new": false,
+    "sale": false,
+    "category": "men",
+    "colors": ["yellow", "gray", "black"],
+    "tags": ["PLAYMAGS"],
+    "rating": 4,
+    "variants": [
+    {
+      "color": "yellow",
+      "images": "/assets/images/fashion/product/51.jpg"
+    },
+    {
+      "color": "gray",
+      "images": "/assets/images/fashion/product/77.jpg"
+    },
+    {
+      "color": "black",
+      "images": "/assets/images/fashion/product/65.jpg"
+    }]
+  },
+  {
+    "id": 45,
+    "name": "28pcs Dome set",
+    "price": 650000,
+    "salePrice": 650000,
+    "discount": 0,
+    "pictures": ["/assets/images/kids/product/Playmags 3D Clear Colour Magnetic Tiles 30 pcs Dome Accessories Pack.jpg", "/assets/images/fashion/product/Playmag.jpg", "/assets/images/fashion/product/65.jpg", "/assets/images/fashion/product/Playmag 2.jpg"],
+    "shortDetails": "Stacking Wave Blocks by Avdar Toys",
+    "description": "Wave hello to our eight piece Wave Blocks set by Avdar. Four gently rippling waves and four colourful fishes play together in this set, which can be sorted or stacked any way that you can imagine. There's something fishy about this beautiful open-ended Montessori-inspired wooden play set, 'water' you going to build with it? Dimensions: 7 x 11 x 2cm ",
+   "stock": 10,
+    "new": false,
+    "sale": false,
+    "category": "men",
+    "colors": ["yellow", "gray", "black"],
+    "tags": ["PLAYMAGS"],
+    "rating": 4,
+    "variants": [
+    {
+      "color": "yellow",
+      "images": "/assets/images/fashion/product/51.jpg"
+    },
+    {
+      "color": "gray",
+      "images": "/assets/images/fashion/product/77.jpg"
+    },
+    {
+      "color": "black",
+      "images": "/assets/images/fashion/product/65.jpg"
+    }]
+  },
+  {
+    "id": 46,
+    "name": "100 pcs+ 28pcs domeset",
+    "price": 1800000,
+    "salePrice": 1800000,
+    "discount": 0,
+    "pictures": ["/assets/images/kids/product/Playmags 100 +32 Pcs.jpg", "/assets/images/fashion/product/77.jpg", "/assets/images/fashion/product/65.jpg", "/assets/images/fashion/product/74.jpg"],
+    "shortDetails": "Stacking Wave Blocks by Avdar Toys",
+    "description": "Wave hello to our eight piece Wave Blocks set by Avdar. Four gently rippling waves and four colourful fishes play together in this set, which can be sorted or stacked any way that you can imagine. There's something fishy about this beautiful open-ended Montessori-inspired wooden play set, 'water' you going to build with it? Dimensions: 7 x 11 x 2cm ",
+   "stock": 10,
+    "new": false,
+    "sale": false,
+    "category": "men",
+    "colors": ["yellow", "gray", "black"],
+    "tags": ["PLAYMAGS"],
+    "rating": 4,
+    "variants": [
+    {
+      "color": "yellow",
+      "images": "/assets/images/fashion/product/51.jpg"
+    },
+    {
+      "color": "gray",
+      "images": "/assets/images/fashion/product/77.jpg"
+    },
+    {
+      "color": "black",
+      "images": "/assets/images/fashion/product/65.jpg"
+    }]
+  },
+  {
+    "id": 46,
+    "name": "New DELUXE Magnetic MightyMind",
+    "price": 525000,
+    "salePrice": 525000,
+    "discount": 0,
+    "pictures": ["/assets/images/kids/product/3-MightyMind (Magnetic Edition) 3.jpg"],
+    "shortDetails": "Stacking Wave Blocks by Avdar Toys",
+    "description": "Wave hello to our eight piece Wave Blocks set by Avdar. Four gently rippling waves and four colourful fishes play together in this set, which can be sorted or stacked any way that you can imagine. There's something fishy about this beautiful open-ended Montessori-inspired wooden play set, 'water' you going to build with it? Dimensions: 7 x 11 x 2cm ",
+   "stock": 10,
+    "new": false,
+    "sale": false,
+    "category": "men",
+    "colors": ["yellow", "gray", "black"],
+    "tags": ["MIGHTY MINDS"],
+    "rating": 4,
+    "variants": [
+    {
+      "color": "yellow",
+      "images": "/assets/images/fashion/product/51.jpg"
+    },
+    {
+      "color": "gray",
+      "images": "/assets/images/fashion/product/77.jpg"
+    },
+    {
+      "color": "black",
+      "images": "/assets/images/fashion/product/65.jpg"
+    }]
+  },
+  {
+    "id": 47,
+    "name": "Magnetic MightyMind",
+    "price": 425000,
+    "salePrice": 425000,
+    "discount": 0,
+    "pictures": ["/assets/images/kids/product/3-MightyMind (Magnetic Edition).jpg"],
+    "shortDetails": "Stacking Wave Blocks by Avdar Toys",
+    "description": "Wave hello to our eight piece Wave Blocks set by Avdar. Four gently rippling waves and four colourful fishes play together in this set, which can be sorted or stacked any way that you can imagine. There's something fishy about this beautiful open-ended Montessori-inspired wooden play set, 'water' you going to build with it? Dimensions: 7 x 11 x 2cm ",
+   "stock": 10,
+    "new": false,
+    "sale": false,
+    "category": "men",
+    "colors": ["yellow", "gray", "black"],
+    "tags": ["MIGHTY MINDS"],
+    "rating": 4,
+    "variants": [
+    {
+      "color": "yellow",
+      "images": "/assets/images/fashion/product/51.jpg"
+    },
+    {
+      "color": "gray",
+      "images": "/assets/images/fashion/product/77.jpg"
+    },
+    {
+      "color": "black",
+      "images": "/assets/images/fashion/product/65.jpg"
+    }]
+  },
+  {
+    "id": 48,
+    "name": "MAGNETIC MM CHALLENGER",
+    "price": 425000,
+    "salePrice": 425000,
+    "discount": 0,
+    "pictures": ["/assets/images/kids/product/MIGHTY MIND Magnetic MightyMind Challenger.jpg", "/assets/images/fashion/product/MIGHTY MIND Magnetic MightyMind Challenger 2.jpg"],
+    "shortDetails": "Stacking Wave Blocks by Avdar Toys",
+    "description": "Wave hello to our eight piece Wave Blocks set by Avdar. Four gently rippling waves and four colourful fishes play together in this set, which can be sorted or stacked any way that you can imagine. There's something fishy about this beautiful open-ended Montessori-inspired wooden play set, 'water' you going to build with it? Dimensions: 7 x 11 x 2cm ",
+   "stock": 10,
+    "new": false,
+    "sale": false,
+    "category": "men",
+    "colors": ["yellow", "gray", "black"],
+    "tags": ["MIGHTY MINDS"],
+    "rating": 4,
+    "variants": [
+    {
+      "color": "yellow",
+      "images": "/assets/images/fashion/product/51.jpg"
+    },
+    {
+      "color": "gray",
+      "images": "/assets/images/fashion/product/77.jpg"
+    },
+    {
+      "color": "black",
+      "images": "/assets/images/fashion/product/65.jpg"
+    }]
+  },
+  {
+    "id": 49,
+    "name": "MAGNETIC MM Sea Explorer",
+    "price": 425000,
+    "salePrice": 425000,
+    "discount": 0,
+    "pictures": ["/assets/images/kids/product/MIGHTY MIND Magnetic Sea Explorer 1.jpg", "/assets/images/fashion/product/MIGHTY MIND Magnetic Sea Explorer 2.jpg"],
+    "shortDetails": "Stacking Wave Blocks by Avdar Toys",
+    "description": "Wave hello to our eight piece Wave Blocks set by Avdar. Four gently rippling waves and four colourful fishes play together in this set, which can be sorted or stacked any way that you can imagine. There's something fishy about this beautiful open-ended Montessori-inspired wooden play set, 'water' you going to build with it? Dimensions: 7 x 11 x 2cm ",
+   "stock": 10,
+    "new": false,
+    "sale": false,
+    "category": "men",
+    "colors": ["yellow", "gray", "black"],
+    "tags": ["MIGHTY MINDS"],
+    "rating": 4,
+    "variants": [
+    {
+      "color": "yellow",
+      "images": "/assets/images/fashion/product/51.jpg"
+    },
+    {
+      "color": "gray",
+      "images": "/assets/images/fashion/product/77.jpg"
+    },
+    {
+      "color": "black",
+      "images": "/assets/images/fashion/product/65.jpg"
+    }]
+  },
+  {
+    "id": 50,
+    "name": "MAGNETIC MM ZOO Adventure",
+    "price": 425000,
+    "salePrice": 425000,
+    "discount": 0,
+    "pictures": ["/assets/images/kids/product/MIGHTY MIND Magnetic Zoo Explorer.jpg", "/assets/images/fashion/product/MIGHTY MIND Magnetic Zoo Explorer 2.jpg", "/assets/images/fashion/product/MIGHTY MIND Magnetic Zoo Explorer 3.jpg"],
+    "shortDetails": "Stacking Wave Blocks by Avdar Toys",
+    "description": "Wave hello to our eight piece Wave Blocks set by Avdar. Four gently rippling waves and four colourful fishes play together in this set, which can be sorted or stacked any way that you can imagine. There's something fishy about this beautiful open-ended Montessori-inspired wooden play set, 'water' you going to build with it? Dimensions: 7 x 11 x 2cm ",
+   "stock": 10,
+    "new": false,
+    "sale": false,
+    "category": "men",
+    "colors": ["yellow", "gray", "black"],
+    "tags": ["MIGHTY MINDS"],
+    "rating": 4,
+    "variants": [
+    {
+      "color": "yellow",
+      "images": "/assets/images/fashion/product/51.jpg"
+    },
+    {
+      "color": "gray",
+      "images": "/assets/images/fashion/product/77.jpg"
+    },
+    {
+      "color": "black",
+      "images": "/assets/images/fashion/product/65.jpg"
+    }]
+  }
+  ]
+  
