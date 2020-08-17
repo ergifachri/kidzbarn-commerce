@@ -101,11 +101,11 @@ class Root extends React.Component {
 					<ScrollContext>
 						<Switch>
                              <Route exact path={`${process.env.PUBLIC_URL}/`} component={Kids}/>
-                            {/* <Route path={`${process.env.PUBLIC_URL}/vegetables`} component={Vegetables}/>
+                             <Route path={`${process.env.PUBLIC_URL}/vegetables`} component={Vegetables}/>
 							<Route path={`${process.env.PUBLIC_URL}/electronic`} component={Electronic}/>
                             <Route path={`${process.env.PUBLIC_URL}/furniture`} component={Furniture}/>
 							<Route path={`${process.env.PUBLIC_URL}/pets`} component={Pets}/>
-							<Route path={`${process.env.PUBLIC_URL}/watch`} component={Watch}/> */} 
+							<Route path={`${process.env.PUBLIC_URL}/watch`} component={Watch}/>  
                             <Route path={`${process.env.PUBLIC_URL}/kids`} component={Kids}/>
                             {/* <Route path={`${process.env.PUBLIC_URL}/beauty`} component={Beauty}/> */}
                             <Layout>
