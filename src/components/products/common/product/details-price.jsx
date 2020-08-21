@@ -63,10 +63,13 @@ class DetailsWithPrice extends Component {
             <div className="col-lg-6 rtl-text">
                 <div className="product-right">
                     <h2> {item.name} </h2>
-                    <h4>
+                    {item.stock == 0 ? <h4>Out of stock</h4>
+                                :
+                        <h4>
                         <del>{symbol}{item.price}</del>
                         <span>{item.discount}% off</span></h4>
-                    <h3>{symbol}{item.price-(item.price*item.discount/100)} </h3>
+                    }
+                    
                     {item.variants?
                     <ul >
                         <Slider {...colorsnav} asNavFor={this.props.navOne} ref={slider => (this.slider1 = slider)} className="color-variant">
@@ -118,7 +121,7 @@ class DetailsWithPrice extends Component {
                                 </button>
                         </div>
                     </div>
-                    <div className="border-product">
+                    {/* <div className="border-product">
                         <h6 className="product-title">Time Reminder</h6>
                         <div className="timer">
                             <p id="demo">
@@ -139,7 +142,7 @@ class DetailsWithPrice extends Component {
                                 </span>
                             </p>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
                 <Modal open={this.state.open} onClose={this.onCloseModal} center>
                     <div className="modal-dialog modal-dialog-centered" role="document">

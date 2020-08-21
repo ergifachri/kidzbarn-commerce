@@ -1,0 +1,28 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "body-parser": "^1.19.0",
+    "bootstrap": "^4.5.2",
+    "concurrently": "^5.3.0",
+    "express": "^4.17.1",
+    "nodemailer": "^6.4.11",
+    "nodemon": "^2.0.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "reactstrap": "^8.5.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node inde.js",
+    "server": "nodemon index.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

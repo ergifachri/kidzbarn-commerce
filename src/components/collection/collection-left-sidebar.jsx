@@ -15,14 +15,15 @@ class CollectionLeftSidebar extends Component {
 
     componentDidMount(){
         const _values = queryString.parse(this.props.location.search);
-        console.log(_values.brand);
-        console.log(_values.length);
+        
         
         if(_values.brand){
             console.log('initials')
             //this.clickInitialBrandHendle(_values.brand)
             
         }
+
+       
         
     }
 
@@ -78,7 +79,7 @@ class CollectionLeftSidebar extends Component {
 
                                     <StickyBox offsetTop={20} offsetBottom={20}>
                                         <div>
-                                            <Filter />
+                                            <Filter history={this.props.history}/>
                                             {/* <NewProduct/> */}
                                             {/* <div className="collection-sidebar-banner">
                                                 <a href="#">

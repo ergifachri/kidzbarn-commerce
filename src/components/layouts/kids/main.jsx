@@ -20,6 +20,7 @@ class Kids extends Component {
 
     componentDidMount() {
         document.getElementById("color").setAttribute("href", `${process.env.PUBLIC_URL}/assets/css/color10.css` );
+        
     }
 
     clickInitialBrandHendle(initialBrand) {
@@ -33,7 +34,7 @@ class Kids extends Component {
         if (event.target.checked)
          else
             brands.splice(index, 1); // removed in array unchecked value  */
-
+        ;
         this.props.filterBrand(brands);
         
     }
@@ -209,7 +210,7 @@ class Kids extends Component {
                                         <div className="img-part">
                                         
                                             <img  src={`${process.env.PUBLIC_URL}/assets/images/kids/product/BannerAvdar.jpg`}
-                                                 className="img-fluid blur-up lazyload bg-img" style={{maxHeight:'200px'}} alt="" />
+                                                 className="img-fluid blur-up lazyload bg-img" style={{maxHeight:'250px'}} alt="" />
                                         </div>
                                         <div className="contain-banner banner-3">
                                             <div>
@@ -230,7 +231,7 @@ class Kids extends Component {
                                     <div className="collection-banner p-right text-right">
                                         <div className="img-part">
                                             <img src={`${process.env.PUBLIC_URL}/assets/images/kids/product/BannerClicques.jpg`}
-                                                 className="img-fluid blur-up lazyload bg-img" style={{maxHeight:'200px'}} alt="" />
+                                                 className="img-fluid blur-up lazyload bg-img" style={{maxHeight:'250px'}} alt="" />
                                         </div>
                                         <div className="contain-banner banner-3">
                                             <div>
@@ -249,7 +250,7 @@ class Kids extends Component {
                                     <div className="collection-banner p-left">
                                         <div className="img-part">
                                             <img src={`${process.env.PUBLIC_URL}/assets/images/kids/product/BannerConnetix.jpg`}
-                                                 className="img-fluid blur-up lazyload bg-img" style={{maxHeight:'200px'}} alt="" />
+                                                 className="img-fluid blur-up lazyload bg-img" style={{maxHeight:'250px'}} alt="" />
                                         </div>
                                         <div className="contain-banner banner-3">
                                             <div>
@@ -267,7 +268,7 @@ class Kids extends Component {
                                     <div className="collection-banner p-right text-right">
                                         <div className="img-part">
                                             <img src={`${process.env.PUBLIC_URL}/assets/images/kids/product/BannerFlockmen.jpg`}
-                                                 className="img-fluid blur-up lazyload bg-img" style={{maxHeight:'200px'}} alt="" />
+                                                 className="img-fluid blur-up lazyload bg-img" style={{maxHeight:'250px'}} alt="" />
                                         </div>
                                         <div className="contain-banner banner-3">
                                             <div>
@@ -288,7 +289,7 @@ class Kids extends Component {
                                     <div className="collection-banner p-right">
                                         <div className="img-part">
                                             <img src={`${process.env.PUBLIC_URL}/assets/images/kids/product/BannerGrapat.jpg`}
-                                                 className="img-fluid blur-up lazyload bg-img" style={{maxHeight:'200px'}} alt="" />
+                                                 className="img-fluid blur-up lazyload bg-img" style={{maxHeight:'250px'}} alt="" />
                                         </div>
                                         <div className="contain-banner banner-3">
                                             <div>
@@ -306,7 +307,7 @@ class Kids extends Component {
                                     <div className="collection-banner p-right text-right">
                                         <div className="img-part">
                                             <img src={`${process.env.PUBLIC_URL}/assets/images/kids/product/BannerGrimms.jpg`}
-                                                 className="img-fluid blur-up lazyload bg-img" style={{maxHeight:'200px'}} alt="" />
+                                                 className="img-fluid blur-up lazyload bg-img" style={{maxHeight:'250px'}} alt="" />
                                         </div>
                                         <div className="contain-banner banner-3">
                                             <div>
@@ -324,7 +325,7 @@ class Kids extends Component {
                                     <div className="collection-banner p-right">
                                         <div className="img-part">
                                             <img src={`${process.env.PUBLIC_URL}/assets/images/kids/product/BannerSumBlox.jpg`}
-                                                 className="img-fluid blur-up lazyload bg-img" style={{maxHeight:'200px'}} alt="" />
+                                                 className="img-fluid blur-up lazyload bg-img" style={{maxHeight:'250px'}} alt="" />
                                         </div>
                                         <div className="contain-banner banner-3">
                                             <div>
@@ -342,7 +343,7 @@ class Kids extends Component {
                                     <div className="collection-banner p-right">
                                         <div className="img-part">
                                             <img src={`${process.env.PUBLIC_URL}/assets/images/kids/product/BannerTegu.jpg`}
-                                                 className="img-fluid blur-up lazyload bg-img" style={{maxHeight:'200px'}} alt="" />
+                                                 className="img-fluid blur-up lazyload bg-img" style={{maxHeight:'250px'}} alt="" />
                                         </div>
                                         <div className="contain-banner banner-3">
                                             <div>
@@ -363,7 +364,7 @@ class Kids extends Component {
                                     <div className="collection-banner p-right">
                                         <div className="img-part">
                                             <img src={`${process.env.PUBLIC_URL}/assets/images/kids/product/BannerWayToPlay.jpg`}
-                                                 className="img-fluid blur-up lazyload bg-img" style={{maxHeight:'200px'}} alt="" />
+                                                 className="img-fluid blur-up lazyload bg-img" style={{maxHeight:'250px'}} alt="" />
                                         </div>
                                         <div className="contain-banner banner-3">
                                             <div>
@@ -381,7 +382,7 @@ class Kids extends Component {
                                     <div className="collection-banner p-right text-right">
                                         <div className="img-part">
                                             <img src={`${process.env.PUBLIC_URL}/assets/images/kids/product/BannerYellowDoor.jpg`}
-                                                 className="img-fluid blur-up lazyload bg-img" style={{maxHeight:'200px'}} alt="" />
+                                                 className="img-fluid blur-up lazyload bg-img" style={{maxHeight:'250px'}} alt="" />
                                         </div>
                                         <div className="contain-banner banner-3">
                                             <div>
@@ -469,14 +470,14 @@ class Kids extends Component {
                 {/*Product Slider End*/}
                 <AboutUsOne logoName={'logo/6.png'}/>
                 {/*Instagram Section*/}
-                <Instagram />
+                {/* <Instagram /> */}
                 {/*Instagram Section End*/}
 
                 {/* Logo Block Section*/}
-                 <LogoBlock /> 
+                {/*  <LogoBlock /> */} 
                 {/* Logo Block Section End*/}
 
-                <FooterOne /* logoName={'logo/6.png'} *//>
+                <FooterOne/>
 
                 {/* <ThemeSettings /> */}
             </div>

@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom'
 
 class DetailsTopTabs extends Component {
     render (){
-
+        const {item} = this.props
         return (
             <section className="tab-product m-0">
                 <div className="row">
@@ -17,7 +17,7 @@ class DetailsTopTabs extends Component {
                                         <i className="icofont icofont-ui-home"></i>Description</span>
                                     <div className="material-border"></div>
                                 </Tab>
-                                <Tab className="nav-item">
+                                {/* <Tab className="nav-item">
                                     <span className="nav-link" ><i className="icofont icofont-man-in-glasses"></i>Details</span>
                                     <div className="material-border"></div>
                                 </Tab>
@@ -25,7 +25,7 @@ class DetailsTopTabs extends Component {
                                     <span className="nav-link" >
                                         <i className="icofont icofont-contacts"></i>Video</span>
                                     <div className="material-border"></div>
-                                </Tab>
+                                </Tab> */}
                                 <Tab className="nav-item">
                                     <span className="nav-link" >
                                         <i className="icofont icofont-contacts"></i>Write Review</span>
@@ -33,64 +33,11 @@ class DetailsTopTabs extends Component {
                                 </Tab>
                             </TabList>
                             <TabPanel className="tab-pane fade mt-4 show active">
-                                <table className="table table-striped mb-0">
-                                    <tbody>
-                                     {/* <tr>
-                                        <th>Ideal For :</th>
-                                        <td>Women's</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Pattern :</th>
-                                        <td>Embroidered</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Dress Fabric :</th>
-                                        <td>Silk</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Type :</th>
-                                        <td>Ghagra, Choli, Dupatta Set</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Neck :</th>
-                                        <td>Round Neck</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Sleeve :</th>
-                                        <td>3/4 Sleeve</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Work :</th>
-                                        <td>N/A</td>
-                                    </tr> */}
-                                    </tbody> 
-                                </table>
-                            </TabPanel>
-                            <TabPanel>
                                 <p className="mt-4 p-0">
-                                    Lorem Ipsum is simply dummy text of the printing and
-                                    typesetting industry. Lorem Ipsum has been the industry's
-                                    standard dummy text ever since the 1500s, when an unknown
-                                    printer took a galley of type and scrambled it to make a
-                                    type specimen book. It has survived not only five centuries,
-                                    but also the leap into electronic typesetting, remaining
-                                    essentially unchanged. It was popularised in the 1960s with
-                                    the release of Letraset sheets containing Lorem Ipsum
-                                    passages, and more recently with desktop publishing software
-                                    like Aldus PageMaker including versions of Lorem Ipsum.
+                                    {item.description}
                                 </p>
                             </TabPanel>
-                            <TabPanel>
-                                <div className="mt-4 text-center">
-                                    <div className="embed-responsive embed-responsive-16by9">
-                                        {/* <iframe
-                                            src="https://www.youtube.com/embed/BUWzX78Ye_8"
-                                            allow="autoplay; encrypted-media"
-                                            allowFullScreen>
-                                        </iframe> */}
-                                    </div>
-                                </div>
-                            </TabPanel>
+                            
                             <TabPanel>
                                 <form className="theme-form mt-4">
                                     <div className="form-row">

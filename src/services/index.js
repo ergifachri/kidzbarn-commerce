@@ -66,10 +66,10 @@ export const getVisibleproducts = (data, { brand, color, value, sortBy }) => {
             colorMatch = true;
         } */
 
-        const startPriceMatch = typeof value.min !== 'number' || value.min <= product.price;
+      /*   const startPriceMatch = typeof value.min !== 'number' || value.min <= product.price;
         const endPriceMatch = typeof value.max !== 'number' || product.price <= value.max;
-
-        return brandMatch && colorMatch && startPriceMatch && endPriceMatch;
+ */
+        return brandMatch && colorMatch /* && startPriceMatch && endPriceMatch */;
     }).sort((product1, product2) => {
         if (sortBy === 'HighToLow') {
             return product2.price < product1.price ? -1 : 1;

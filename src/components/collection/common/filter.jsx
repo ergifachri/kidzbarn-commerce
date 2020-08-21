@@ -4,7 +4,7 @@ import InputRange from 'react-input-range';
 import 'react-input-range/lib/css/index.css';
 import { SlideToggle } from 'react-slide-toggle';
 
-
+import {Link} from 'react-router-dom';
 import {getBrands, getColors, getMinMaxPrice} from '../../../services';
 import {filterBrand, filterColor, filterPrice} from '../../../actions'
 
@@ -12,7 +12,8 @@ class Filter extends Component {
 
     constructor(props) {
         super(props);
-
+        console.log('this is props');
+        console.log(props);
         this.state = {
             openFilter: false
         }
@@ -36,7 +37,8 @@ class Filter extends Component {
         if (event.target.checked)
          else
             brands.splice(index, 1); // removed in array unchecked value  */
-
+        
+       
         this.props.filterBrand(brands);
         
     }
@@ -45,6 +47,7 @@ class Filter extends Component {
         
         
         brands = [];
+        let brand = event.target.value;
         console.log('brands');
         console.log(event.target.value);
         brands.push(event.target.value); // push in array checked value
@@ -53,7 +56,8 @@ class Filter extends Component {
         if (event.target.checked)
          else
             brands.splice(index, 1); // removed in array unchecked value  */
-
+        console.log('history push');
+        this.props.history.push(`${process.env.PUBLIC_URL}/collection?=${brand}`);
         this.props.filterBrand(brands);
         
     }
@@ -81,16 +85,19 @@ class Filter extends Component {
                     <SlideToggle>
                         {({onToggle, setCollapsibleElement}) => (
                             <div className="collection-collapse-block">
-                                <h3 className="collapse-block-title" onClick={onToggle}>brand</h3>
+                                <h3 className="collapse-block-title" onClick={onToggle}>brands</h3>
                                 <div className="collection-collapse-block-content"  ref={setCollapsibleElement}>
                                     <div className="collection-brand-filter">
                         
                                         {this.props.brands.map((brand, index) => {
-                                            /* console.log('filteredBrands');
-                                            console.log(filteredBrands); */
+                                            
                                             return (
                                                 <div className="custom-checkbox collection-filter-checkbox" key={index}>
-                                                <input type="text" onClick={(e) => this.clickBrandHendle(e,filteredBrands)} value={brand} defaultChecked={filteredBrands.includes(brand)? true : false}  className="custom-control-input" id={brand} />
+                                                    
+                                                
+                                                <input type="text"  onClick={(e) => this.clickBrandHendle(e,filteredBrands)}   value={brand} defaultChecked={filteredBrands.includes(brand)? true : false}  className="custom-control-input" id={brand} >
+                                                    
+                                                </input>
                                                 {brand == filteredBrands ? <label className="custom-control-label"
                                                        htmlFor={brand} style={{color:'pink'}}>{brand}</label>
 
@@ -124,7 +131,7 @@ class Filter extends Component {
                         )}
                     </SlideToggle> */}
                     {/*price filter start here */}
-                    <SlideToggle>
+                    {/* <SlideToggle>
                         {({onToggle, setCollapsibleElement}) => (
                             <div className="collection-collapse-block open">
                                 <h3 className="collapse-block-title" onClick={onToggle}>price</h3>
@@ -141,7 +148,7 @@ class Filter extends Component {
                                 </div>
                             </div>
                         )}
-                    </SlideToggle>
+                    </SlideToggle> */}
                 </div>
         )
     }

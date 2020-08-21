@@ -25,9 +25,7 @@ class HeaderBrand extends Component {
 
     render (){
         const filteredBrands = this.props.filters.brand;
-        console.log('header-brand');
-        console.log(filteredBrands);
-        //console.log(this.props.brands);
+        
         return (
         <div className="top-banner-content small-section">
             <h4>

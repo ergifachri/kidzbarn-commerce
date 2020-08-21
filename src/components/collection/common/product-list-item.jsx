@@ -85,19 +85,10 @@ class ProductListItem extends Component {
                                    data-target="#quick-view"
                                    title="Quick View"
                                    onClick={this.onOpenModal}><i className="fa fa-search" aria-hidden="true"></i></a>
-                                <Link to={`${process.env.PUBLIC_URL}/compare`} title="Compare" onClick={onAddToCompareClicked}>
-                                    <i className="fa fa-refresh" aria-hidden="true"></i></Link>
+                               {/*  <Link to={`${process.env.PUBLIC_URL}/compare`} title="Compare" onClick={onAddToCompareClicked}>
+                                    <i className="fa fa-refresh" aria-hidden="true"></i></Link> */}
                             </div>
-                            {product.variants?
-                            <ul className="product-thumb-list">
-                                {product.variants.map((vari, i) =>
-                                    <li className={`grid_thumb_img ${(vari.images === this.state.image)?'active':''}`} key={i}>
-                                        <a href="javascript:void(0)" title="Add to Wishlist">
-                                            <img src={`${vari.images}`} onClick={() => this.onClickHandle(vari.images)} />
-                                        </a>
-                                    </li>)
-                                }
-                            </ul>:''}
+                            
 
                         </div>
                         <div className="product-detail">

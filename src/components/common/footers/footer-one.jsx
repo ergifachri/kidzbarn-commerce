@@ -23,11 +23,11 @@ class FooterOne extends Component {
     render () {
 
         return (
-            <footer className="footer-light">
+            <footer className="footer-light" style={{backgroundColor:'white'}}>
                 <div className="light-layout">
                     <div className="container">
-                        <section className="small-section border-section border-top-0">
-                            <div className="row">
+                        {/* <section className="small-section border-section border-top-0">
+                             <div className="row">
                                 <div className="col-lg-6">
                                     <div className="subscribe">
                                         <div>
@@ -45,11 +45,11 @@ class FooterOne extends Component {
                                         <button type="submit" className="btn btn-solid">subscribe</button>
                                     </form>
                                 </div>
-                            </div>
-                        </section>
+                            </div> 
+                        </section> */}
                     </div>
                 </div>
-                <section className="section-b-space light-layout">
+                <section className="section-b-space light-layout" style={{backgroundColor:'white'}}>
                     <div className="container">
                         <div className="row footer-theme partition-f">
                             <div className="col-lg-4 col-md-6">

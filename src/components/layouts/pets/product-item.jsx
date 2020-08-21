@@ -97,8 +97,8 @@ class ProductItem extends Component {
                                data-target="#quick-view"
                                title="Quick View"
                                onClick={this.onOpenModal}><i className="fa fa-search" aria-hidden="true"></i></a>
-                            <Link to={`${process.env.PUBLIC_URL}/compare`} title="Compare" onClick={onAddToCompareClicked}>
-                                <i className="fa fa-refresh" aria-hidden="true"></i></Link>
+                            {/* <Link to={`${process.env.PUBLIC_URL}/compare`} title="Compare" onClick={onAddToCompareClicked}>
+                                <i className="fa fa-refresh" aria-hidden="true"></i></Link> */}
                         </div>
                     </div>
                     <div className="product-detail ">

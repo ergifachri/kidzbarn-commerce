@@ -1,11 +1,41 @@
 import React, {Component} from 'react';
 import Breadcrumb from "../common/breadcrumb";
-
+import axios from 'axios';
 class Contact extends Component {
 
     constructor (props) {
         super (props)
+
+        this.state={
+            firstname:'',
+            lastname:'',
+            email:'',
+            phone:'',
+            message:'',
+          }
+
+        this.handleChange = this.handleChange.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
     }
+
+    handleChange = e =>{
+        this.setState({
+          [e.target.name]:e.target.value
+        })
+        
+    }
+
+    async handleSubmit(e){
+        e.preventDefault()
+    
+        const {firstname,email,message}= this.state
+        console.log(firstname,email,message);
+        const form = await axios.post('localhost:3001/api/form',{
+          firstname,
+          email,
+          message
+        })
+      }
 
     render (){
 
@@ -76,37 +106,38 @@ class Contact extends Component {
                                 <form className="theme-form">
                                     <div className="form-row">
                                         <div className="col-md-6">
-                                            <label htmlFor="name">First Name</label>
-                                            <input type="text" className="form-control" id="name"
-                                                   placeholder="Enter Your name" required="" />
+                                            <label htmlFor="firstname">First Name</label>
+                                            <input type="text" className="form-control" id="name" name="firstname"
+                                                   placeholder="Enter Your name" required="" onChange={this.handleChange}/>
                                         </div>
                                         <div className="col-md-6">
-                                            <label htmlFor="email">Last Name</label>
-                                            <input type="text" className="form-control" id="last-name"
-                                                   placeholder="Email" required="" />
+                                            <label htmlFor="lastname">Last Name</label>
+                                            <input type="text" className="form-control" id="last-name" name="lastname"
+                                                   placeholder="Email" required="" onChange={this.handleChange} />
                                         </div>
                                         <div className="col-md-6">
-                                            <label htmlFor="review">Phone number</label>
-                                            <input type="text" className="form-control" id="review"
-                                                   placeholder="Enter your number" required="" />
+                                            <label htmlFor="phone">Phone number</label>
+                                            <input type="text" className="form-control" id="phone" name="phone"
+                                                   placeholder="Enter your number" required="" onChange={this.handleChange}/>
                                         </div>
                                         <div className="col-md-6">
                                             <label htmlFor="email">Email</label>
-                                            <input type="text" className="form-control" id="email" placeholder="Email"
-                                                   required="" />
+                                            <input type="text" className="form-control" id="email" placeholder="Email" name="email"
+                                                   required="" onChange={this.handleChange}/>
                                         </div>
                                         <div className="col-md-12">
-                                            <label htmlFor="review">Write Your Message</label>
-                                            <textarea className="form-control" placeholder="Write Your Message"
-                                                      id="exampleFormControlTextarea1" rows="6"></textarea>
+                                            <label htmlFor="message">Write Your Message</label>
+                                            <textarea className="form-control" placeholder="Write Your Message" name="message"
+                                                      id="exampleFormControlTextarea1" rows="6" onChange={this.handleChange}></textarea>
                                         </div>
                                         <div className="col-md-12">
-                                            <button className="btn btn-solid" type="submit">Send Your Message</button>
-                                        </div>
+                                          </div>
                                     </div>
                                 </form>
                             </div>
                         </div>
+                        <button className="btn btn-solid" type="submit" onClick={this.handleSubmit}>Send Your Message</button>
+                                       
                     </div>
                 </section>
 

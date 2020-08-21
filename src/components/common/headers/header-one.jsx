@@ -9,6 +9,7 @@ import NavBar from "./common/navbar";
 import SideBar from "./common/sidebar";
 import CartContainer from "./../../../containers/CartContainer";
 import TopBar from "./common/topbar";
+
 import LogoImage from "./common/logo";
 import {changeCurrency} from '../../../actions'
 import {connect} from "react-redux";
@@ -100,9 +101,9 @@ class HeaderOne extends Component {
 											{/*SideBar Navigation Component*/}
 											 <SideBar/> 
 										</div>
-										<div className="brand-logo">
-											{/* <LogoImage logo={this.props.logoName} /> */}
-										</div>
+										<div className="brand-logo" style={{backgroundColor:'white'}}>
+										{/* 	 <LogoImage logo={this.props.logoName} ></LogoImage>
+									 */}	</div>
 									</div>
 									<div className="menu-right pull-right">
 										{/*Top Navigation Bar Component*/}
