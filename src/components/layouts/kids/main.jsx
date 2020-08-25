@@ -277,7 +277,7 @@ class Kids extends Component {
                                         </div>
                                     </div>
                                     <div style={{textAlign:'center'}}>
-                                        <h3>Groom</h3>
+                                        <h3>Flockmen</h3>
                                     </div>
                                 </Link>
                             </div>
