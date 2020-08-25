@@ -63,10 +63,10 @@ class DetailsWithPrice extends Component {
             <div className="col-lg-6 rtl-text">
                 <div className="product-right">
                     <h2> {item.name} </h2>
-                    {item.stock == 0 ? <h4>Out of stock</h4>
+                    {item.stock == 0 ? <h4></h4>
                                 :
                         <h4>
-                        <del>{symbol}{item.price}</del>
+                        {symbol}{item.price}
                         <span>{item.discount}% off</span></h4>
                     }
                     

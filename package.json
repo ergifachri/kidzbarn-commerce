@@ -82,6 +82,7 @@
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.3.0",
     "resolve": "1.8.1",
+    "serve": "^11.3.2",
     "simple-react-validator": "^1.2.4",
     "slick-carousel": "^1.8.1",
     "smartmenus": "^1.1.0",

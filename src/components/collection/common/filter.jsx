@@ -38,7 +38,7 @@ class Filter extends Component {
          else
             brands.splice(index, 1); // removed in array unchecked value  */
         
-       
+        
         this.props.filterBrand(brands);
         
     }
@@ -47,6 +47,7 @@ class Filter extends Component {
         
         
         brands = [];
+        let windowWidth = window.innerWidth;
         let brand = event.target.value;
         console.log('brands');
         console.log(event.target.value);
@@ -57,8 +58,15 @@ class Filter extends Component {
          else
             brands.splice(index, 1); // removed in array unchecked value  */
         console.log('history push');
-        this.props.history.push(`${process.env.PUBLIC_URL}/collection?=${brand}`);
+        //this.props.history.push(`${process.env.PUBLIC_URL}/collection?=${brand}`);
+        console.log(window.innerWidth);
+        
         this.props.filterBrand(brands);
+
+        /* if(windowWidth < 990){
+            window.location.reload();
+        } */
+        window.location.reload();
         
     }
 

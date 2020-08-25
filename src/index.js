@@ -112,10 +112,12 @@ class Root extends React.Component {
 
                                 {/*Routes For Layouts*/}
                                 <Route path={`${process.env.PUBLIC_URL}/fashion`} component={Fashion}/>
-
+                                <Route path={`${process.env.PUBLIC_URL}/collection`} component={CollectionLeftSidebar}/>
+								
+                            
 								{/*Routes For Features (Product Collection) */}
-								<Route path={`${process.env.PUBLIC_URL}/collection`} component={CollectionLeftSidebar}/>
-								{/* <Route path={`${process.env.PUBLIC_URL}/no-sidebar/collection`} component={CollectionNoSidebar}/>
+							{/* 	<Route path={`${process.env.PUBLIC_URL}/collection`} component={CollectionLeftSidebar}/>
+							 */}	{/* <Route path={`${process.env.PUBLIC_URL}/no-sidebar/collection`} component={CollectionNoSidebar}/>
 								<Route path={`${process.env.PUBLIC_URL}/right-sidebar/collection`} component={CollectionRightSidebar}/>
 								<Route path={`${process.env.PUBLIC_URL}/full-width/collection`} component={CollectionFullWidth}/>
 								<Route path={`${process.env.PUBLIC_URL}/metro/collection`} component={CollectionMetro}/> */}

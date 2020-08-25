@@ -20,7 +20,7 @@ class checkOut extends Component {
             last_name:'',
             phone:'',
             email:'',
-            country:'',
+            country:'Indonesia',
             address:'',
             city:'',
             state:'',
@@ -71,8 +71,8 @@ class checkOut extends Component {
                 }
               });
               handler.open({
-                name: 'Multikart',
-                description: 'Online Fashion Store',
+                name: 'Kidzbarn',
+                description: 'Online Toy Store',
                 amount: this.amount * 100
               })
         } else {
@@ -155,10 +155,7 @@ class checkOut extends Component {
                                                 <div className="form-group col-md-12 col-sm-12 col-xs-12">
                                                     <div className="field-label">Country</div>
                                                     <select name="country" value={this.state.country} onChange={this.setStateFromInput}>
-                                                        <option>India</option>
-                                                        <option>South Africa</option>
-                                                        <option>United State</option>
-                                                        <option>Australia</option>
+                                                        <option>Indonesia</option>
                                                     </select>
                                                     {this.validator.message('country', this.state.country, 'required')}
                                                 </div>

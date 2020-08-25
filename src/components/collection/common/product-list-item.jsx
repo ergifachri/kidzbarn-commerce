@@ -58,9 +58,9 @@ class ProductListItem extends Component {
 
         return (
 
-                    <div className="product-box">
-                        <div className="img-wrapper">
-                            <div className="front">
+                    <div className="product-box" >
+                        <div className="img-wrapper" >
+                            <div className="front" style={{maxHeight:'300px'}}>
                                 {/* <Link to={`${process.env.PUBLIC_URL}/left-sidebar/product/${product.id}`} >
                                  */}   {/*  <img
                                     src={product.variants?
@@ -70,7 +70,7 @@ class ProductListItem extends Component {
                                     alt="" /> */}
                                     <img
                                     src={product.pictures[0]}
-                                    className="img-fluid"
+                                    style={{maxHeight:'100%',maxWidth:'100%'}}
                                     alt="" />
                                {/*  </Link> */}
                             </div>
