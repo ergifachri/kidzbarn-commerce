@@ -200,7 +200,7 @@ class Kids extends Component {
                 
 
                 {/*Banner Section*/}
-                <section className="pt-0 banner-6 ratio2_1">
+                <section className="pt-0 banner-6 ratio2_1" style={{paddingLeft:'70px',paddingRight:'70px'}}>
                     <div >
                         <div className="row partition3 banner-top-cls" style={{display:'flex',flex:1,alignItems:'center',justifyContent:'center',height:'auto'}}>
                             <div className="col-md-3" >
@@ -261,9 +261,6 @@ class Kids extends Component {
                                     </div>
                                 </Link>
                             </div>
-                          
-                        </div>
-                        <div className="row partition3 banner-top-cls"  style={{display:'flex',flex:1,alignItems:'center',justifyContent:'center'}}>
                             <div className="col-md-3">
                                 <Link to={`${process.env.PUBLIC_URL}/collection`} onClick={()=>this.clickInitialBrandHendle('grapat')}>
                                     <div className="collection-banner p-right">
@@ -282,6 +279,10 @@ class Kids extends Component {
                                     </div>
                                 </Link>
                             </div>
+                          
+                        </div>
+                        <div className="row partition3 banner-top-cls"  style={{display:'flex',flex:1,alignItems:'center',justifyContent:'center'}}>
+                            
                             <div className="col-md-3">
                                 <Link to={`${process.env.PUBLIC_URL}/collection`} onClick={()=>this.clickInitialBrandHendle('grimms')}>
                                     <div className="collection-banner p-right text-right">
@@ -336,9 +337,6 @@ class Kids extends Component {
                                     </div>
                                 </Link>
                             </div>
-                           
-                        </div>
-                        <div className="row partition3 banner-top-cls"  style={{display:'flex',flex:1,alignItems:'center',justifyContent:'center'}}>
                             <div className="col-md-3">
                                 <Link to={`${process.env.PUBLIC_URL}/collection`} onClick={()=>this.clickInitialBrandHendle('way to play')} >
                                     <div className="collection-banner p-right">
@@ -357,6 +355,10 @@ class Kids extends Component {
                                     </div>
                                 </Link>
                             </div>
+                           
+                        </div>
+                        <div className="row partition3 banner-top-cls"  style={{display:'flex',flex:1,alignItems:'center',justifyContent:'center'}}>
+                            
                             <div className="col-md-3">
                                 <Link to={`${process.env.PUBLIC_URL}/collection`} onClick={()=>this.clickInitialBrandHendle('yellow door')} >
                                     <div className="collection-banner p-right text-right">
