@@ -226,26 +226,6 @@ class Kids extends Component {
                                 </Link>
                             </div>
                             <div className="col-md-3">
-                                <Link to={`${process.env.PUBLIC_URL}/collection`} onClick={()=>this.clickInitialBrandHendle('clicques')}>
-                                 
-                                    <div className="collection-banner p-right text-right">
-                                        <div className="img-part">
-                                            <img src={`${process.env.PUBLIC_URL}/assets/images/kids/product/BannerClicques.jpg`}
-                                                 className="img-fluid blur-up lazyload bg-img" style={{maxHeight:'250px'}} alt="" />
-                                        </div>
-                                        <div className="contain-banner banner-3">
-                                            <div>
-                                                
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div style={{textAlign:'center'}}>
-                                        <h3>Clicques</h3>
-                                    </div>
-                                    
-                                </Link>
-                            </div>
-                            <div className="col-md-3">
                                 <Link to={`${process.env.PUBLIC_URL}/collection`} onClick={()=>this.clickInitialBrandHendle('connetix')}>
                                     <div className="collection-banner p-left">
                                         <div className="img-part">
