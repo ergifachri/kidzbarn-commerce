@@ -57,29 +57,14 @@ class Kids extends Component {
                                         <div className="col">
                                             <div className="slider-contain">
                                                 <div>
-                                                    <h4>for kids</h4>
-                                                    <h1>Best collection</h1><a href="#" className="btn btn-solid">shop now</a></div>
+                                                    </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div>
-                            <div className="home home22 text-center">
-                                <div className="container">
-                                    <div className="row">
-                                        <div className="col">
-                                            <div className="slider-contain">
-                                                <div>
-                                                    <h4>30% off</h4>
-                                                    <h1>lowest price</h1><a href="#" className="btn btn-solid">shop now</a></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        
                     </Slider>
                 </section>
 
@@ -210,7 +195,7 @@ class Kids extends Component {
                                         <div className="img-part">
                                         
                                             <img  src={`${process.env.PUBLIC_URL}/assets/images/kids/product/BannerAvdar.jpg`}
-                                                 className="img-fluid blur-up lazyload bg-img" style={{maxHeight:'250px'}} alt="" />
+                                                 className="img-fluid blur-up lazyload bg-img" style={{maxHeight:'220px'}} alt="" />
                                         </div>
                                         <div className="contain-banner banner-3">
                                             <div>
@@ -230,7 +215,7 @@ class Kids extends Component {
                                     <div className="collection-banner p-left">
                                         <div className="img-part">
                                             <img src={`${process.env.PUBLIC_URL}/assets/images/kids/product/BannerConnetix.jpg`}
-                                                 className="img-fluid blur-up lazyload bg-img" style={{maxHeight:'250px'}} alt="" />
+                                                 className="img-fluid blur-up lazyload bg-img" style={{maxHeight:'220px'}} alt="" />
                                         </div>
                                         <div className="contain-banner banner-3">
                                             <div>
@@ -247,7 +232,7 @@ class Kids extends Component {
                                 <Link to={`${process.env.PUBLIC_URL}/collection`} onClick={()=>this.clickInitialBrandHendle('flockmen')}>
                                     <div className="collection-banner p-right text-right">
                                         <div className="img-part">
-                                            <img src={`${process.env.PUBLIC_URL}/assets/images/kids/product/BannerFlockmen.jpg`}
+                                            <img src={`${process.env.PUBLIC_URL}/assets/images/kids/product/Flockmen front.jpg`}
                                                  className="img-fluid blur-up lazyload bg-img" style={{maxHeight:'250px'}} alt="" />
                                         </div>
                                         <div className="contain-banner banner-3">

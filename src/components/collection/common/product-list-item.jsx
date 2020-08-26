@@ -70,7 +70,7 @@ class ProductListItem extends Component {
                                     alt="" /> */}
                                     <img
                                     src={product.pictures[0]}
-                                    style={{maxHeight:'100%',maxWidth:'100%'}}
+                                    style={{maxHeight:'100%',maxWidth:'100%',width:'200px',height:'200px',objectFit:'cover',objectPosition:'center'}}
                                     alt="" />
                                {/*  </Link> */}
                             </div>

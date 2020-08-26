@@ -60,13 +60,13 @@ class Filter extends Component {
         console.log('history push');
         //this.props.history.push(`${process.env.PUBLIC_URL}/collection?=${brand}`);
         console.log(window.innerWidth);
-        
+        window.location.reload();
         this.props.filterBrand(brands);
 
         /* if(windowWidth < 990){
             window.location.reload();
         } */
-        window.location.reload();
+        
         
     }
 
