@@ -143,7 +143,7 @@ class FooterOne extends Component {
                                 </div>
                             </div>
                             <div className="col-xl-6 col-md-6 col-sm-12">
-                                <div className="payment-card-bottom">
+                                {/* <div className="payment-card-bottom">
                                     <ul>
                                         <li>
                                             <a href="#"><img src={`${process.env.PUBLIC_URL}/assets/images/icon/visa.png`} alt="" /></a>
@@ -161,7 +161,7 @@ class FooterOne extends Component {
                                             <a href="#"><img src={`${process.env.PUBLIC_URL}/assets/images/icon/discover.png`} alt="" /></a>
                                         </li>
                                     </ul>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>

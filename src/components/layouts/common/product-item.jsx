@@ -61,7 +61,7 @@ class ProductItem extends Component {
 
                         </div>
                         <div className="front">
-                            <Link to={`${process.env.PUBLIC_URL}/left-sidebar/product/${product.id}`} ><img
+                            <Link to={`${process.env.PUBLIC_URL}/no-sidebar/product/${product.id}`} ><img
                                 src={`${
                                     product.variants?
                                         this.state.image?this.state.image:product.variants[0].images
@@ -97,15 +97,18 @@ class ProductItem extends Component {
                     </div>
                     <div className="product-detail">
                         <div>
-                            <div className="rating">
+                            {/* <div className="rating">
                                 {RatingStars}
-                            </div>
-                            <Link to={`${process.env.PUBLIC_URL}/left-sidebar/product/${product.id}`}>
+                            </div> */}
+                            <Link to={`${process.env.PUBLIC_URL}/no-sidebar/product/${product.id}`}>
                                 <h6>{product.name}</h6>
                             </Link>
-                            <h4>{symbol}{product.price-(product.price*product.discount/100)}
-                                <del><span className="money">{symbol}{product.price}</span></del>
-                            </h4>
+                            {product.stock == 0 ? <h5>Out of Stock</h5>
+                                :
+                        <h4>
+                        {symbol}{product.price}
+                        </h4>
+                    }
                             {product.variants?
                             <ul className="color-variant">
                                 {product.variants.map((vari, i) => {

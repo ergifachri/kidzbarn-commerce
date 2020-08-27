@@ -60,17 +60,26 @@ class NoSideBar extends Component {
                     <div className="collection-wrapper">
                         <div className="container">
                             <div className="row">
-                                <div className="col-lg-6 product-thumbnail">
-                                    <Slider {...products} asNavFor={this.state.nav2} ref={slider => (this.slider1 = slider)} className="product-slick">
-                                        {item.variants.map((vari, index) =>
-                                            <div key={index}>
-                                                <ImageZoom image={vari.images} className="img-fluid image_zoom_cls-0" />
+                            <div className="col-lg-6 product-thumbnail">
+                                                <Slider {...products} asNavFor={this.state.nav2} ref={slider => (this.slider1 = slider)} className="product-slick">
+                                                    {item.variants?
+                                                    item.variants.map((vari, index) =>
+                                                   
+                                                       <div key={index}>
+                                                           <ImageZoom image={vari.images} />
+                                                       </div>
+                                                    ):
+                                                    item.pictures.map((vari, index) =>
+                                                        
+                                                        <div key={index}>
+                                                            <ImageZoom image={vari} />
+                                                        </div>
+                                                    )}
+                                                </Slider>
+                                                {item.pictures.length > 1 ?       <SmallImages item={item} settings={productsnav} navOne={this.state.nav1} />
+                                          :null}
                                             </div>
-                                        )}
-                                    </Slider>
-                                    <SmallImages item={item} settings={productsnav} navOne={this.state.nav1} />
-                                </div>
-                                <DetailsWithPrice symbol={symbol} item={item} navOne={this.state.nav1} addToCartClicked={addToCart} BuynowClicked={addToCartUnsafe} addToWishlistClicked={addToWishlist} />
+                                <DetailsWithPrice symbol={'IDR'} item={item} navOne={this.state.nav1} addToCartClicked={addToCart} BuynowClicked={addToCartUnsafe} addToWishlistClicked={addToWishlist} />
                             </div>
                         </div>
                     </div>

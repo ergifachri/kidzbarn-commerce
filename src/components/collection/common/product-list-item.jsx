@@ -60,7 +60,7 @@ class ProductListItem extends Component {
 
                     <div className="product-box" >
                         <div className="img-wrapper" >
-                            <div className="front" style={{maxHeight:'300px'}}>
+                            <div className="front" style={{maxHeight:'200px'}}>
                                 {/* <Link to={`${process.env.PUBLIC_URL}/left-sidebar/product/${product.id}`} >
                                  */}   {/*  <img
                                     src={product.variants?
@@ -68,10 +68,13 @@ class ProductListItem extends Component {
                                         :product.pictures[0]}
                                     className="img-fluid"
                                     alt="" /> */}
+                                <Link to={`${process.env.PUBLIC_URL}/product/${product.id}`} >
                                     <img
                                     src={product.pictures[0]}
                                     style={{maxHeight:'100%',maxWidth:'100%',width:'200px',height:'200px',objectFit:'cover',objectPosition:'center'}}
                                     alt="" />
+                                </Link>
+                                
                                {/*  </Link> */}
                             </div>
                             <div className="cart-info cart-wrap">
@@ -96,7 +99,7 @@ class ProductListItem extends Component {
                                {/*  <div className="rating">
                                     {RatingStars}
                                 </div> */}
-                                <Link to={`${process.env.PUBLIC_URL}/left-sidebar/product/${product.id}`}>
+                                <Link to={`${process.env.PUBLIC_URL}/product/${product.id}`}>
                                     <h6>{product.name}</h6>
                                 </Link>
                                 

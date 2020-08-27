@@ -47,6 +47,8 @@ class LeftSideBar extends Component {
 
     render(){
         const {symbol, item, addToCart, addToCartUnsafe, addToWishlist} = this.props
+        const {length} = item.pictures.length
+           
         var products = {
             slidesToShow: 1,
             slidesToScroll: 1,
@@ -88,7 +90,7 @@ class LeftSideBar extends Component {
                                     </div>
 
                                     {/* <BrandBlock/> */}
-                                    <Service/>
+                                    {/* <Service/> */}
                                     {/*side-bar single product slider start*/}
                                     <NewProduct/>
                                     {/*side-bar single product slider end*/}
@@ -114,12 +116,14 @@ class LeftSideBar extends Component {
                                                        </div>
                                                     ):
                                                     item.pictures.map((vari, index) =>
+                                                        
                                                         <div key={index}>
                                                             <ImageZoom image={vari} />
                                                         </div>
                                                     )}
                                                 </Slider>
-                                                <SmallImages item={item} settings={productsnav} navOne={this.state.nav1} />
+                                                {item.pictures.length > 1 ?       <SmallImages item={item} settings={productsnav} navOne={this.state.nav1} />
+                                          :null}
                                             </div>
                                             <DetailsWithPrice symbol={'IDR'} item={item} navOne={this.state.nav1} addToCartClicked={addToCart} BuynowClicked={addToCartUnsafe} addToWishlistClicked={addToWishlist} />
                                         </div>

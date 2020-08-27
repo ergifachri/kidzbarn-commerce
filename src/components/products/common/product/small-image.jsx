@@ -32,7 +32,8 @@ class SmallImages extends Component {
                         ):
                             item.pictures.map((vari, index) =>
                                 <div key={index}>
-                                    <img src={`${vari}`} key={index} alt=""  className="img-fluid" />
+                                    <img src={`${vari}`} key={index} alt=""  className="img-fluid"   style={{maxHeight:'100%',maxWidth:'100%',width:'250px',height:'150px',objectFit:'cover',objectPosition:'center'}}
+                                   />
                                 </div>
                             )}
                     </Slider>
