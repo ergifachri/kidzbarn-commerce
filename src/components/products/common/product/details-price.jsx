@@ -16,6 +16,14 @@ class DetailsWithPrice extends Component {
         }
     }
 
+    componentWillMount(){
+        if(this.props.item.stock == 0){
+            this.setState({
+                stock :'Out of Stock !'
+            })
+        }
+    }
+
     onOpenModal = () => {
         this.setState({ open: true });
     };
@@ -31,7 +39,7 @@ class DetailsWithPrice extends Component {
     }
 
     minusQty = () => {
-        if(this.state.quantity > 1) {
+        if(this.state.quantity > 1 & this.props.item.stock !=0) {
             this.setState({stock: 'InStock'})
             this.setState({quantity: this.state.quantity - 1})
         }
@@ -99,8 +107,8 @@ class DetailsWithPrice extends Component {
                         </div>
                     </div>
                     <div className="product-buttons" >
-                        <a className="btn btn-solid" onClick={() => addToCartClicked(item, this.state.quantity)}>add to cart</a>
-                        <Link to={`${process.env.PUBLIC_URL}/checkout`} className="btn btn-solid" onClick={() => BuynowClicked(item, this.state.quantity)} >buy now</Link>
+                        <a className={`btn btn-solid ${this.state.stock == 'Out of Stock !'? 'disabled':null}`} onClick={() => addToCartClicked(item, this.state.quantity)} >add to cart</a>
+                        <Link to={`${process.env.PUBLIC_URL}/checkout`} className={`btn btn-solid ${this.state.stock == 'Out of Stock !'? 'disabled':null}`} disabled={true} onClick={() => BuynowClicked(item, this.state.quantity)} >buy now</Link>
                     </div>
                     <div className="border-product">
                         <h6 className="product-title">product details</h6>

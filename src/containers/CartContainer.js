@@ -12,7 +12,7 @@ const CartContainer = ({cartList, total, symbol, removeFromCart}) => (
             <i className="fa fa-shopping-cart"></i></Link>
         <ul className="show-div shopping-cart">
             { cartList.map((item,index) => (
-                <CartPage key={index} item={item} total={total} symbol={symbol} removeFromCart={() => removeFromCart(item)}  />
+                <CartPage key={index} item={item} total={total} symbol={'IDR'} removeFromCart={() => removeFromCart(item)}  />
             ))}
             {(cartList.length > 0) ?
                 <div>

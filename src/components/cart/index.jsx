@@ -17,6 +17,7 @@ class cartComponent extends Component {
     render (){
 
         const {cartItems, symbol, total} = this.props;
+      
         return (
             <div>
                 {/*SEO Support*/}
@@ -151,7 +152,7 @@ class cartComponent extends Component {
 }
 const mapStateToProps = (state) => ({
     cartItems: state.cartList.cart,
-    symbol: state.data.symbol,
+    symbol: 'IDR',
     total: getCartTotal(state.cartList.cart)
 })
 

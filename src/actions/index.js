@@ -55,6 +55,9 @@ export const removeFromCart = product_id => (dispatch) => {
 };
 export const incrementQty = (product,qty) => (dispatch) => {
     toast.success("Item Added to Cart (Under Construction)");
+    console.log('this is qty');
+    console.log(product);
+    console.log(qty);
     dispatch(addToCartUnsafe(product, qty))
 
 }

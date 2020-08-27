@@ -60,7 +60,7 @@ class ProductListItem extends Component {
 
                     <div className="product-box" >
                         <div className="img-wrapper" >
-                            <div className="front" style={{maxHeight:'200px'}}>
+                            <div className="front" >
                                 {/* <Link to={`${process.env.PUBLIC_URL}/left-sidebar/product/${product.id}`} >
                                  */}   {/*  <img
                                     src={product.variants?
@@ -71,7 +71,7 @@ class ProductListItem extends Component {
                                 <Link to={`${process.env.PUBLIC_URL}/product/${product.id}`} >
                                     <img
                                     src={product.pictures[0]}
-                                    style={{maxHeight:'100%',maxWidth:'100%',width:'200px',height:'200px',objectFit:'cover',objectPosition:'center'}}
+                                    style={{maxHeight:'100%',maxWidth:'100%',width:'225px',height:'200px',objectFit:'scale-down'}}
                                     alt="" />
                                 </Link>
                                 
@@ -126,12 +126,15 @@ class ProductListItem extends Component {
                                 <div className="modal-content quick-view-modal">
                                     <div className="modal-body">
                                         <div className="row">
-                                            <div className="col-lg-6  col-xs-12">
+                                            <div className="col-lg-6  col-xs-12" style={{display:'flex',flex:'1',alignItems:'center',justifyContent:'center'}} >
                                                 <div className="quick-view-img" >
                                                     {/* <img src={product.variants?
                                                         this.state.image?this.state.image:product.variants[0].images
                                                         :product.pictures[0]} alt="" className="img-fluid" /> */}
+                                                        <div>
                                                          <img src={product.pictures[0]} alt="" className="img-fluid" />
+                                                        </div>
+                                                        
                                                 </div>
                                             </div>
                                             <div className="col-lg-6 rtl-text">

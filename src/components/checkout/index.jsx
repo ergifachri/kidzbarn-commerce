@@ -194,11 +194,13 @@ class checkOut extends Component {
                                                     </div>
                                                     <ul className="qty">
                                                         {cartItems.map((item, index) => {
-                                                            return <li key={index}>{item.name} × {item.qty} <span>{symbol} {item.sum}</span></li> })
+                                                            console.log('this is item');
+                                                            console.log(item)
+                                                            return <li key={index}>{item.name} × {item.qty} <span>{'IDR'} {item.sum}</span></li> })
                                                         }
                                                     </ul>
                                                     <ul className="sub-total">
-                                                        <li>Subtotal <span className="count">{symbol}{total}</span></li>
+                                                        <li>Subtotal <span className="count">{'IDR'}{total}</span></li>
                                                         <li>Shipping <div className="shipping">
                                                             <div className="shopping-option">
                                                                 <input type="checkbox" name="free-shipping" id="free-shipping" />

@@ -22,7 +22,7 @@ class NewProduct extends Component {
                     {arrays.map((products, index) =>
                         <div key={index}>
                             {products.map((product, i) =>
-                                <div className="media" key={i}>
+                                <div className="media" key={i} onClick={()=>window.location.reload()}>
                                     <Link to={`${process.env.PUBLIC_URL}/product/${product.id}`}><img className="img-fluid" src={`${product.pictures[0]}`} alt="" /></Link>
                                     <div className="media-body align-self-center">
                                         <div className="rating">
@@ -33,9 +33,9 @@ class NewProduct extends Component {
                                             <i className="fa fa-star"></i>
                                         </div>
                                         <Link to={`${process.env.PUBLIC_URL}/product/${product.id}`}><h6>{product.name}</h6></Link>
-                                        {product.stock == 0 ? <h4>Out of stock</h4> : product.discount > 0 ?  <h4>{symbol}{(product.price*product.discount/100)}
-                                            <del><span className="money">{symbol}{product.price}</span></del></h4>:
-                                            <span className="money">{symbol}{product.price}</span>}
+                                        {product.stock == 0 ? <h6>Out of stock</h6> : product.discount > 0 ?  <h4>{symbol}{(product.price*product.discount/100)}
+                                            <del><span className="money">{'IDR'}{product.price}</span></del></h4>:
+                                            <span className="money">{'IDR'}{product.price}</span>}
 
 
 

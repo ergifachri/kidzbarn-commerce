@@ -105,23 +105,30 @@ class LeftSideBar extends Component {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="row">
-                                            <div className="col-lg-6 product-thumbnail">
-                                                <Slider {...products} asNavFor={this.state.nav2} ref={slider => (this.slider1 = slider)} className="product-slick">
-                                                    {item.variants?
-                                                    item.variants.map((vari, index) =>
+                                        <div className="row" >
+                                            <div className="col-lg-6 product-thumbnail" /* style={{display:'flex'}}  */>
+                                            <Slider {...products} asNavFor={this.state.nav2} ref={slider => (this.slider1 = slider)} className="product-slick">
+                                                            {item.variants?
+                                                            item.variants.map((vari, index) =>
+                                                            
+                                                                <div key={index}>
+                                                                    <ImageZoom image={vari.images} />
+                                                                </div>
+                                                            ):
+                                                            item.pictures.map((vari, index) =>
+                                                                
+                                                                <div key={index}>
+                                                                    <ImageZoom image={vari} />
+                                                                </div>
+                                                            )}
+                                            </Slider>
+                                                {/* <div style={{display:'flex',flex:'1',alignItems:'center',justifyContent:'center'}}>
+                                                
                                                    
-                                                       <div key={index}>
-                                                           <ImageZoom image={vari.images} />
-                                                       </div>
-                                                    ):
-                                                    item.pictures.map((vari, index) =>
-                                                        
-                                                        <div key={index}>
-                                                            <ImageZoom image={vari} />
-                                                        </div>
-                                                    )}
-                                                </Slider>
+                                                </div> */}
+                                                
+                                                
+                                                
                                                 {item.pictures.length > 1 ?       <SmallImages item={item} settings={productsnav} navOne={this.state.nav1} />
                                           :null}
                                             </div>
