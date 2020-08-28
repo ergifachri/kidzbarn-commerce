@@ -47,7 +47,7 @@ class FilterBar extends Component {
     render (){
         return (
             <div className="product-filter-content">
-                <div className="search-count">
+               {/*  <div className="search-count">
                     <h5>Showing Products 1-{this.props.products.length} Result</h5>
                 </div>
                 <div className="collection-view">
@@ -87,7 +87,7 @@ class FilterBar extends Component {
                                 className="product-6-layout-view" onClick={() => this.LayoutView(2)} />
                         </li>
                     </ul>
-                </div>
+                </div> */}
                 <div className="product-page-filter">
                     <select onChange={(e) => this.props.filterSort(e.target.value)}>
                         <option value="">Sorting items</option>
