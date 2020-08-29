@@ -8,18 +8,24 @@ class Breadcrumb extends Component {
             <div className="breadcrumb-section">
                 <div className="container">
                     <div className="row">
-                        <div className="col-md-6">
+                        {/* <div className="col-md-6">
                             <div className="page-title">
                                 <h2>{title}</h2>
                             </div>
-                        </div>
+                        </div> */}
                         <div className="col-md-6">
                             <nav aria-label="breadcrumb" className="theme-breadcrumb">
-                                <ol className="breadcrumb">
-                                    <li className="breadcrumb-item"><Link to={`${process.env.PUBLIC_URL}`}>Home</Link></li>
+                                <ol style={{
+                                    backgroundColor:'transparent',
+                                    textTransform:'uppercase',
+                                    fontSize:'14px',
+                                    color:'#555555',
+                                    fontSize:'14px',
+                                    fontWeight:'600' }}>
+                                    <li className="breadcrumb-item" style={{color:'#555555'}}><Link to={`${process.env.PUBLIC_URL}`}>Home</Link></li>
                                     {parent?
-                                    <li className="breadcrumb-item" aria-current="page">{parent}</li>:''}
-                                    <li className="breadcrumb-item active" aria-current="page">{title}</li>
+                                    <li className="breadcrumb-item" aria-current="page" style={{color:'#555555'}}>{parent}</li>:''}
+                                    <li className="breadcrumb-item active" aria-current="page" style={{color:'#555555'}}>{title}</li>
                                 </ol>
                             </nav>
                         </div>
