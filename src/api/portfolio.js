@@ -1,7 +1,7 @@
 
 // Grid Columns Photos
 
-export const photos = [
+/*export const photos = [
     {
       src: require('../assets/images/portfolio/grid/1.jpg'),
       type: 'fashion'
@@ -159,4 +159,4 @@ export const photos = [
       src: require('../assets/images/portfolio/26.jpg'),
       type: 'fashion'
     },
-  ]
+  ]*/
