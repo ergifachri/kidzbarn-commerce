@@ -81,8 +81,8 @@ class HeaderFour extends Component {
 											<SideBar/>
 										</div>
 										<div className="brand-logo">
-                                            <LogoImage logo={this.props.logoName} />
-										</div>
+                                       {/*      <LogoImage logo={this.props.logoName} />
+									 */}	</div>
 									</div>
 									<div className="menu-right pull-right">
 										{/*Top Navigation Bar Component*/}

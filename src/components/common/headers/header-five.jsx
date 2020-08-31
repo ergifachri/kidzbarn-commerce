@@ -94,8 +94,8 @@ class HeaderFive extends Component {
 								<div className="main-menu">
 									<div className="menu-left category-nav-right">
 										<div className="brand-logo">
-                                            <LogoImage logo={this.props.logoName} />
-										</div>
+                                        {/*     <LogoImage logo={this.props.logoName} />
+										 */}</div>
 										<div className="navbar">
 											<a href="javascript:void(0)" onClick={this.openNav}>
 												<div className="bar-style"> <i className="fa fa-bars sidebar-bar" aria-hidden="true"></i></div>

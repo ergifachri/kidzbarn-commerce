@@ -93,8 +93,8 @@ class HeaderThree extends Component {
                             <div className="col-sm-12">
                                 <div className="main-menu border-section border-top-0">
                                     <div className="brand-logo layout2-logo">
-                                        <LogoImage logo={this.props.logoName} />
-                                    </div>
+                                    {/*     <LogoImage logo={this.props.logoName} />
+                                    */} </div>
                                     <div>
                                         <form className="form_search" role="form">
                                             <input id="query search-autocomplete" type="search"

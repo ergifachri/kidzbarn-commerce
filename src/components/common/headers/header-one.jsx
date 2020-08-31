@@ -101,9 +101,9 @@ class HeaderOne extends Component {
 											{/*SideBar Navigation Component*/}
 											 <SideBar/> 
 										</div>
-										<div className="brand-logo" style={{backgroundColor:'white'}}>
-										{/* 	 <LogoImage logo={this.props.logoName} ></LogoImage>
-									 */}	</div>
+										<div className="brand-logo" >
+											 <LogoImage logo={'logo/Kidz Barn Logo1.jpg'} ></LogoImage>
+										</div>
 									</div>
 									<div className="menu-right pull-right">
 										{/*Top Navigation Bar Component*/}

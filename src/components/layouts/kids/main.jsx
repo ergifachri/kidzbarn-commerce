@@ -46,7 +46,7 @@ class Kids extends Component {
                 <Helmet>
                     <title>Kidz Barn | Kids Store</title>
                 </Helmet>
-                <HeaderOne logoName={'logo/6.png'}/>
+                <HeaderOne logoName={'logo/Kidz Barn Logo1.jpg'}/>
 
                 <section className="p-0">
                     <Slider className="slide-1 home-slider">
@@ -214,7 +214,7 @@ class Kids extends Component {
                                 <Link to={`${process.env.PUBLIC_URL}/collection`} onClick={()=>this.clickInitialBrandHendle('connetix')}>
                                     <div className="collection-banner p-left">
                                         <div className="img-part">
-                                            <img src={`${process.env.PUBLIC_URL}/assets/images/kids/product/BannerConnetix.jpg`}
+                                            <img src={`${process.env.PUBLIC_URL}/assets/images/kids/banner/Connetix.jpg`}
                                                  className="img-fluid blur-up lazyload bg-img" style={{maxHeight:'220px'}} alt="" />
                                         </div>
                                         <div className="contain-banner banner-3">
@@ -232,7 +232,7 @@ class Kids extends Component {
                                 <Link to={`${process.env.PUBLIC_URL}/collection`} onClick={()=>this.clickInitialBrandHendle('flockmen')}>
                                     <div className="collection-banner p-right text-right">
                                         <div className="img-part">
-                                            <img src={`${process.env.PUBLIC_URL}/assets/images/kids/product/Flockmen front.jpg`}
+                                            <img src={`${process.env.PUBLIC_URL}/assets/images/kids/banner/Flockmen front.jpg`}
                                                  className="img-fluid blur-up lazyload bg-img" style={{maxHeight:'250px'}} alt="" />
                                         </div>
                                         <div className="contain-banner banner-3">
@@ -272,7 +272,7 @@ class Kids extends Component {
                                 <Link to={`${process.env.PUBLIC_URL}/collection`} onClick={()=>this.clickInitialBrandHendle('grimms')}>
                                     <div className="collection-banner p-right text-right">
                                         <div className="img-part">
-                                            <img src={`${process.env.PUBLIC_URL}/assets/images/kids/product/BannerGrimms.jpg`}
+                                            <img src={`${process.env.PUBLIC_URL}/assets/images/kids/banner/Grimms.jpg`}
                                                  className="img-fluid blur-up lazyload bg-img" style={{maxHeight:'250px'}} alt="" />
                                         </div>
                                         <div className="contain-banner banner-3">
@@ -308,7 +308,7 @@ class Kids extends Component {
                                 <Link to={`${process.env.PUBLIC_URL}/collection`} onClick={()=>this.clickInitialBrandHendle('tegu')}>
                                     <div className="collection-banner p-right">
                                         <div className="img-part">
-                                            <img src={`${process.env.PUBLIC_URL}/assets/images/kids/product/BannerTegu.jpg`}
+                                            <img src={`${process.env.PUBLIC_URL}/assets/images/kids/banner/Tegu Wooden Blocks.jpg`}
                                                  className="img-fluid blur-up lazyload bg-img" style={{maxHeight:'250px'}} alt="" />
                                         </div>
                                         <div className="contain-banner banner-3">
@@ -326,7 +326,7 @@ class Kids extends Component {
                                 <Link to={`${process.env.PUBLIC_URL}/collection`} onClick={()=>this.clickInitialBrandHendle('way to play')} >
                                     <div className="collection-banner p-right">
                                         <div className="img-part">
-                                            <img src={`${process.env.PUBLIC_URL}/assets/images/kids/product/BannerWayToPlay.jpg`}
+                                            <img src={`${process.env.PUBLIC_URL}/assets/images/kids/banner/Way to Play.jpg`}
                                                  className="img-fluid blur-up lazyload bg-img" style={{maxHeight:'250px'}} alt="" />
                                         </div>
                                         <div className="contain-banner banner-3">
@@ -359,6 +359,24 @@ class Kids extends Component {
                                     </div>
                                     <div style={{textAlign:'center'}}>
                                         <h3>YellowDoor</h3>
+                                    </div>
+                                </Link>
+                            </div>
+                            <div className="col-md-3">
+                                <Link to={`${process.env.PUBLIC_URL}/collection`} onClick={()=>this.clickInitialBrandHendle('playmags')} >
+                                    <div className="collection-banner p-right text-right">
+                                        <div className="img-part">
+                                            <img src={`${process.env.PUBLIC_URL}/assets/images/kids/banner/Playmags.jpg`}
+                                                 className="img-fluid blur-up lazyload bg-img" style={{maxHeight:'250px'}} alt="" />
+                                        </div>
+                                        <div className="contain-banner banner-3">
+                                            <div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div style={{textAlign:'center'}}>
+                                        <h3>Playmags</h3>
                                     </div>
                                 </Link>
                             </div>

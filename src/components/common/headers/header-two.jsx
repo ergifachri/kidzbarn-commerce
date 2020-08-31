@@ -102,8 +102,8 @@ class HeaderTwo extends Component {
                                         </div>
                                     </div>
                                     <div className="brand-logo layout2-logo">
-                                        <LogoImage logo={this.props.logoName} />
-                                    </div>
+                                   {/*      <LogoImage logo={this.props.logoName} />
+                                    */} </div>
                                     <div className="menu-right pull-right">
                                         <div>
                                             <div className="icon-nav">
