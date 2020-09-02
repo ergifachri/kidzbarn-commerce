@@ -20,7 +20,8 @@ class HeaderOne extends Component {
         super(props);
 
 		this.state = {
-			isLoading:false
+			isLoading:false,
+			windowWidth:''
 		}
     }
     /*=====================
@@ -30,7 +31,9 @@ class HeaderOne extends Component {
         setTimeout(function() {
             document.querySelector(".loader-wrapper").style = "display: none";
         }, 2000);
-
+		this.setState({
+			windowWidth:window.innerWidth
+		})
         this.setState({ open: true });
     }
 
@@ -80,7 +83,7 @@ class HeaderOne extends Component {
 	};
 	
 	render() {
-
+		const {windowWidth} = this.state
 		return (
 			<div>
 				<header id="sticky" className="sticky">
@@ -96,10 +99,12 @@ class HeaderOne extends Component {
 									<div className="menu-left">
 										<div className="navbar">
 											<a href="javascript:void(0)" onClick={this.openNav}>
-												<div className="bar-style"> <i className="fa fa-bars sidebar-bar" aria-hidden="true"></i></div>
-											</a>
-											{/*SideBar Navigation Component*/}
-											 <SideBar/> 
+												{windowWidth > 500 ? 		<div className="bar-style"> <i className="fa sidebar-bar" aria-hidden="true"></i></div>
+										:		<div className="bar-style"> <i className="fa fa-bars sidebar-bar" aria-hidden="true"></i></div>
+									}
+											{/* 	<div className="bar-style"> <i className="fa fa-bars sidebar-bar" aria-hidden="true"></i></div>
+											 */}</a>
+											<SideBar/> 
 										</div>
 										<div className="brand-logo" >
 											 <LogoImage logo={'logo/Kidz Barn Logo1.jpg'} ></LogoImage>

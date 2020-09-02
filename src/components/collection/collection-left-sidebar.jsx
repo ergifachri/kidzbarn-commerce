@@ -78,6 +78,7 @@ class CollectionLeftSidebar extends Component {
                                 <div  className="col-sm-3 collection-filter">
 
                                     <StickyBox offsetTop={20} offsetBottom={20}>
+                                     
                                         <div>
                                             <Filter history={this.props.history}/>
                                             {/* <NewProduct/> */}
@@ -96,8 +97,8 @@ class CollectionLeftSidebar extends Component {
                                             <div className="row">
                                                 <div className="col-sm-12">
                                                     <div className="top-banner-wrapper">
-                                                        <a href="#"><img src={`${process.env.PUBLIC_URL}/assets/images/mega-menu/TOYS TIFF.jpg`} className="img-fluid" alt=""/></a>
-                                                        
+                                                       {/*  <a href="#"><img src={`${process.env.PUBLIC_URL}/assets/images/mega-menu/TOYS TIFF.jpg`} className="img-fluid" alt=""/></a>
+                                                         */}
                                                             <HeaderBrand></HeaderBrand>
                                                         
                                                     </div>
