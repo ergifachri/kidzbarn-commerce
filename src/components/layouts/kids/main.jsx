@@ -46,7 +46,7 @@ class Kids extends Component {
                 <Helmet>
                     <title>Kidz Barn | Kids Store</title>
                 </Helmet>
-                <HeaderOne logoName={'logo/Kidz Barn Logo1.jpg'}/>
+                <HeaderOne logoName={'logo/Kidz Barn Logo2.jpg'}/>
 
                 <section className="p-0">
                     <Slider className="slide-1 home-slider">

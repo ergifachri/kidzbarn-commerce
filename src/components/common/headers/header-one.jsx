@@ -107,7 +107,7 @@ class HeaderOne extends Component {
 											<SideBar/> 
 										</div>
 										<div className="brand-logo" >
-											 <LogoImage logo={'logo/Kidz Barn Logo1.jpg'} ></LogoImage>
+											 <LogoImage logo={'logo/Kidz Barn Logo2.jpg'} ></LogoImage>
 										</div>
 									</div>
 									<div className="menu-right pull-right">
