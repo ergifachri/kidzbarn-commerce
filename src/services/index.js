@@ -139,7 +139,7 @@ export const getNewProducts = (products, type) => {
 // Get Related Items
 export const getRelatedItems = (products, type) => {
     const items = products.filter(product => {
-        return product.category === type;
+        return product.tags[0] === type;
     })
 
     return items.slice(0,4)

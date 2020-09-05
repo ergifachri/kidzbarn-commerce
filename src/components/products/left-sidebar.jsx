@@ -8,6 +8,7 @@ import {connect} from "react-redux";
 import Service from "./common/service";
 import BrandBlock from "./common/brand-block";
 import NewProduct from "../common/new-product";
+import RelatedProduct from "../common/related-product";
 import Breadcrumb from "../common/breadcrumb";
 import DetailsWithPrice from "./common/product/details-price";
 import DetailsTopTabs from "./common/details-top-tabs";
@@ -92,7 +93,8 @@ class LeftSideBar extends Component {
                                     {/* <BrandBlock/> */}
                                     {/* <Service/> */}
                                     {/*side-bar single product slider start*/}
-                                    <NewProduct/>
+                                    {/* <NewProduct/> */}
+                                    <NewProduct productItem={item}/>
                                     {/*side-bar single product slider end*/}
                                 </div>
                                 <div className="col-lg-9 col-sm-12 col-xs-12">

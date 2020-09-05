@@ -3,13 +3,18 @@ import Slider from 'react-slick';
 import {connect} from 'react-redux';
 import {Link} from 'react-router-dom'
 
-import {getBestSeller} from "../../services";
+import {getBestSeller,getRelatedItems} from "../../services";
 
 
 class NewProduct extends Component {
+
+    constructor(props){
+        super(props);
+    }
+
     render (){
         const {items, symbol} = this.props;
-
+        
         var arrays = [];
         while (items.length > 0) {
             arrays.push(items.splice(0, 4));
@@ -17,7 +22,8 @@ class NewProduct extends Component {
 
         return (
             <div className="theme-card">
-                <h5 className="title-border">new product</h5>
+                <h1></h1>
+                <h5 className="title-border">Related Product</h5>
                 <Slider className="offer-slider slide-1">
                     {arrays.map((products, index) =>
                         <div key={index}>
@@ -25,15 +31,15 @@ class NewProduct extends Component {
                                 <div className="media" key={i} onClick={()=>window.location.reload()}>
                                     <Link to={`${process.env.PUBLIC_URL}/product/${product.id}`}><img className="img-fluid" src={`${product.pictures[0]}`} alt="" /></Link>
                                     <div className="media-body align-self-center">
-                                        <div className="rating">
+                                        {/* <div className="rating">
                                             <i className="fa fa-star"></i>
                                             <i className="fa fa-star"></i>
                                             <i className="fa fa-star"></i>
                                             <i className="fa fa-star"></i>
                                             <i className="fa fa-star"></i>
-                                        </div>
+                                        </div> */}
                                         <Link to={`${process.env.PUBLIC_URL}/product/${product.id}`}><h6>{product.name}</h6></Link>
-                                        {product.stock == 0 ? <h6>Out of stock</h6> : product.discount > 0 ?  <h4>{symbol}{(product.price*product.discount/100)}
+                                        {product.stock == 0 ? <h7>Out of stock</h7> : product.discount > 0 ?  <h4>{symbol}{(product.price*product.discount/100)}
                                             <del><span className="money">{'IDR'}{product.price}</span></del></h4>:
                                             <span className="money">{'IDR'}{product.price}</span>}
 
@@ -51,9 +57,10 @@ class NewProduct extends Component {
     }
 }
 
-function mapStateToProps(state) {
+function mapStateToProps(state,ownProps) {
+    
     return {
-        items: getBestSeller(state.data.products),
+        items: getRelatedItems(state.data.products,ownProps.productItem.tags[0]),
         symbol: state.data.symbol
     }
 }

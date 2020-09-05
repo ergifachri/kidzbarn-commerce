@@ -139,7 +139,8 @@ class FooterOne extends Component {
                         <div className="row">
                             <div className="col-xl-6 col-md-6 col-sm-12">
                                 <div className="footer-end">
-                                    <p><i className="fa fa-copyright" aria-hidden="true"></i> by ergifachri</p>
+                                    <p>{/* <i className="fa fa-copyright" aria-hidden="true"></i>  */}Copyright © Kidzbarn. All rights reserved.
+</p>
                                 </div>
                             </div>
                             <div className="col-xl-6 col-md-6 col-sm-12">
