@@ -194,8 +194,8 @@ class Kids extends Component {
                                     <div className="collection-banner p-left">
                                         <div className="img-part">
                                         
-                                            <img  src={`${process.env.PUBLIC_URL}/assets/images/kids/product/BannerAvdar.jpg`}
-                                                 className="img-fluid blur-up lazyload bg-img" style={{maxHeight:'220px'}} alt="" />
+                                            <img  src={`${process.env.PUBLIC_URL}/assets/images/kids/banner/Avdar.jpg`}
+                                                 className="img-fluid blur-up lazyload bg-img" style={{maxHeight:'250px'}} alt="" />
                                         </div>
                                         <div className="contain-banner banner-3">
                                             <div>
@@ -215,7 +215,7 @@ class Kids extends Component {
                                     <div className="collection-banner p-left">
                                         <div className="img-part">
                                             <img src={`${process.env.PUBLIC_URL}/assets/images/kids/banner/Connetix.jpg`}
-                                                 className="img-fluid blur-up lazyload bg-img" style={{maxHeight:'220px'}} alt="" />
+                                                 className="img-fluid blur-up lazyload bg-img" style={{maxHeight:'250px'}} alt="" />
                                         </div>
                                         <div className="contain-banner banner-3">
                                             <div>
@@ -250,7 +250,7 @@ class Kids extends Component {
                                 <Link to={`${process.env.PUBLIC_URL}/collection`} onClick={()=>this.clickInitialBrandHendle('grapat')}>
                                     <div className="collection-banner p-right">
                                         <div className="img-part">
-                                            <img src={`${process.env.PUBLIC_URL}/assets/images/kids/product/BannerGrapat.jpg`}
+                                            <img src={`${process.env.PUBLIC_URL}/assets/images/kids/banner/Grapat.jpg`}
                                                  className="img-fluid blur-up lazyload bg-img" style={{maxHeight:'250px'}} alt="" />
                                         </div>
                                         <div className="contain-banner banner-3">
@@ -287,10 +287,28 @@ class Kids extends Component {
                                 </Link>
                             </div>
                             <div className="col-md-3">
+                                <Link to={`${process.env.PUBLIC_URL}/collection`} onClick={()=>this.clickInitialBrandHendle('playmags')} >
+                                    <div className="collection-banner p-right text-right">
+                                        <div className="img-part">
+                                            <img src={`${process.env.PUBLIC_URL}/assets/images/kids/banner/Playmags.jpg`}
+                                                 className="img-fluid blur-up lazyload bg-img" style={{maxHeight:'250px'}} alt="" />
+                                        </div>
+                                        <div className="contain-banner banner-3">
+                                            <div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div style={{textAlign:'center'}}>
+                                        <h3>Playmags</h3>
+                                    </div>
+                                </Link>
+                            </div>
+                            <div className="col-md-3">
                                 <Link to={`${process.env.PUBLIC_URL}/collection`} onClick={()=>this.clickInitialBrandHendle('sumblox')}>
                                     <div className="collection-banner p-right">
                                         <div className="img-part">
-                                            <img src={`${process.env.PUBLIC_URL}/assets/images/kids/product/BannerSumBlox.jpg`}
+                                            <img src={`${process.env.PUBLIC_URL}/assets/images/kids/banner/SumBlox.jpg`}
                                                  className="img-fluid blur-up lazyload bg-img" style={{maxHeight:'250px'}} alt="" />
                                         </div>
                                         <div className="contain-banner banner-3">
@@ -322,7 +340,11 @@ class Kids extends Component {
                                     </div>
                                 </Link>
                             </div>
-                            <div className="col-md-3">
+                            
+                           
+                        </div>
+                        <div className="row partition3 banner-top-cls"  style={{display:'flex',flex:1,alignItems:'center',justifyContent:'center'}}>
+                        <div className="col-md-3">
                                 <Link to={`${process.env.PUBLIC_URL}/collection`} onClick={()=>this.clickInitialBrandHendle('way to play')} >
                                     <div className="collection-banner p-right">
                                         <div className="img-part">
@@ -340,10 +362,6 @@ class Kids extends Component {
                                     </div>
                                 </Link>
                             </div>
-                           
-                        </div>
-                        <div className="row partition3 banner-top-cls"  style={{display:'flex',flex:1,alignItems:'center',justifyContent:'center'}}>
-                            
                             <div className="col-md-3">
                                 <Link to={`${process.env.PUBLIC_URL}/collection`} onClick={()=>this.clickInitialBrandHendle('yellow door')} >
                                     <div className="collection-banner p-right text-right">
@@ -362,24 +380,7 @@ class Kids extends Component {
                                     </div>
                                 </Link>
                             </div>
-                            <div className="col-md-3">
-                                <Link to={`${process.env.PUBLIC_URL}/collection`} onClick={()=>this.clickInitialBrandHendle('playmags')} >
-                                    <div className="collection-banner p-right text-right">
-                                        <div className="img-part">
-                                            <img src={`${process.env.PUBLIC_URL}/assets/images/kids/banner/Playmags.jpg`}
-                                                 className="img-fluid blur-up lazyload bg-img" style={{maxHeight:'250px'}} alt="" />
-                                        </div>
-                                        <div className="contain-banner banner-3">
-                                            <div>
-                                                
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div style={{textAlign:'center'}}>
-                                        <h3>Playmags</h3>
-                                    </div>
-                                </Link>
-                            </div>
+                            
                            
                            
                         </div>

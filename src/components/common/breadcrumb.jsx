@@ -23,8 +23,8 @@ class Breadcrumb extends Component {
                                     fontSize:'14px',
                                     fontWeight:'600' }}>
                                     <li className="breadcrumb-item" style={{color:'#555555'}}><Link to={`${process.env.PUBLIC_URL}`}>Home</Link></li>
-                                    {parent?
-                                    <li className="breadcrumb-item" aria-current="page" style={{color:'#555555'}}>{parent}</li>:''}
+                                    {parent? 
+                                    <li className="breadcrumb-item" aria-current="page" style={{color:'#555555'}}><Link to={`${process.env.PUBLIC_URL}/${parent}`}>{parent}</Link></li>:''}
                                     <li className="breadcrumb-item active" aria-current="page" style={{color:'#555555'}}>{title}</li>
                                 </ol>
                             </nav>

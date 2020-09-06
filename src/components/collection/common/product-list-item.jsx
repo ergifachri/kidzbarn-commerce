@@ -100,6 +100,7 @@ class ProductListItem extends Component {
                                     {RatingStars}
                                 </div> */}
                                 <Link to={`${process.env.PUBLIC_URL}/product/${product.id}`}>
+                                    <h8><span style={{color:'PaleVioletRed'}}>{product.tags[0]}</span></h8>
                                     <h6>{product.name}</h6>
                                 </Link>
                                 
