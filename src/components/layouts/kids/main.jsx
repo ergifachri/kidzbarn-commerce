@@ -308,7 +308,7 @@ class Kids extends Component {
                                 <Link to={`${process.env.PUBLIC_URL}/collection`} onClick={()=>this.clickInitialBrandHendle('sumblox')}>
                                     <div className="collection-banner p-right">
                                         <div className="img-part">
-                                            <img src={`${process.env.PUBLIC_URL}/assets/images/kids/banner/SumBlox.jpg`}
+                                            <img src={`${process.env.PUBLIC_URL}/assets/images/kids/banner/Sumblox.jpg`}
                                                  className="img-fluid blur-up lazyload bg-img" style={{maxHeight:'250px'}} alt="" />
                                         </div>
                                         <div className="contain-banner banner-3">
