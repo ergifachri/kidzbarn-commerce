@@ -46,6 +46,8 @@ class cartComponent extends Component {
                                     </tr>
                                     </thead>
                                     {cartItems.map((item, index) => {
+                                        console.log('a+cartitems');
+                                        console.log(item);
                                         return (
                                         <tbody key={index}>
                                             <tr>

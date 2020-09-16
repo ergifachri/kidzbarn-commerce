@@ -29,17 +29,6 @@ class Register extends Component {
         let registerData = this.state;
         if (this.validator.allValid()) {
             this.props.dispatch(registerUser(registerData))
-            .then(response=>{
-                if(response.payload.success){
-                    alert('Success register');
-                }
-                else{
-                    alert('Failed register');
-                }
-            })
-            .catch(e => {
-                alert('Failed resgiter');
-            })
            
             
 

@@ -11,10 +11,11 @@ export default function cartReducer(state = {
     switch (action.type) {
         case ADD_TO_CART:
             const productId = action.product.id
+            const inputQty = action.qty
             if (state.cart.findIndex(product => product.id === productId) !== -1) {
                 const cart = state.cart.reduce((cartAcc, product) => {
                     if (product.id === productId) {
-                        cartAcc.push({ ...product, qty: product.qty+1, sum: (product.price/* *product.discount/100 */)*(product.qty+1) }) // Increment qty
+                        cartAcc.push({ ...product, qty: product.qty+inputQty, sum: (product.price/* *product.discount/100 */)*(product.qty+1) }) // Increment qty
                     } else {
                         cartAcc.push(product)
                     }

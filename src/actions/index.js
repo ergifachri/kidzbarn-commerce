@@ -32,6 +32,8 @@ export const fetchSingleProduct = productId => ({
 
 //it seems that I should probably use this as the basis for "Cart"
 export const addToCart = (product,qty) => (dispatch) => {
+    console.log("a+Addtocart");
+    console.log(qty);
     toast.success("Item Added to Cart (Under Construction)");
         dispatch(addToCartUnsafe(product, qty))
 

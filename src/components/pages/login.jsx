@@ -26,8 +26,8 @@ class Login extends Component {
         let loginData = this.state;
         if (this.validator.allValid()) {
             console.log(loginData);
-            this.props.dispatch(loginUser(loginData))
-            .then(response=>{
+            this.props.dispatch(loginUser(loginData,this.props.history))
+            /* .then(response=>{
                 if(response.payload.success){
                     alert('Success register');
                 }
@@ -37,7 +37,7 @@ class Login extends Component {
             })
             .catch(e => {
                 alert('Failed resgiter');
-            })
+            }) */
            
              
 

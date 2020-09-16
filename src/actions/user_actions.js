@@ -12,6 +12,7 @@ import {
     CLEAR_UPDATE_USER_DATA
 } from './types';
 
+import { toast  } from 'react-toastify';
 import { USER_SERVER, PRODUCT_SERVER, AUTH_SERVER } from '../components/utils/misc';
 
 
@@ -20,48 +21,128 @@ export function registerUser(dataToSubmit){
     dataToSubmit = {
         firstname:'Ergi',
         lastname:'Nurfachri',
-        email:'ergifachri@gmail.com',
-        password:'Aeroasia05'
+        email:'ergifachriaa@gmail.com',
+        password:'Aeroasia05',
+        phone:"082129179027"
     }
     console.log(dataToSubmit);
+    const response = {};
     const request = axios.post(`${USER_SERVER}/register`,dataToSubmit)
-        .then(response => response.data);
+        .then(response => {
+            console.log(response.data);
+           if(response.data.status == 'success'){
+            toast.success('Your user has been created');
+            
+           }
+        })
+        .catch(err => {
+            toast.error(err.response.data.message);
+            
+        });
     
-    alert('register action');
-    return {
-        type: REGISTER_USER,
-        payload: request
+        return {
+            type: REGISTER_USER,
+            payload: request
+        }
+    
+}
+
+function saveToLocalStorage(request) {
+    try {
+        const serializedState = JSON.stringify(request)
+        
+        localStorage.setItem('user', serializedState)
+    }catch(e){
+        console.log(e);
     }
 }
 
-
-export function loginUser(dataToSubmit){
+export  function loginUser (dataToSubmit,history){
     const request = axios.post(`${AUTH_SERVER}/loginUser`,dataToSubmit)
-                .then(response => response.data);
+                .then(response => {
+                    
+                    if (response.data.message == 'User has been logged-in successfully'){
+                        console.log('a+loginresult');
+                        console.log(response.data);
+                        saveToLocalStorage(response.data);
+                        history.push({
+                            pathname: '/kids',
+                        })
+                    }
+                    
+                    else{
+                        toast.error(response.data.message);
+            
+                    }
+                })
+                .catch(error =>{
+                    console.log("a+error");
+                    console.log(error.response);
+                });
     
+    const requesta = {status: "success", message: "User has been logged-in successfully", data: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZ…xMjJ9.gBMGxL0qL3pOFORFlUCXFZUzpiudDE7Ubc9uLHY-rxY"}
     return {
         type: LOGIN_USER,
-        payload: request
+        payload: requesta
+    }
+}
+
+function authHeader() {
+    // return authorization header with jwt token
+    let user = JSON.parse(localStorage.getItem('user'));
+    
+    console.log('this is ssss');
+    if (user && user.data) {
+        console.log("a+return authorization");
+        console.log(user.data);
+        return { 'Authorization': 'Bearer '+user.data};
+    } else {
+        return {};
     }
 }
 
 export function auth(){
+    return (dispatch)=>{
+        const requestOptions = {
+            headers:authHeader()
+        };
 
-    const request = axios.get(`${USER_SERVER}/auth`)
-    .then(response => response.data);
+        console.log("a+reqestoptions");
+        console.log(requestOptions);
+        const request = axios.get(`${USER_SERVER}/showuser`,requestOptions)
+        .then(response =>{
+            console.log("a+responsestatus");
+            console.log(response.data.status);
+            if(response.data.status == 'success'){
+                dispatch(success(response.data));
+            }
+            else{
+                logoutUser();
+            }
+            
+        })
 
-    return {
-        type: AUTH_USER,
-        payload: request
+       
+        
     }
+    
+    function success(request){
+        return {
+            type: AUTH_USER,
+            payload: request
+        }
+    }
+
+    
+        
 
 }
 
 
 export function logoutUser(){
 
-    const request = axios.get(`${USER_SERVER}/logout`)
-    .then(response => response.data);
+    localStorage.removeItem('user');
+    const request = {};
 
     return {
         type: LOGOUT_USER,

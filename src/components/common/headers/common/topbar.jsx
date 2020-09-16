@@ -1,8 +1,16 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 import { withTranslate } from 'react-redux-multilingual'
+import { connect } from 'react-redux';
+import {logoutUser} from '../../../../actions/user_actions';
+import { bindActionCreators } from 'redux'
 
 class TopBar extends Component {
+
+    componentDidMount() {
+        console.log("a+topbar");
+        console.log(this.props.user);   
+    }
 
     render() {
         const {translate} = this.props;
@@ -21,17 +29,34 @@ class TopBar extends Component {
                         <div className="col-lg-6 text-right">
                             <ul className="header-dropdown">
                                 {/*  <li className="mobile-wishlist compare-mobile"><Link to={`${process.env.PUBLIC_URL}/compare`}><i className="fa fa-random" aria-hidden="true"></i>{translate('compare')}</Link></li>
-                                 */}<li className="mobile-wishlist"><Link to={`${process.env.PUBLIC_URL}/wishlist`}><i className="fa fa-heart" aria-hidden="true"></i>{translate('wishlist')}</Link></li>
+                                 */}<li className="mobile-wishlist"><Link to={`${process.env.PUBLIC_URL}/wishlist`}><i className="fa fa-heart" aria-hidden="true"></i>wishlist</Link></li>
                                  <li className="onhover-dropdown mobile-account">
-                                    <i className="fa fa-user" aria-hidden="true"></i> {translate('my_account')}
+                                    <i className="fa fa-user" aria-hidden="true"></i> 
+                                    {this.props.user.userData.data == null? 'My Account':this.props.user.userData.data.firstname}
+
+                                    {this.props.user.userData.data  == null ? 
                                     <ul className="onhover-show-div">
-                                        <li>
-                                            <Link to={`${process.env.PUBLIC_URL}/pages/login`} data-lng="en">Login</Link>
-                                        </li>
-                                        <li>
-                                            <Link to={`${process.env.PUBLIC_URL}/pages/register`} data-lng="en">Register</Link>
-                                        </li>
-                                    </ul>
+                                        
+                                    <li>
+                                        <Link to={`${process.env.PUBLIC_URL}/pages/login`} data-lng="en">Login</Link>
+                                    </li>
+                                    <li>
+                                        <Link to={`${process.env.PUBLIC_URL}/pages/register`} data-lng="en">Register</Link>
+                                    </li>
+                                </ul>
+                                :<ul className="onhover-show-div">
+                                        
+                                <li onClick={()=> {
+                                    this.props.logoutUser()
+                                    }}>
+                                        <Link to={`${process.env.PUBLIC_URL}/`} data-lng="en">Logout</Link>
+                                   
+                                </li>
+                               
+                            </ul>}
+
+                                    
+                                    
                                 </li>
                             </ul>
                         </div>
@@ -42,5 +67,15 @@ class TopBar extends Component {
     }
 }
 
+const mapDispatchToProps = (dispatch)=>{
+    return bindActionCreators({ logoutUser }, dispatch)
+  }
 
-export default withTranslate(TopBar);
+const mapStateToProps = (state)=>{
+    return{
+      user: state.user
+    }
+  }
+
+
+export default connect(mapStateToProps,mapDispatchToProps)(TopBar);

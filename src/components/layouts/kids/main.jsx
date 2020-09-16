@@ -14,13 +14,15 @@ import Instagram from "../common/instagram"
 import LogoBlock from "../common/logo-block"
 import MultiSlider from "./multiple-slider";
 import { connect } from 'react-redux'
-import {filterBrand} from '../../../actions'
+import { bindActionCreators } from 'redux'
+import {filterBrand} from '../../../actions';
+import {auth} from '../../../actions/user_actions';
 
 class Kids extends Component {
 
     componentDidMount() {
         document.getElementById("color").setAttribute("href", `${process.env.PUBLIC_URL}/assets/css/color10.css` );
-        
+        this.props.auth()
     }
 
     clickInitialBrandHendle(initialBrand) {
@@ -471,13 +473,17 @@ class Kids extends Component {
     }
 }
 
+const mapDispatchToProps = (dispatch)=>{
+    return bindActionCreators({ auth ,filterBrand}, dispatch)
+  }
+
 const mapStateToProps = state => ({
     filters: state.filters
  })
  
  
  
-export default connect(mapStateToProps,{ filterBrand })(Kids);
+export default connect(mapStateToProps,mapDispatchToProps)(Kids);
 
 
 

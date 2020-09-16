@@ -5,12 +5,14 @@ class orderSuccess extends Component {
 
     constructor (props) {
         super (props)
-
+        console.log("a+propssuccess");
+        console.log(this.props);
     }
 
     render (){
 
         const {payment, items, symbol, orderTotal} = this.props.location.state;
+        const {userData} = this.props.location.state
         var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
         var current = new Date();
         var next5days = new Date(Date.now() + 5 * 86400000);
@@ -27,8 +29,8 @@ class orderSuccess extends Component {
                                 <div className="success-text">
                                     <i className="fa fa-check-circle" aria-hidden="true"></i>
                                     <h2>thank you</h2>
-                                    <p>Payment Is Has Been Received Order Placed Successfully</p>
-                                    <p>Transaction ID: {(payment.paymentID)?payment.paymentID:payment.id}</p>
+                                    <p>Please Confirm Your Payment To Our Whatsapp</p>{/* 
+                                    <p>Transaction ID: {(payment.paymentID)?payment.paymentID:payment.id}</p> */}
                                 </div>
                             </div>
                         </div>
@@ -71,8 +73,8 @@ class orderSuccess extends Component {
                                     <div className="total-sec">
                                         <ul>
                                             <li>subtotal <span>{symbol}{orderTotal}</span></li>
-                                            <li>shipping <span>$0</span></li>
-                                            <li>tax(GST) <span>$0</span></li>
+                                            <li>shipping <span>IDR0</span></li>
+                                            <li>tax(GST) <span>IDR0</span></li>
                                         </ul>
                                     </div>
                                     <div className="final-total">
@@ -83,7 +85,7 @@ class orderSuccess extends Component {
                             <div className="col-lg-6">
                                 <div className="row order-success-sec">
                                     <div className="col-sm-6">
-                                        <h4>summery</h4>
+                                        <h4>summary</h4>
                                         <ul className="order-detail">
                                             {(payment.paymentID)?
                                                 <div>
@@ -100,10 +102,10 @@ class orderSuccess extends Component {
                                     <div className="col-sm-6">
                                         <h4>shipping address</h4>
                                         <ul className="order-detail">
-                                            <li>gerg harvell</li>
-                                            <li>568, suite ave.</li>
-                                            <li>Austrlia, 235153</li>
-                                            <li>Contact No. 987456321</li>
+                                            <li>{userData.first_name} {userData.last_name}</li>
+                                            <li>{userData.address}</li>
+                                            <li>{userData.city}, {userData.pincode}</li>
+                                            <li>{userData.phone}</li>
                                         </ul>
                                     </div>
 

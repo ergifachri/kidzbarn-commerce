@@ -8,13 +8,14 @@ import SimpleReactValidator from 'simple-react-validator';
 import Breadcrumb from "../common/breadcrumb";
 import {removeFromWishlist} from '../../actions'
 import {getCartTotal} from "../../services";
-
+import Modal from 'react-responsive-modal';
 class checkOut extends Component {
 
     constructor (props) {
         super (props)
 
         this.state = {
+            open: false,
             payment:'stripe',
             first_name:'',
             last_name:'',
@@ -28,6 +29,22 @@ class checkOut extends Component {
             create_account: ''
         }
         this.validator = new SimpleReactValidator();
+    }
+
+    onOpenModal = () => {
+        this.setState({ open: true });
+    };
+
+    onCloseModal = () => {
+        this.setState({ open: false });
+    };
+
+    confirmPayment = (userData) =>{
+        this.onCloseModal();
+        this.props.history.push({
+            pathname: '/order-success',
+                state: {userData:userData, payment: '123456',items: this.props.cartItems, orderTotal: this.props.total, symbol: 'IDR' }
+        })
     }
 
     setStateFromInput = (event) => {
@@ -58,8 +75,24 @@ class checkOut extends Component {
 
         if (this.validator.allValid()) {
             alert('You submitted the form and stuff!');
+            console.log("a+state");
+            
+            const userData = {
+                address:this.state.address,
+                city:this.state.city,
+                country:this.state.country,
+                email:this.state.email,
+                first_name:this.state.first_name,
+                last_name:this.state.last_name,
+                payment:this.state.payment,
+                phone:this.state.phone,
+                pincode:this.state.pincode,
+                state:this.state.state
+            }
 
-            var handler = (window).StripeCheckout.configure({
+            console.log(userData)
+            this.confirmPayment(userData);
+            /* var handler = (window).StripeCheckout.configure({
                 key: 'pk_test_glxk17KhP7poKIawsaSgKtsL',
                 locale: 'auto',
                 token: (token: any) => {
@@ -74,7 +107,7 @@ class checkOut extends Component {
                 name: 'Kidzbarn',
                 description: 'Online Toy Store',
                 amount: this.amount * 100
-              })
+              }) */
         } else {
           this.validator.showMessages();
           // rerender to show messages for the first time
@@ -111,7 +144,33 @@ class checkOut extends Component {
 
         return (
             <div>
-
+                <Modal open={this.state.open} onClose={this.onCloseModal} center>
+                        <div className="modal-dialog modal-lg modal-dialog-centered" role="document">
+                            <div className="modal-content quick-view-modal">
+                                <div className="modal-body">
+                                    <div className="row">
+                                        {/* <div className="col-lg-6  col-xs-12">
+                                            <div className="quick-view-img">
+                                                <h1>Test</h1>
+                                            </div>
+                                        </div> */}
+                                        <div className="col-lg-12 col-xs-12">
+                                            <div className="product-right">
+                                                <h4>Please confirm your payment to our Whatsapp :)</h4>
+                                                
+                                                <div className="product-description border-product">
+                                                    
+                                                </div>
+                                                <div className="product-buttons" style={{display:'flex',flex:'1',alignItems:'center',justifyContent:'center'}}>
+                                                    <button  className="btn btn-solid" onClick={() => this.confirmPayment()} >Confirm Payment</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </Modal>
                 {/*SEO Support*/}
                 <Helmet>
                     <title>Kidz Barn | Sites</title>
@@ -215,7 +274,7 @@ class checkOut extends Component {
                                                     </ul>
 
                                                     <ul className="total">
-                                                        <li>Total <span className="count">{symbol}{total}</span></li>
+                                                        <li>Total <span className="count">{'IDR'}{total}</span></li>
                                                     </ul>
                                                 </div>
 
@@ -226,15 +285,15 @@ class checkOut extends Component {
                                                                 <li>
                                                                     <div className="radio-option stripe">
                                                                         <input type="radio" name="payment-group" id="payment-2" defaultChecked={true} onClick={() => this.checkhandle('stripe')} />
-                                                                        <label htmlFor="payment-2">Stripe</label>
+                                                                        <label htmlFor="payment-2">Bank Transfer <span className="image"><img src={`${process.env.PUBLIC_URL}/assets/images/bca.jpg`} style={{maxHeight:'200px',maxWidth:'200px',objectFit:'scale-down'}} alt=""/></span></label>
+                                                                        
                                                                     </div>
                                                                 </li>
-                                                                <li>
+                                                                 <li>
                                                                     <div className="radio-option paypal">
-                                                                        <input type="radio" name="payment-group" id="payment-1" onClick={() => this.checkhandle('paypal')} />
-                                                                            <label htmlFor="payment-1">PayPal<span className="image"><img src={`${process.env.PUBLIC_URL}/assets/images/paypal.png`} alt=""/></span></label>
+                                                                            <label htmlFor="payment-1" style={{marginLeft:'-40px'}}>12345678 a.n Ergi Nurfachri</label>
                                                                     </div>
-                                                                </li>
+                                                                </li> 
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -248,7 +307,7 @@ class checkOut extends Component {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="row section-t-space">
+                                    {/* <div className="row section-t-space">
                                         <div className="col-lg-6">
                                             <div className="stripe-section">
                                                 <h5>stripe js example</h5>
@@ -297,7 +356,7 @@ class checkOut extends Component {
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> */}
                                 </form>
                             </div>
                         </div>
