@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {Helmet} from 'react-helmet'
+import axios from 'axios';
 import { connect } from 'react-redux'
 import {Link, Redirect } from 'react-router-dom'
 import PaypalExpressBtn from 'react-paypal-express-checkout';
@@ -39,8 +40,17 @@ class checkOut extends Component {
         this.setState({ open: false });
     };
 
-    confirmPayment = (userData) =>{
+    confirmPayment = async (userData) =>{
         this.onCloseModal();
+        
+        const form = axios.post('http://localhost:3003/api/v1/kidzbarn/mail/confirmationEmail',{
+            
+                userData:userData,
+                items:this.props.cartItems,
+                orderTotal:this.props.total,
+                curr:'IDR'
+            
+        })
         this.props.history.push({
             pathname: '/order-success',
                 state: {userData:userData, payment: '123456',items: this.props.cartItems, orderTotal: this.props.total, symbol: 'IDR' }
