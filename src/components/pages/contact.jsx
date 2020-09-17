@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Breadcrumb from "../common/breadcrumb";
 import axios from 'axios';
+import { API_URL } from '../../components/utils/misc';
 import { toast  } from 'react-toastify';
 class Contact extends Component {
 
@@ -33,7 +34,7 @@ class Contact extends Component {
         const {firstname,email,message,phonenumber}= this.state
         console.log(firstname,email,message);
         toast.success("Your question is forwarded to email")
-        const form = await axios.post('http://localhost:3003/api/v1/kidzbarn/mail/sendEmail',{
+        const form = await axios.post(`${API_URL}/api/v1/kidzbarn/mail/sendEmail`,{
           firstname,
           email,
           message,
@@ -115,17 +116,17 @@ class Contact extends Component {
                             <div className="col-sm-12">
                                 <form className="theme-form">
                                     <div className="form-row">
-                                        <div className="col-md-6">
+                                        <div className="col-md-4">
                                             <label htmlFor="firstname">Name</label>
                                             <input type="text" className="form-control" id="name" name="firstname"
                                                    placeholder="Enter Your name" required="" onChange={this.handleChange}/>
                                         </div>
-                                        <div className="col-md-6">
+                                        <div className="col-md-4">
                                             <label htmlFor="phone">Phone number</label>
                                             <input type="text" className="form-control" id="phonenumber" name="phonenumber"
                                                    placeholder="Enter your number" required="" onChange={this.handleChange}/>
                                         </div>
-                                        <div className="col-md-6">
+                                        <div className="col-md-4">
                                             <label htmlFor="email">Email</label>
                                             <input type="text" className="form-control" id="email" placeholder="Email" name="email"
                                                    required="" onChange={this.handleChange}/>

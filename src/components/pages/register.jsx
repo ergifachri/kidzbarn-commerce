@@ -12,7 +12,8 @@ class Register extends Component {
             firstname:'',
             lastname:'',
             email:'',
-            password:''
+            password:'',
+            phone:''
         }
         this.validator = new SimpleReactValidator();
     }
@@ -112,16 +113,23 @@ class Register extends Component {
                                             </div>
                                         </div>
                                         <div className="form-row">
-                                            <div className="col-md-6">
+                                            <div className="col-md-4">
                                                 <label htmlFor="email">email</label>
                                                 <input type="text" name="email" className="form-control" value={this.state.email} onChange={this.setStateFromInput} />
                                                     {this.validator.message('email', this.state.email, 'required|email')}
                                                
                                             </div>
-                                            <div className="col-md-6">
+                                            <div className="col-md-4">
                                                 <label htmlFor="review">Password</label>
                                                 <input type="password" name="password" className="form-control" value={this.state.password} onChange={this.setStateFromInput} />
                                                     {this.validator.message('password', this.state.password, 'required|password')}
+                                             
+                                            
+                                            </div>
+                                            <div className="col-md-4">
+                                                <label htmlFor="review">Phonenumber</label>
+                                                <input type="text" name="phone" className="form-control" value={this.state.phone} onChange={this.setStateFromInput} />
+                                                    {this.validator.message('phone', this.state.phone, 'required|phone')}
                                              
                                             
                                             </div>

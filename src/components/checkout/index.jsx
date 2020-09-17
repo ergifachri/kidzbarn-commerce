@@ -5,7 +5,7 @@ import { connect } from 'react-redux'
 import {Link, Redirect } from 'react-router-dom'
 import PaypalExpressBtn from 'react-paypal-express-checkout';
 import SimpleReactValidator from 'simple-react-validator';
-
+import { API_URL } from '../../components/utils/misc';
 import Breadcrumb from "../common/breadcrumb";
 import {removeFromWishlist} from '../../actions'
 import {getCartTotal} from "../../services";
@@ -43,7 +43,7 @@ class checkOut extends Component {
     confirmPayment = async (userData) =>{
         this.onCloseModal();
         
-        const form = axios.post('http://localhost:3003/api/v1/kidzbarn/mail/confirmationEmail',{
+        const form = axios.post(`${API_URL}/api/v1/kidzbarn/mail/confirmationEmail`,{
             
                 userData:userData,
                 items:this.props.cartItems,
@@ -238,11 +238,11 @@ class checkOut extends Component {
                                                     <input type="text" name="city" value={this.state.city} onChange={this.setStateFromInput} />
                                                     {this.validator.message('city', this.state.city, 'required|alpha')}
                                                 </div>
-                                                <div className="form-group col-md-12 col-sm-6 col-xs-12">
+                                                {/* <div className="form-group col-md-12 col-sm-6 col-xs-12">
                                                     <div className="field-label">State / County</div>
                                                     <input type="text" name="state" value={this.state.state} onChange={this.setStateFromInput} />
                                                     {this.validator.message('state', this.state.state, 'required|alpha')}
-                                                </div>
+                                                </div> */}
                                                 <div className="form-group col-md-12 col-sm-6 col-xs-12">
                                                     <div className="field-label">Postal Code</div>
                                                     <input type="text" name="pincode" value={this.state.spincode} onChange={this.setStateFromInput} />
@@ -270,7 +270,7 @@ class checkOut extends Component {
                                                     </ul>
                                                     <ul className="sub-total">
                                                         <li>Subtotal <span className="count">{'IDR'}{total}</span></li>
-                                                        <li>Shipping <div className="shipping">
+                                                       {/*  <li>Shipping <div className="shipping">
                                                             <div className="shopping-option">
                                                                 <input type="checkbox" name="free-shipping" id="free-shipping" />
                                                                     <label htmlFor="free-shipping">Free Shipping</label>
@@ -280,7 +280,7 @@ class checkOut extends Component {
                                                                     <label htmlFor="local-pickup">Local Pickup</label>
                                                             </div>
                                                         </div>
-                                                        </li>
+                                                        </li> */}
                                                     </ul>
 
                                                     <ul className="total">

@@ -17,15 +17,16 @@ import { USER_SERVER, PRODUCT_SERVER, AUTH_SERVER } from '../components/utils/mi
 
 
 export function registerUser(dataToSubmit){
-    console.log('this is data submit');
-    dataToSubmit = {
+    console.log('a+this is data submit');
+    console.log(dataToSubmit)
+    /* dataToSubmit = {
         firstname:'Ergi',
         lastname:'Nurfachri',
         email:'ergifachriaa@gmail.com',
         password:'Aeroasia05',
         phone:"082129179027"
     }
-    console.log(dataToSubmit);
+    console.log(dataToSubmit); */
     const response = {};
     const request = axios.post(`${USER_SERVER}/register`,dataToSubmit)
         .then(response => {
