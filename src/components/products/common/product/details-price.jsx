@@ -123,10 +123,10 @@ class DetailsWithPrice extends Component {
                                 <li><a href="https://twitter.com/" target="_blank"><i className="fa fa-twitter"></i></a></li>
                                 <li><a href="https://www.instagram.com/" target="_blank"><i className="fa fa-instagram"></i></a></li>
                             </ul>
-                                <button className="wishlist-btn" onClick={() => addToWishlistClicked(item)}><i
+                                <a className={`btn wishlist-btn ${this.state.stock == 'Out of Stock !'? 'disabled':null}`} onClick={() => addToWishlistClicked(item)}><i
                                     className="fa fa-heart"></i><span
                                     className="title-font">Add To WishList</span>
-                                </button>
+                                </a>
                         </div>
                     </div>
                     {/* <div className="border-product">
