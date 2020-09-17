@@ -15,12 +15,19 @@ class CollectionLeftSidebar extends Component {
 
     componentDidMount(){
         const _values = queryString.parse(this.props.location.search);
-        
+        console.log("a+collectionleft");
+        console.log(this.props.filters.brand[0]);
+        /* let brands = [];
+        this.props.filterBrand(brands); */
         
         if(_values.brand){
             console.log('initials')
-            //this.clickInitialBrandHendle(_values.brand)
+            this.clickInitialBrandHendle(_values.brand)
             
+        }
+        else{
+            let brands = [];
+            this.props.filterBrand(brands);  
         }
 
        

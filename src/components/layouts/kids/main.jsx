@@ -191,7 +191,7 @@ class Kids extends Component {
                     <div >
                         <div className="row partition3 banner-top-cls" style={{display:'flex',flex:1,alignItems:'center',justifyContent:'center',height:'auto'}}>
                             <div className="col-md-3" >
-                            <Link to={`${process.env.PUBLIC_URL}/collection`} onClick={()=>this.clickInitialBrandHendle('avdar')}>
+                            <Link to={`${process.env.PUBLIC_URL}/collection?brand=AVDAR`} /* onClick={()=>this.clickInitialBrandHendle('avdar')} */>
                                      
                                     <div className="collection-banner p-left">
                                         <div className="img-part">
@@ -213,7 +213,9 @@ class Kids extends Component {
                                 </Link>
                             </div>
                             <div className="col-md-3">
-                                <Link to={`${process.env.PUBLIC_URL}/collection`} onClick={()=>this.clickInitialBrandHendle('connetix')}>
+                               {/*  <Link to={`${process.env.PUBLIC_URL}/collection`} onClick={()=>this.clickInitialBrandHendle('connetix')}>
+                                */} <Link to={`${process.env.PUBLIC_URL}/collection?brand=CONNETIX`} >
+                                
                                     <div className="collection-banner p-left">
                                         <div className="img-part">
                                             <img src={`${process.env.PUBLIC_URL}/assets/images/kids/banner/Connetix.jpg`}
@@ -231,7 +233,8 @@ class Kids extends Component {
                                 </Link>
                             </div>
                             <div className="col-md-3">
-                                <Link to={`${process.env.PUBLIC_URL}/collection`} onClick={()=>this.clickInitialBrandHendle('flockmen')}>
+                                {/* <Link to={`${process.env.PUBLIC_URL}/collection`} onClick={()=>this.clickInitialBrandHendle('flockmen')}> */}
+                                <Link to={`${process.env.PUBLIC_URL}/collection?brand=FLOCKMEN`} >
                                     <div className="collection-banner p-right text-right">
                                         <div className="img-part">
                                             <img src={`${process.env.PUBLIC_URL}/assets/images/kids/banner/Flockmen front.jpg`}
@@ -249,7 +252,9 @@ class Kids extends Component {
                                 </Link>
                             </div>
                             <div className="col-md-3">
-                                <Link to={`${process.env.PUBLIC_URL}/collection`} onClick={()=>this.clickInitialBrandHendle('grapat')}>
+                                {/* <Link to={`${process.env.PUBLIC_URL}/collection`} onClick={()=>this.clickInitialBrandHendle('grapat')}>
+                                    */} 
+                                    <Link to={`${process.env.PUBLIC_URL}/collection?brand=GRAPAT`} >
                                     <div className="collection-banner p-right">
                                         <div className="img-part">
                                             <img src={`${process.env.PUBLIC_URL}/assets/images/kids/banner/Grapat.jpg`}
@@ -271,7 +276,8 @@ class Kids extends Component {
                         <div className="row partition3 banner-top-cls"  style={{display:'flex',flex:1,alignItems:'center',justifyContent:'center'}}>
                             
                             <div className="col-md-3">
-                                <Link to={`${process.env.PUBLIC_URL}/collection`} onClick={()=>this.clickInitialBrandHendle('grimms')}>
+                                {/* <Link to={`${process.env.PUBLIC_URL}/collection`} onClick={()=>this.clickInitialBrandHendle('grimms')}> */}
+                                <Link to={`${process.env.PUBLIC_URL}/collection?brand=GRIMMS`} >
                                     <div className="collection-banner p-right text-right">
                                         <div className="img-part">
                                             <img src={`${process.env.PUBLIC_URL}/assets/images/kids/banner/Grimms.jpg`}
@@ -289,7 +295,8 @@ class Kids extends Component {
                                 </Link>
                             </div>
                             <div className="col-md-3">
-                                <Link to={`${process.env.PUBLIC_URL}/collection`} onClick={()=>this.clickInitialBrandHendle('playmags')} >
+                               {/*  <Link to={`${process.env.PUBLIC_URL}/collection`} onClick={()=>this.clickInitialBrandHendle('playmags')} > */}
+                               <Link to={`${process.env.PUBLIC_URL}/collection?brand=PLAYMAGS`} >
                                     <div className="collection-banner p-right text-right">
                                         <div className="img-part">
                                             <img src={`${process.env.PUBLIC_URL}/assets/images/kids/banner/Playmags.jpg`}
@@ -307,8 +314,10 @@ class Kids extends Component {
                                 </Link>
                             </div>
                             <div className="col-md-3">
-                                <Link to={`${process.env.PUBLIC_URL}/collection`} onClick={()=>this.clickInitialBrandHendle('sumblox')}>
-                                    <div className="collection-banner p-right">
+                                {/* <Link to={`${process.env.PUBLIC_URL}/collection`} onClick={()=>this.clickInitialBrandHendle('sumblox')}>
+                                 */}   
+                                    <Link to={`${process.env.PUBLIC_URL}/collection?brand=SUMBLOX`} >
+                                        <div className="collection-banner p-right">
                                         <div className="img-part">
                                             <img src={`${process.env.PUBLIC_URL}/assets/images/kids/banner/Sumblox.jpg`}
                                                  className="img-fluid blur-up lazyload bg-img" style={{maxHeight:'250px'}} alt="" />
@@ -325,7 +334,8 @@ class Kids extends Component {
                                 </Link>
                             </div>
                             <div className="col-md-3">
-                                <Link to={`${process.env.PUBLIC_URL}/collection`} onClick={()=>this.clickInitialBrandHendle('tegu')}>
+                                {/* <Link to={`${process.env.PUBLIC_URL}/collection`} onClick={()=>this.clickInitialBrandHendle('tegu')}> */}
+                                <Link to={`${process.env.PUBLIC_URL}/collection?brand=TEGU`} >
                                     <div className="collection-banner p-right">
                                         <div className="img-part">
                                             <img src={`${process.env.PUBLIC_URL}/assets/images/kids/banner/Tegu Wooden Blocks.jpg`}
@@ -347,7 +357,8 @@ class Kids extends Component {
                         </div>
                         <div className="row partition3 banner-top-cls"  style={{display:'flex',flex:1,alignItems:'center',justifyContent:'center'}}>
                         <div className="col-md-3">
-                                <Link to={`${process.env.PUBLIC_URL}/collection`} onClick={()=>this.clickInitialBrandHendle('way to play')} >
+                                {/* <Link to={`${process.env.PUBLIC_URL}/collection`} onClick={()=>this.clickInitialBrandHendle('way to play')} > */}
+                                <Link to={`${process.env.PUBLIC_URL}/collection?brand=WAY TO PLAY`} >
                                     <div className="collection-banner p-right">
                                         <div className="img-part">
                                             <img src={`${process.env.PUBLIC_URL}/assets/images/kids/banner/Way to Play.jpg`}
@@ -365,7 +376,8 @@ class Kids extends Component {
                                 </Link>
                             </div>
                             <div className="col-md-3">
-                                <Link to={`${process.env.PUBLIC_URL}/collection`} onClick={()=>this.clickInitialBrandHendle('yellow door')} >
+                              {/*   <Link to={`${process.env.PUBLIC_URL}/collection`} onClick={()=>this.clickInitialBrandHendle('yellow door')} > */}
+                              <Link to={`${process.env.PUBLIC_URL}/collection?brand=YELLOW DOOR`} >
                                     <div className="collection-banner p-right text-right">
                                         <div className="img-part">
                                             <img src={`${process.env.PUBLIC_URL}/assets/images/kids/product/BannerYellowDoor.jpg`}

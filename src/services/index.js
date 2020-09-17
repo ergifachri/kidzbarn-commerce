@@ -46,9 +46,17 @@ export const getMinMaxPrice = (products) => {
 export const getVisibleproducts = (data, { brand, color, value, sortBy }) => {
     
     return data.products.filter(product => {
-        //console.log('loop');
+        
         let brandMatch;
-        if(product.tags)
+        /* if(!brand[0]){
+            console.log(brand)
+        } 
+        else{
+            console.log(brand)
+        } */
+        
+        if(product.tags && brand[0])
+            
             brandMatch = product.tags.some(tag => brand.includes(tag))
         else
             brandMatch = true;
