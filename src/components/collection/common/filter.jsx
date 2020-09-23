@@ -12,8 +12,6 @@ class Filter extends Component {
 
     constructor(props) {
         super(props);
-        console.log('this is props');
-        console.log(props);
         this.state = {
             openFilter: false
         }
@@ -29,8 +27,6 @@ class Filter extends Component {
         
         
         brands = [];
-        console.log('initialBrand');
-        console.log(initialBrand);
         brands.push(initialBrand); // push in array checked value
        
         /* var index = brands.indexOf(event.target.value);
@@ -49,17 +45,13 @@ class Filter extends Component {
         brands = [];
         let windowWidth = window.innerWidth;
         let brand = event.target.value;
-        console.log('brands');
-        console.log(event.target.value);
-        brands.push(event.target.value); // push in array checked value
+       brands.push(event.target.value); // push in array checked value
        
         /* var index = brands.indexOf(event.target.value);
         if (event.target.checked)
          else
             brands.splice(index, 1); // removed in array unchecked value  */
-        console.log('history push');
-        this.props.history.push(`${process.env.PUBLIC_URL}/collection?brand=${brand}`);
-        console.log(window.innerWidth);
+       this.props.history.push(`${process.env.PUBLIC_URL}/collection?brand=${brand}`);
         window.location.reload();
         /* this.props.filterBrand(brands); */
 
@@ -81,8 +73,7 @@ class Filter extends Component {
 
     render (){
         const filteredBrands = this.props.filters.brand;
-        //console.log(this.props.brands);
-        return (
+         return (
                 <div className="collection-filter-block">
                     {/*brand filter start*/}
                     <div className="collection-mobile-back">

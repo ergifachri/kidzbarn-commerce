@@ -8,9 +8,7 @@ import { bindActionCreators } from 'redux'
 class TopBar extends Component {
 
     componentDidMount() {
-        console.log("a+topbar");
-        console.log(this.props.user);   
-    }
+     }
 
     render() {
         const {translate} = this.props;

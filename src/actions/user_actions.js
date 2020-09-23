@@ -17,20 +17,9 @@ import { USER_SERVER, PRODUCT_SERVER, AUTH_SERVER } from '../components/utils/mi
 
 
 export function registerUser(dataToSubmit){
-    console.log('a+this is data submit');
-    console.log(dataToSubmit)
-    /* dataToSubmit = {
-        firstname:'Ergi',
-        lastname:'Nurfachri',
-        email:'ergifachriaa@gmail.com',
-        password:'Aeroasia05',
-        phone:"082129179027"
-    }
-    console.log(dataToSubmit); */
-    const response = {};
+     const response = {};
     const request = axios.post(`${USER_SERVER}/register`,dataToSubmit)
         .then(response => {
-            console.log(response.data);
            if(response.data.status == 'success'){
             toast.success('Your user has been created');
             
@@ -54,7 +43,6 @@ function saveToLocalStorage(request) {
         
         localStorage.setItem('user', serializedState)
     }catch(e){
-        console.log(e);
     }
 }
 
@@ -63,8 +51,6 @@ export  function loginUser (dataToSubmit,history){
                 .then(response => {
                     
                     if (response.data.message == 'User has been logged-in successfully'){
-                        console.log('a+loginresult');
-                        console.log(response.data);
                         saveToLocalStorage(response.data);
                         history.push({
                             pathname: '/kids',
@@ -77,9 +63,7 @@ export  function loginUser (dataToSubmit,history){
                     }
                 })
                 .catch(error =>{
-                    console.log("a+error");
-                    console.log(error.response);
-                });
+                 });
     
     const requesta = {status: "success", message: "User has been logged-in successfully", data: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZ…xMjJ9.gBMGxL0qL3pOFORFlUCXFZUzpiudDE7Ubc9uLHY-rxY"}
     return {
@@ -92,11 +76,8 @@ function authHeader() {
     // return authorization header with jwt token
     let user = JSON.parse(localStorage.getItem('user'));
     
-    console.log('this is ssss');
     if (user && user.data) {
-        console.log("a+return authorization");
-        console.log(user.data);
-        return { 'Authorization': 'Bearer '+user.data};
+         return { 'Authorization': 'Bearer '+user.data};
     } else {
         return {};
     }
@@ -108,13 +89,9 @@ export function auth(){
             headers:authHeader()
         };
 
-        console.log("a+reqestoptions");
-        console.log(requestOptions);
         const request = axios.get(`${USER_SERVER}/showuser`,requestOptions)
         .then(response =>{
-            console.log("a+responsestatus");
-            console.log(response.data.status);
-            if(response.data.status == 'success'){
+             if(response.data.status == 'success'){
                 dispatch(success(response.data));
             }
             else{

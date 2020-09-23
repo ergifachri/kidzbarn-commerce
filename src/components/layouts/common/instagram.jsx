@@ -22,7 +22,6 @@ class Instagram extends Component {
 
         const users = instagram.media();
         users.then(res => {
-            console.log('accessing instagram');
            
             this.setState({InstaData:res.data})
         })

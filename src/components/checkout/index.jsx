@@ -85,7 +85,6 @@ class checkOut extends Component {
 
         if (this.validator.allValid()) {
             alert('You submitted the form and stuff!');
-            console.log("a+state");
             
             const userData = {
                 address:this.state.address,
@@ -100,14 +99,12 @@ class checkOut extends Component {
                 state:this.state.state
             }
 
-            console.log(userData)
             this.confirmPayment(userData);
             /* var handler = (window).StripeCheckout.configure({
                 key: 'pk_test_glxk17KhP7poKIawsaSgKtsL',
                 locale: 'auto',
                 token: (token: any) => {
-                    console.log(token)
-                      this.props.history.push({
+                       this.props.history.push({
                           pathname: '/order-success',
                               state: { payment: token, items: this.props.cartItems, orderTotal: this.props.total, symbol: this.props.symbol }
                       })
@@ -263,9 +260,7 @@ class checkOut extends Component {
                                                     </div>
                                                     <ul className="qty">
                                                         {cartItems.map((item, index) => {
-                                                            console.log('this is item');
-                                                            console.log(item)
-                                                            return <li key={index}>{item.name} × {item.qty} <span>{'IDR'} {item.sum}</span></li> })
+                                                     return <li key={index}>{item.name} × {item.qty} <span>{'IDR'} {item.sum}</span></li> })
                                                         }
                                                     </ul>
                                                     <ul className="sub-total">
@@ -295,15 +290,15 @@ class checkOut extends Component {
                                                                 <li>
                                                                     <div className="radio-option stripe">
                                                                         <input type="radio" name="payment-group" id="payment-2" defaultChecked={true} onClick={() => this.checkhandle('stripe')} />
-                                                                        <label htmlFor="payment-2">Bank Transfer <span className="image"><img src={`${process.env.PUBLIC_URL}/assets/images/bca.jpg`} style={{maxHeight:'200px',maxWidth:'200px',objectFit:'scale-down'}} alt=""/></span></label>
+                                                                        <label htmlFor="payment-2">Bank Transfer {/* <span className="image"><img src={`${process.env.PUBLIC_URL}/assets/images/bca.jpg`} style={{maxHeight:'200px',maxWidth:'200px',objectFit:'scale-down'}} alt=""/></span> */}</label>
                                                                         
                                                                     </div>
                                                                 </li>
-                                                                 <li>
+                                                                {/*  <li>
                                                                     <div className="radio-option paypal">
                                                                             <label htmlFor="payment-1" style={{marginLeft:'-40px'}}>12345678 a.n Ergi Nurfachri</label>
                                                                     </div>
-                                                                </li> 
+                                                                </li>  */}
                                                             </ul>
                                                         </div>
                                                     </div>

@@ -125,7 +125,7 @@ class FooterOne extends Component {
                                             </li>
                                             {/* <li><i className="fa fa-phone"></i>Call Us: +62-456-7898</li> */}
                                             <li><i className="fa fa-envelope-o"></i>Email Us: <a
-                                                href="#">kidzbarn.jakarta@gmail.com</a></li>
+                                                href="#"><span style={{textTransform:'lowercase'}}>admin@kidzbarn.id</span></a></li>
                                             {/* <li><i className="fa fa-fax"></i>Fax: 123456</li> */}
                                         </ul>
                                     </div>
