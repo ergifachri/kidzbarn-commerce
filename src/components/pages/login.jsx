@@ -25,7 +25,7 @@ class Login extends Component {
         event.preventDefault();
         let loginData = this.state;
         if (this.validator.allValid()) {
-            console.log(loginData);
+            
             this.props.dispatch(loginUser(loginData,this.props.history))
             /* .then(response=>{
                 if(response.payload.success){
@@ -45,7 +45,6 @@ class Login extends Component {
                 key: 'pk_test_glxk17KhP7poKIawsaSgKtsL',
                 locale: 'auto',
                 token: (token: any) => {
-                    console.log(token)
                       this.props.history.push({
                           pathname: '/order-success',
                               state: { payment: token, items: this.props.cartItems, orderTotal: this.props.total, symbol: this.props.symbol }
@@ -68,7 +67,6 @@ class Login extends Component {
         if(formIsValid){
             this.props.dispatch(loginUser(dataToSubmit)).then(response =>{
                 if(response.payload.loginSuccess){
-                    console.log(response.payload);
                 }else{
                     this.setState({
                         formError: true

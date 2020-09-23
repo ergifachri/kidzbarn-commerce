@@ -37,7 +37,6 @@ class Register extends Component {
                 key: 'pk_test_glxk17KhP7poKIawsaSgKtsL',
                 locale: 'auto',
                 token: (token: any) => {
-                    console.log(token)
                       this.props.history.push({
                           pathname: '/order-success',
                               state: { payment: token, items: this.props.cartItems, orderTotal: this.props.total, symbol: this.props.symbol }

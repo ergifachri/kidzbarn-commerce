@@ -5,9 +5,7 @@ class orderSuccess extends Component {
 
     constructor (props) {
         super (props)
-        console.log("a+propssuccess");
-        console.log(this.props);
-    }
+   }
 
     render (){
 

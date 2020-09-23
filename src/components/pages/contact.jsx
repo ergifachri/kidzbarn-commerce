@@ -32,7 +32,6 @@ class Contact extends Component {
         e.preventDefault()
         let title = "From Contact Us";
         const {firstname,email,message,phonenumber}= this.state
-        console.log(firstname,email,message);
         toast.success("Your question is forwarded to email")
         const form = await axios.post(`${API_URL}/api/v1/kidzbarn/mail/sendEmail`,{
           firstname,
@@ -43,8 +42,7 @@ class Contact extends Component {
         })
         ;
   
-        console.log("a+return");
-        console.log(form);
+        
         
       }
 
