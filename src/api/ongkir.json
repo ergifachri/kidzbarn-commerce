@@ -1,0 +1,52 @@
+{"rajaongkir": {
+    "query":    {
+       "origin": "1",
+       "destination": "10",
+       "weight": 1,
+       "courier": "jne"
+    },
+    "status":    {
+       "code": 200,
+       "description": "OK"
+    },
+    "origin_details":    {
+       "city_id": "1",
+       "province_id": "21",
+       "province": "Nanggroe Aceh Darussalam (NAD)",
+       "type": "Kabupaten",
+       "city_name": "Aceh Barat",
+       "postal_code": "23681"
+    },
+    "destination_details":    {
+       "city_id": "10",
+       "province_id": "21",
+       "province": "Nanggroe Aceh Darussalam (NAD)",
+       "type": "Kabupaten",
+       "city_name": "Aceh Timur",
+       "postal_code": "24454"
+    },
+    "results": [   {
+       "code": "jne",
+       "name": "Jalur Nugraha Ekakurir (JNE)",
+       "costs":       [
+                   {
+             "service": "OKE",
+             "description": "Ongkos Kirim Ekonomis",
+             "cost": [            {
+                "value": 18000,
+                "etd": "4-6",
+                "note": ""
+             }]
+          },
+                   {
+             "service": "REG",
+             "description": "Layanan Reguler",
+             "cost": [            {
+                "value": 20000,
+                "etd": "2-3",
+                "note": ""
+             }]
+          }
+       ]
+    }]
+ }}

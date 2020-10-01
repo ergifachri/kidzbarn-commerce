@@ -226,6 +226,14 @@ class checkOut extends Component {
                                                     {this.validator.message('country', this.state.country, 'required')}
                                                 </div>
                                                 <div className="form-group col-md-12 col-sm-12 col-xs-12">
+                                                    <div className="field-label">Province</div>
+                                                    <select name="province" value={this.state.province} onChange={this.setStateFromInput}>
+                                                        <option value={1}>NAD</option>
+                                                        <option value={2}>SUMUT</option>
+                                                    </select>
+                                                    {this.validator.message('province', this.state.province, 'required')}
+                                                </div>
+                                                <div className="form-group col-md-12 col-sm-12 col-xs-12">
                                                     <div className="field-label">Address</div>
                                                     <input type="text" name="address" value={this.state.address} onChange={this.setStateFromInput} placeholder="Street address" />
                                                     {this.validator.message('address', this.state.address, 'required|min:20|max:120')}

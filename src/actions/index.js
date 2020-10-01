@@ -15,6 +15,11 @@ export const receiveProducts = products => ({
     products
 })
 
+export const receiveOngkir = ongkir => ({
+    type: types.RECEIVE_ONGKIR,
+    ongkir
+})
+
 export const getAllProducts = () => dispatch => {
     dispatch(fetchProductsBegin());
     shop.getProducts(products => {
@@ -22,6 +27,15 @@ export const getAllProducts = () => dispatch => {
         return products;
     })
 }
+
+export const getOngkir = () => dispatch => {
+    //dispatch(fetchProductsBegin());
+    shop.getOngkir(ongkir => {
+        dispatch(receiveOngkir(ongkir));
+        return ongkir;
+    })
+}
+
 export const fetchSingleProduct = productId => ({
     type: types.FETCH_SINGLE_PRODUCT,
     productId

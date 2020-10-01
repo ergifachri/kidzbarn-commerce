@@ -19,6 +19,8 @@ export const REMOVE_FROM_CART = 'REMOVE_FROM_CART'
 export const INCREMENT_QTY = 'INCREMENT_QTY'
 export const DECREMENT_QTY = 'DECREMENT_QTY'
 
+// Ongkir
+export const RECEIVE_ONGKIR = 'RECEIVE_ONGKIR'
 
 
 // WishList
