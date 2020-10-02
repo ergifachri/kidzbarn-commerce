@@ -16,13 +16,15 @@ import { toast  } from 'react-toastify';
 import { USER_SERVER, PRODUCT_SERVER, AUTH_SERVER } from '../components/utils/misc';
 
 
-export function registerUser(dataToSubmit){
+export function registerUser(dataToSubmit,history){
      const response = {};
     const request = axios.post(`${USER_SERVER}/register`,dataToSubmit)
         .then(response => {
            if(response.data.status == 'success'){
             toast.success('Your user has been created');
-            
+            history.push({
+                pathname: '/pages/login',
+            })
            }
         })
         .catch(err => {

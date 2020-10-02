@@ -100,18 +100,18 @@ class ProductListItem extends Component {
                                     {RatingStars}
                                 </div> */}
                                 <Link to={`${process.env.PUBLIC_URL}/product/${product.id}`}>
-                                    <h8><span style={{color:'PaleVioletRed'}}>{product.tags[0]}</span></h8>
                                     <h6>{product.name}</h6>
+                                    <h8><span style={{color:'PaleVioletRed'}}>{product.tags[0]}</span></h8>
                                 </Link>
                                 
                                 {product.stock == 0 ? <h5>Out of stock</h5>
                                 :
-                                <h4>{/* {symbol}{product.price-(product.price*product.discount/100)} */}
+                                <h5>{/* {symbol}{product.price-(product.price*product.discount/100)} */}
                                     <span className="money">
                                         <NumberFormat value={product.price} displayType={'text'} thousandSeparator={true} prefix={'IDR'} />
                                         
                                         
-                                        </span></h4>}
+                                        </span></h5>}
                                 
                                {/*  {product.variants?
                                 <ul className="color-variant">

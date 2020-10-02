@@ -13,6 +13,7 @@ class Register extends Component {
             lastname:'',
             email:'',
             password:'',
+            confirmpassword:'',
             phone:''
         }
         this.validator = new SimpleReactValidator();
@@ -29,7 +30,8 @@ class Register extends Component {
         event.preventDefault();
         let registerData = this.state;
         if (this.validator.allValid()) {
-            this.props.dispatch(registerUser(registerData))
+            
+            this.props.dispatch(registerUser(registerData,this.props.history))
            
             
 
@@ -98,31 +100,37 @@ class Register extends Component {
                                 <div className="theme-card">
                                     <form className="theme-form">
                                         <div className="form-row">
-                                            <div className="col-md-6">
+                                            <div className="col-md-4">
                                                 <label htmlFor="email">First Name</label>
                                                 <input type="text"  className="form-control" name="firstname" value={this.state.firstname} onChange={this.setStateFromInput} />
                                                     {this.validator.message('firstname', this.state.firstname, 'required|alpha')}
                                                 
                                             </div>
-                                            <div className="col-md-6">
+                                            <div className="col-md-4">
                                                 <label htmlFor="review">Last Name</label>
                                                 <input type="text" className="form-control" name="lastname" value={this.state.lastname} onChange={this.setStateFromInput} />
                                                     {this.validator.message('lastname', this.state.lastname, 'required|alpha')}
                                              
                                             </div>
-                                        </div>
-                                        <div className="form-row">
                                             <div className="col-md-4">
                                                 <label htmlFor="email">email</label>
                                                 <input type="text" name="email" className="form-control" value={this.state.email} onChange={this.setStateFromInput} />
                                                     {this.validator.message('email', this.state.email, 'required|email')}
                                                
                                             </div>
+                                        </div>
+                                        <div className="form-row">
                                             <div className="col-md-4">
                                                 <label htmlFor="review">Password</label>
                                                 <input type="password" name="password" className="form-control" value={this.state.password} onChange={this.setStateFromInput} />
-                                                    {this.validator.message('password', this.state.password, 'required|password')}
+                                                    {this.validator.message('password', this.state.password, 'required|password required|min:8',)}
                                              
+                                            
+                                            </div>
+                                            <div className="col-md-4">
+                                                <label htmlFor="review">Confirm Password</label>
+                                                <input type="password" name="confirmpassword" className="form-control" value={this.state.confirmpassword} onChange={this.setStateFromInput} />
+                                                {this.validator.message('confirm_password', this.state.confirmpassword, `required|in:${this.state.password}`, {messages: {in: 'Passwords need to match!'}})}
                                             
                                             </div>
                                             <div className="col-md-4">
