@@ -86,6 +86,8 @@ class checkOut extends Component {
                 orderTotal:this.props.totalDisc,
                 curr:'IDR'
             }) 
+        }).catch(error=>{
+            console.log(error.response);
         })
 
         
