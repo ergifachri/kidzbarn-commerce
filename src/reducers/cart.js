@@ -2,6 +2,7 @@ import {
     ADD_TO_CART,
     REMOVE_FROM_CART,
     INCREMENT_QTY,
+    ADD_COUPON_TO_CART,
     DECREMENT_QTY } from "../constants/ActionTypes";
 
 

@@ -70,7 +70,7 @@ class ProductListItem extends Component {
                                     alt="" /> */}
                                 <Link to={`${process.env.PUBLIC_URL}/product/${product.id}`} >
                                     <img
-                                    src={product.pictures[0]}
+                                    src=/* {product.pictures[0]} */{`${process.env.PUBLIC_URL}/assets/images/kids/product/${product.Pictures[0].name}`}
                                     style={{maxHeight:'100%',maxWidth:'100%',width:'225px',height:'200px',objectFit:'scale-down'}}
                                     alt="" />
                                 </Link>
@@ -100,7 +100,7 @@ class ProductListItem extends Component {
                                     {RatingStars}
                                 </div> */}
                                 <Link to={`${process.env.PUBLIC_URL}/product/${product.id}`}>
-                                    <h8><span style={{color:'PaleVioletRed'}}>{product.tags[0]}</span></h8>
+                                    <h8><span style={{color:'PaleVioletRed'}}>{product.tags}</span></h8>
                                     <h6>{product.name}</h6>
                                 </Link>
                                 
@@ -133,7 +133,7 @@ class ProductListItem extends Component {
                                                         this.state.image?this.state.image:product.variants[0].images
                                                         :product.pictures[0]} alt="" className="img-fluid" /> */}
                                                         <div>
-                                                         <img src={product.pictures[0]} alt="" className="img-fluid" />
+                                                         <img src={`${process.env.PUBLIC_URL}/assets/images/kids/product/${product.Pictures[0].name}`} alt="" className="img-fluid" />
                                                         </div>
                                                         
                                                 </div>

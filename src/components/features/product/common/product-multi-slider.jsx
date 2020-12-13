@@ -23,7 +23,7 @@ class ProductMultiSlider extends Component {
                                         <img className="img-fluid" src={
                                             product.variants?
                                                 product.variants[0].images
-                                                :product.pictures[0]
+                                                :product.Pictures[0].name
                                         } alt="" />
                                     </Link>
                                     <div className="media-body align-self-center">

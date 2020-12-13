@@ -29,7 +29,7 @@ class NewProduct extends Component {
                         <div key={index}>
                             {products.map((product, i) =>
                                 <div className="media" key={i} onClick={()=>window.location.reload()}>
-                                    <Link to={`${process.env.PUBLIC_URL}/product/${product.id}`}><img className="img-fluid" src={`${product.pictures[0]}`} alt="" /></Link>
+                                    <Link to={`${process.env.PUBLIC_URL}/product/${product.id}`}><img className="img-fluid" src={`${process.env.PUBLIC_URL}/assets/images/kids/product/${product.Pictures[0].name}`} alt="" /></Link>
                                     <div className="media-body align-self-center">
                                         {/* <div className="rating">
                                             <i className="fa fa-star"></i>

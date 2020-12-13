@@ -9,8 +9,10 @@ class orderSuccess extends Component {
 
     render (){
 
-        const {payment, items, symbol, orderTotal} = this.props.location.state;
+        const {payment, items, symbol, orderTotal,ongkir,subtotal,discount,porder} = this.props.location.state;
         const {userData} = this.props.location.state
+        console.log('a+ location state');
+        console.log(this.props.location.state);
         var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
         var current = new Date();
         var next5days = new Date(Date.now() + 5 * 86400000);
@@ -44,9 +46,7 @@ class orderSuccess extends Component {
                                     {items.map((item, index) => {
                                     return <div className="row product-order-detail" key={index}>
                                                 <div className="col-3">
-                                                    <img src={item.variants?
-                                                        item.variants[0].images
-                                                        :item.pictures[0]} alt="" className="img-fluid" />
+                                                    <img src={`${process.env.PUBLIC_URL}/assets/images/kids/product/${item.Pictures[0].name}`} alt="" className="img-fluid" />
                                                 </div>
                                                 <div className="col-3 order_detail">
                                                     <div>
@@ -70,9 +70,9 @@ class orderSuccess extends Component {
                                     })}
                                     <div className="total-sec">
                                         <ul>
-                                            <li>subtotal <span>{symbol}{orderTotal}</span></li>
-                                            <li>shipping <span>IDR0</span></li>
-                                            <li>tax(GST) <span>IDR0</span></li>
+                                            <li>subtotal <span>{symbol}{subtotal}</span></li>
+                                            <li>shipping <span>IDR {ongkir}</span></li>
+                                            <li>Discount(GST) <span>IDR{discount}</span></li>
                                         </ul>
                                     </div>
                                     <div className="final-total">
@@ -91,7 +91,7 @@ class orderSuccess extends Component {
                                             <li>payment ID: {payment.paymentID}</li>
                                             <li>payment Token: {payment.paymentToken}</li></div>
                                                 :
-                                            <li>Order ID: {payment.id}</li> }
+                                            <li>Order ID: {porder}</li> }
 
                                             <li>Order Date: {CheckDate}</li>
                                             <li>Order Total: {symbol}{orderTotal}</li>
@@ -100,10 +100,10 @@ class orderSuccess extends Component {
                                     <div className="col-sm-6">
                                         <h4>shipping address</h4>
                                         <ul className="order-detail">
-                                            <li>{userData.first_name} {userData.last_name}</li>
-                                            <li>{userData.address}</li>
-                                            <li>{userData.city}, {userData.pincode}</li>
-                                            <li>{userData.phone}</li>
+                                            <li>{userData.user.first_name} {userData.user.last_name}</li>
+                                            <li>{userData.user.address}</li>
+                                            <li>{userData.user.city}, {userData.user.pincode}</li>
+                                            <li>{userData.user.phone}</li>
                                         </ul>
                                     </div>
 

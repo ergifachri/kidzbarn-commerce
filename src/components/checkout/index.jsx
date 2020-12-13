@@ -8,8 +8,12 @@ import SimpleReactValidator from 'simple-react-validator';
 import { API_URL } from '../../components/utils/misc';
 import Breadcrumb from "../common/breadcrumb";
 import {removeFromWishlist} from '../../actions'
-import {getCartTotal} from "../../services";
+import {ongkirCalculation} from '../../actions/ongkir_action'
+import {couponCheck} from '../../actions/discount_action'
+import {getCartTotal,getProvince,getCity,getCartTotalDisc} from "../../services";
 import Modal from 'react-responsive-modal';
+import { bindActionCreators } from 'redux';
+
 class checkOut extends Component {
 
     constructor (props) {
@@ -27,9 +31,39 @@ class checkOut extends Component {
             city:'',
             state:'',
             pincode:'',
-            create_account: ''
+            create_account: '',
+            provinces:[],
+            cities:[],
+            coupon:''
         }
         this.validator = new SimpleReactValidator();
+        this.getProvinsi();
+    }
+
+    getProvinsi = async()=>{
+        let result = await getProvince();
+        console.log("a+provinsi");
+        console.log(result);
+        this.setState({
+            provinces : result
+        },()=>{
+            this.getKota(1);
+        })
+        this.setState({
+            province:result[0].province
+        })
+    }
+
+    getKota = async(cityCode)=>{
+        let result = await getCity(cityCode);
+        console.log("a+provinsi");
+        console.log(result);
+        this.setState({
+            cities : result
+        })
+        this.setState({
+            city:result[0].city_name
+        })
     }
 
     onOpenModal = () => {
@@ -43,28 +77,43 @@ class checkOut extends Component {
     confirmPayment = async (userData) =>{
         this.onCloseModal();
         
-        const form = axios.post(`${API_URL}/api/v1/kidzbarn/mail/confirmationEmail`,{
-            
+        console.log("a+ confirmPayment");
+        console.log(userData);
+        axios.post(`${API_URL}/api/v1/kidzbarn/transactions/addNewTransaction`,userData).then(result=>{
+            const form = axios.post(`${API_URL}/api/v1/kidzbarn/mail/confirmationEmail`,{
                 userData:userData,
                 items:this.props.cartItems,
-                orderTotal:this.props.total,
+                orderTotal:this.props.totalDisc,
                 curr:'IDR'
-            
+            }) 
         })
+
+        
         this.props.history.push({
             pathname: '/order-success',
-                state: {userData:userData, payment: '123456',items: this.props.cartItems, orderTotal: this.props.total, symbol: 'IDR' }
+                state: {ongkir:this.props.ongkir,userData:userData, payment: '123456',
+                porder:userData.user.porder,discount:this.props.discount,items: this.props.cartItems, orderTotal: this.props.totalDisc,subtotal:this.props.total, symbol: 'IDR' }
         })
     }
 
     setStateFromInput = (event) => {
         var obj = {};
+        
         obj[event.target.name] = event.target.value;
         this.setState(obj);
 
-      }
+        if(event.target.name=='province'){
+            this.getKota(event.target.value);
+        }
 
-      setStateFromCheckbox = (event) => {
+        if(event.target.name=='city'){
+            //dispatchOngkir(cityCode)
+            this.props.ongkirCalculation(event.target.value)
+        }
+
+    }
+
+    setStateFromCheckbox = (event) => {
           var obj = {};
           obj[event.target.name] = event.target.checked;
           this.setState(obj);
@@ -73,7 +122,7 @@ class checkOut extends Component {
           {
               this.validator.showMessages();
           }
-        }
+    }
 
     checkhandle(value) {
         this.setState({
@@ -86,20 +135,47 @@ class checkOut extends Component {
         if (this.validator.allValid()) {
             alert('You submitted the form and stuff!');
             
-            const userData = {
-                address:this.state.address,
-                city:this.state.city,
-                country:this.state.country,
-                email:this.state.email,
-                first_name:this.state.first_name,
-                last_name:this.state.last_name,
-                payment:this.state.payment,
-                phone:this.state.phone,
-                pincode:this.state.pincode,
-                state:this.state.state
-            }
+            const _cartItems = this.props.cartItems;
+            const cartItems = [];
+            _cartItems.map(item=>{
+                const cartItem={
+                    id:item.id,
+                    price:item.price,
+                    qty:item.qty,
+                    subtotal:item.sum,
+                    productname:item.name
+                }
+                cartItems.push(cartItem);
+            })
 
-            this.confirmPayment(userData);
+            const date = new Date();
+            let x = Math.floor((Math.random() * 1000) + 1);
+            const _porder = `${date.getSeconds()}${date.getMilliseconds()}${(x)}`;
+            const uploadData = {
+                "cartItems":cartItems,
+                "user":{
+                    firstname:this.state.first_name,
+                    lastname:this.state.last_name,
+                    email:this.state.email,
+                    phone:this.state.phone,
+                    id:this.props.user.id,
+                    total:this.props.total,
+                    status:'NOT PAID',
+                    totaldisc:this.props.totalDisc,
+                    ongkir:this.props.ongkir,
+                    discount:this.props.discount,
+                    realTotal:this.props.total,
+                    address:this.state.address,
+                    porder:_porder
+                }
+                
+            };            
+
+            
+
+           
+
+            this.confirmPayment(uploadData);
             /* var handler = (window).StripeCheckout.configure({
                 key: 'pk_test_glxk17KhP7poKIawsaSgKtsL',
                 locale: 'auto',
@@ -114,7 +190,7 @@ class checkOut extends Component {
                 name: 'Kidzbarn',
                 description: 'Online Toy Store',
                 amount: this.amount * 100
-              }) */
+              })   */
         } else {
           this.validator.showMessages();
           // rerender to show messages for the first time
@@ -122,15 +198,32 @@ class checkOut extends Component {
         }
     }
 
-    render (){
-        const {cartItems, symbol, total} = this.props;
+    couponCheck = ()=>{
+        console.log("a+ check coupon");
+        console.log(this.state.coupon);
+        const coupon = this.state.coupon;
+        this.props.couponCheck(coupon);
+        /* console.log("a+ totcal coopun");
+        console.log(this.props.total);
+        axios.get(`${API_URL}/api/v1/kidzbarn/coupon/findbycode/${coupon}`).then(result=>{
+            alert('Coupoun Success');
+            console.log('success');
+            console.log(result.data);
+        }).catch(err=>{
+            alert('Coupon Not Found');
+            console.log(err);
+        }) */
+    }
 
+    render (){
+        const {cartItems, symbol, total,ongkir,discount,totalDisc} = this.props;
+        const {provinces,cities}=this.state;
         // Paypal Integration
         const onSuccess = (payment) => {
             console.log("The payment was succeeded!", payment);
             this.props.history.push({
                 pathname: '/order-success',
-                    state: { payment: payment, items: cartItems, orderTotal: total, symbol: symbol }
+                    state: { ongkir:ongkir, payment: payment, items: cartItems, orderTotal: total, symbol: symbol }
             })
 
         }
@@ -228,21 +321,33 @@ class checkOut extends Component {
                                                 <div className="form-group col-md-12 col-sm-12 col-xs-12">
                                                     <div className="field-label">Province</div>
                                                     <select name="province" value={this.state.province} onChange={this.setStateFromInput}>
-                                                        <option value={1}>NAD</option>
-                                                        <option value={2}>SUMUT</option>
-                                                    </select>
+                                                        {provinces.map(provinsi =>{
+                                                            return(
+                                                                <option value={provinsi.province_id}>{provinsi.province}</option>
+                                                    
+                                                            )
+                                                        })}
+                                                     </select>
                                                     {this.validator.message('province', this.state.province, 'required')}
+                                                </div>
+                                                <div className="form-group col-md-12 col-sm-12 col-xs-12">
+                                                    <div className="field-label">City</div>
+                                                    <select name="city" value={this.state.city} onChange={this.setStateFromInput}>
+                                                        {cities.map(city =>{
+                                                            return(
+                                                                <option value={city.city_id}>{city.city_name}</option>
+                                                    
+                                                            )
+                                                        })}
+                                                    </select>
+                                                    {this.validator.message('province', this.state.city, 'required')}
                                                 </div>
                                                 <div className="form-group col-md-12 col-sm-12 col-xs-12">
                                                     <div className="field-label">Address</div>
                                                     <input type="text" name="address" value={this.state.address} onChange={this.setStateFromInput} placeholder="Street address" />
                                                     {this.validator.message('address', this.state.address, 'required|min:20|max:120')}
                                                 </div>
-                                                <div className="form-group col-md-12 col-sm-12 col-xs-12">
-                                                    <div className="field-label">Town/City</div>
-                                                    <input type="text" name="city" value={this.state.city} onChange={this.setStateFromInput} />
-                                                    {this.validator.message('city', this.state.city, 'required|alpha')}
-                                                </div>
+                                                
                                                 {/* <div className="form-group col-md-12 col-sm-6 col-xs-12">
                                                     <div className="field-label">State / County</div>
                                                     <input type="text" name="state" value={this.state.state} onChange={this.setStateFromInput} />
@@ -273,6 +378,7 @@ class checkOut extends Component {
                                                     </ul>
                                                     <ul className="sub-total">
                                                         <li>Subtotal <span className="count">{'IDR'}{total}</span></li>
+                                                        <li>Ongkir (JNE) <span className="ongkir">{'IDR'}{ongkir}</span></li>
                                                        {/*  <li>Shipping <div className="shipping">
                                                             <div className="shopping-option">
                                                                 <input type="checkbox" name="free-shipping" id="free-shipping" />
@@ -286,8 +392,28 @@ class checkOut extends Component {
                                                         </li> */}
                                                     </ul>
 
+                                                    <ul className="sub-total">
+                                                        <h6>Coupon Valid</h6>
+                                                        <li>Coupon</li>
+                                                        <li> <input type="text" name="coupon" value={this.state.coupon} onChange={this.setStateFromInput} />
+                                                    <span className="count"><button type="button" style={{padding:'10px 30px',marginTop:'10px'}} className="btn-solid btn" onClick={() => this.couponCheck()} >Apply</button></span></li>
+                                                       {/*  <li>Shipping <div className="shipping">
+                                                            <div className="shopping-option">
+                                                                <input type="checkbox" name="free-shipping" id="free-shipping" />
+                                                                    <label htmlFor="free-shipping">Free Shipping</label>
+                                                            </div>
+                                                            <div className="shopping-option">
+                                                                <input type="checkbox" name="local-pickup" id="local-pickup" />
+                                                                    <label htmlFor="local-pickup">Local Pickup</label>
+                                                            </div>
+                                                        </div>
+                                                        </li> */}
+                                                    </ul>
                                                     <ul className="total">
-                                                        <li>Total <span className="count">{'IDR'}{total}</span></li>
+                                                        <li>Discount <span className="count">{discount}{'%'}</span></li>
+                                                    </ul>
+                                                    <ul className="total">
+                                                        <li>Total <span className="count">{'IDR'}{totalDisc}</span></li>
                                                     </ul>
                                                 </div>
 
@@ -382,10 +508,21 @@ class checkOut extends Component {
 const mapStateToProps = (state) => ({
     cartItems: state.cartList.cart,
     symbol: state.data.symbol,
-    total: getCartTotal(state.cartList.cart)
+    totalDisc: getCartTotalDisc(state.cartList.cart,state.discount,state.ongkir.ongkir),
+    total: getCartTotal(state.cartList.cart,state.discount,state.ongkir.ongkir),
+    ongkir:state.ongkir.ongkir,
+    discount:state.discount,
+    user:state.user.userData.data
 })
+
+const mapDispatchToProps = (dispatch)=>{
+    return bindActionCreators({ ongkirCalculation,couponCheck}, dispatch)
+}
 
 export default connect(
     mapStateToProps,
-    {removeFromWishlist}
+    mapDispatchToProps
 )(checkOut)
+
+
+

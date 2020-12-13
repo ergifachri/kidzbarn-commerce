@@ -3,12 +3,16 @@ import * as types from '../constants/ActionTypes'
 import store from "../store";
 import { toast  } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css';
+import {getProducts} from '../services/index';
 
 export const fetchProductsBegin = () => ({
     type: types.FETCH_PRODUCTS_BEGIN
 });
 
-
+export const couponCheck = discount => ({
+    type: types.ADD_COUPON_TO_CART,
+    discount
+})
 
 export const receiveProducts = products => ({
     type: types.RECEIVE_PRODUCTS,
@@ -22,19 +26,32 @@ export const receiveOngkir = ongkir => ({
 
 export const getAllProducts = () => dispatch => {
     dispatch(fetchProductsBegin());
+    /*
+        
+    */
+    console.log("a+resultServices");
+    const resultServices = getProducts()
+        .then(result=>{
+            let products = result.data.message
+            dispatch(couponCheck(0));
+            dispatch(receiveProducts(products));
+            return products;
+
+        });
+    /* console.log(resultServices);
     shop.getProducts(products => {
         dispatch(receiveProducts(products));
         return products;
-    })
+    }) */
 }
 
-export const getOngkir = () => dispatch => {
+/* export const getOngkir = () => dispatch => {
     //dispatch(fetchProductsBegin());
     shop.getOngkir(ongkir => {
         dispatch(receiveOngkir(ongkir));
         return ongkir;
     })
-}
+} */
 
 export const fetchSingleProduct = productId => ({
     type: types.FETCH_SINGLE_PRODUCT,

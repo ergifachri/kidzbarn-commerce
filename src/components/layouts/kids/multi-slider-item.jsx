@@ -20,11 +20,7 @@ class MultiSliderItem extends Component {
                             {products.map((product, i) =>
                                 <div className="media" key={i}>
                                     <Link to={`${process.env.PUBLIC_URL}/left-sidebar/product/${product.id}`}>
-                                        <img className="img-fluid" src={
-                                            product.variants?
-                                                product.variants[0].images
-                                                :product.pictures[0]
-                                        } alt="" />
+                                        <img className="img-fluid" src={`${process.env.PUBLIC_URL}/assets/images/kids/product/${product.Pictures[0].name}`} alt="" />
                                     </Link>
                                     <div className="media-body align-self-center">
                                         <div className="rating">

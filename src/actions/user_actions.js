@@ -47,9 +47,14 @@ function saveToLocalStorage(request) {
 }
 
 export  function loginUser (dataToSubmit,history){
+    let jsonToken = "";
     const request = axios.post(`${AUTH_SERVER}/loginUser`,dataToSubmit)
                 .then(response => {
                     
+                    
+                    jsonToken = response.data.data;
+                    console.log("a+ jsontoken");
+                    console.log(jsonToken);
                     if (response.data.message == 'User has been logged-in successfully'){
                         saveToLocalStorage(response.data);
                         history.push({
@@ -65,7 +70,7 @@ export  function loginUser (dataToSubmit,history){
                 .catch(error =>{
                  });
     
-    const requesta = {status: "success", message: "User has been logged-in successfully", data: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZ…xMjJ9.gBMGxL0qL3pOFORFlUCXFZUzpiudDE7Ubc9uLHY-rxY"}
+    const requesta = {status: "success", message: "User has been logged-in successfully", data: jsonToken}
     return {
         type: LOGIN_USER,
         payload: requesta
@@ -92,7 +97,11 @@ export function auth(){
         const request = axios.get(`${USER_SERVER}/showuser`,requestOptions)
         .then(response =>{
              if(response.data.status == 'success'){
+                
+                console.log("a+ response data");
+                console.log(response.data);
                 dispatch(success(response.data));
+              
             }
             else{
                 logoutUser();

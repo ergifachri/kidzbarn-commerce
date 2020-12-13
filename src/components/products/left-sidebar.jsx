@@ -48,7 +48,7 @@ class LeftSideBar extends Component {
 
     render(){
         const {symbol, item, addToCart, addToCartUnsafe, addToWishlist} = this.props
-        const {length} = item.pictures.length
+        const {length} = item.Pictures.length
            
         var products = {
             slidesToShow: 1,
@@ -111,16 +111,16 @@ class LeftSideBar extends Component {
                                             <div className="col-lg-6 product-thumbnail" /* style={{display:'flex'}}  */>
                                             <Slider {...products} asNavFor={this.state.nav2} ref={slider => (this.slider1 = slider)} className="product-slick">
                                                             {item.variants?
-                                                            item.variants.map((vari, index) =>
+                                                            /* item.variants.map((vari, index) =>
                                                             
                                                                 <div key={index}>
                                                                     <ImageZoom image={vari.images} />
                                                                 </div>
-                                                            ):
-                                                            item.pictures.map((vari, index) =>
+                                                            ) */null:
+                                                            item.Pictures.map((vari, index) =>
                                                                 
                                                                 <div key={index}>
-                                                                    <ImageZoom image={vari} />
+                                                                    <ImageZoom image={`${process.env.PUBLIC_URL}/assets/images/kids/product/${vari.name}`} />
                                                                 </div>
                                                             )}
                                             </Slider>
@@ -131,7 +131,7 @@ class LeftSideBar extends Component {
                                                 
                                                 
                                                 
-                                                {item.pictures.length > 1 ?       <SmallImages item={item} settings={productsnav} navOne={this.state.nav1} />
+                                                {item.Pictures.length > 1 ?       <SmallImages item={item} settings={productsnav} navOne={this.state.nav1} />
                                           :null}
                                             </div>
                                             <DetailsWithPrice symbol={'IDR'} item={item} navOne={this.state.nav1} addToCartClicked={addToCart} BuynowClicked={addToCartUnsafe} addToWishlistClicked={addToWishlist} />

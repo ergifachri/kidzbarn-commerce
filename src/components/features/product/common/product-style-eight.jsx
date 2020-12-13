@@ -16,7 +16,7 @@ class ProductStyleEight extends Component {
                         <Link to={`${process.env.PUBLIC_URL}/left-sidebar/product/${product.id}`} ><img
                             src={product.variants?
                                 product.variants[0].images
-                                :product.pictures[0]}
+                                :product.Pictures[0].name}
                             className="img-fluid"
                             alt="" /></Link>
                     </div>

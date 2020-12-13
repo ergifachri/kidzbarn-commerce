@@ -93,7 +93,7 @@ class Root extends React.Component {
 
     render() {
         store.dispatch(getAllProducts());
-        store.dispatch(getOngkir());
+        //store.dispatch(getOngkir());
         return(
         	<Provider store={store}>
                 <IntlProvider translations={translations} locale='en'>

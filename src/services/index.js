@@ -1,13 +1,88 @@
+import {ONGKIR_SERVER,PRODUCT_SERVER} from '../components/utils/misc';
+import axios from 'axios';
+import _products from '../api/data.json';
+
+
+// Get Products from Json Data
+export const getProducts =  () => {
+    
+   /*  const request = axios.get(`${PRODUCT_SERVER}/showall`)
+                .then(response => {
+                    console.log("a+resultproduct");
+                    console.log(response.data);
+                    products = response.data;
+                    
+                })
+                .catch(error =>{
+                 });
+     */
+            
+    return axios.get(`${PRODUCT_SERVER}/showall`)
+        
+}
+
+// Get Province from Json Data
+export const getProvince = async () => {
+    let provinces= [];
+    let result = await axios.get(`${ONGKIR_SERVER}/provinsi`);
+    
+    if(result.status >199 && result.status <300){
+        provinces = result.data.rajaongkir.results
+    }
+    else{
+        provinces = result.data.rajaongkir.results
+    }
+
+    
+    
+    return provinces;
+}
+
+// Get City from Json Data
+export const getCity = async (provinsi) => {
+    
+    let cities = [];
+    let result = await axios.get(`${ONGKIR_SERVER}/kota/${provinsi}`);
+    console.log("a+city");
+    console.log(result);
+    if(result.status >199 && result.status <300){
+        cities = result.data.rajaongkir.results
+    }
+    else{
+        cities = result.data.rajaongkir.results
+    }
+
+    
+
+    //console.log(uniqueBrands)
+    return cities;
+}
+
+// Get Ongkir from Json Data
+/* export const getOngkir = (products) => {
+    var uniqueBrands = [];
+    products.map((product, index) => {
+        if (product.tags) {
+
+            if (uniqueBrands.indexOf(product.tags) === -1) {
+                uniqueBrands.push(product.tags);
+            }
+            
+        }
+    })
+    //console.log(uniqueBrands)
+    return uniqueBrands;
+} */
+
 // Get Unique Brands from Json Data
 export const getBrands = (products) => {
     var uniqueBrands = [];
     products.map((product, index) => {
         if (product.tags) {
-            product.tags.map((tag) => {
-                if (uniqueBrands.indexOf(tag) === -1) {
-                    uniqueBrands.push(tag);
-                }
-            })
+            if (uniqueBrands.indexOf(product.tags) === -1) {
+                uniqueBrands.push(product.tags);
+            }
+            
         }
     })
     //console.log(uniqueBrands)
@@ -57,7 +132,7 @@ export const getVisibleproducts = (data, { brand, color, value, sortBy }) => {
         
         if(product.tags && brand[0])
             
-            brandMatch = product.tags.some(tag => brand.includes(tag))
+            brandMatch = brand.includes(product.tags)
         else
             brandMatch = true;
 
@@ -95,10 +170,18 @@ export const getVisibleproducts = (data, { brand, color, value, sortBy }) => {
     });
 }
 
-export const getCartTotal = cartItems => {
+export const getCartTotal = (cartItems,_discount,ongkir) => {
     var total = 0;
     for(var i=0; i<cartItems.length; i++){
-        total += parseInt(cartItems[i].qty, 10)*parseInt((cartItems[i].price/* *cartItems[i].discount/100 */), 10);
+        total +=  parseInt(cartItems[i].qty, 10)*parseInt((cartItems[i].price * (100-0)/100 ), 10);
+    }
+    return total;
+}
+
+export const getCartTotalDisc = (cartItems,_discount,ongkir) => {
+    var total = 0;
+    for(var i=0; i<cartItems.length; i++){
+        total += ongkir + parseInt(cartItems[i].qty, 10)*parseInt((cartItems[i].price * (100-_discount)/100 ), 10);
     }
     return total;
 }

@@ -53,6 +53,6 @@ export default function(state={},action){
         case CLEAR_UPDATE_USER_DATA:
             return {...state,updateUser: action.payload}
         default:
-            return {...state,userData:{} };
+            return {...state };
     }
 }

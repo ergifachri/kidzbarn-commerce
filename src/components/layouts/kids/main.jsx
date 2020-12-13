@@ -380,7 +380,7 @@ class Kids extends Component {
                               <Link to={`${process.env.PUBLIC_URL}/collection?brand=YELLOW DOOR`} >
                                     <div className="collection-banner p-right text-right">
                                         <div className="img-part">
-                                            <img src={`${process.env.PUBLIC_URL}/assets/images/kids/product/BannerYellowDoor.jpg`}
+                                            <img src={`${process.env.PUBLIC_URL}/assets/images/kids/banner/BannerYellowDoor.jpg`}
                                                  className="img-fluid blur-up lazyload bg-img" style={{maxHeight:'250px'}} alt="" />
                                         </div>
                                         <div className="contain-banner banner-3">
@@ -487,7 +487,7 @@ class Kids extends Component {
 
 const mapDispatchToProps = (dispatch)=>{
     return bindActionCreators({ auth ,filterBrand}, dispatch)
-  }
+}
 
 const mapStateToProps = state => ({
     filters: state.filters

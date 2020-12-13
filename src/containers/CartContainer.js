@@ -38,7 +38,7 @@ const CartContainer = ({cartList, total, symbol, removeFromCart}) => (
 function mapStateToProps(state) {
     return {
         cartList: state.cartList.cart,
-        total: getCartTotal(state.cartList.cart),
+        total: getCartTotal(state.cartList.cart,state.discount),
         symbol: state.data.symbol,
     }
 }

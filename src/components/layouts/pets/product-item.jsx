@@ -80,7 +80,7 @@ class ProductItem extends Component {
                                 <img src={`${
                                     product.variants?
                                         this.state.image?this.state.image:product.variants[0].images
-                                        :product.pictures[0]
+                                        :product.Pictures[0].name
                                     }`}
                                 className="img-fluid lazyload bg-img"
                                 alt="" />
@@ -126,7 +126,7 @@ class ProductItem extends Component {
                                                 <img src={`${
                                                     product.variants?
                                                         this.state.image?this.state.image:product.variants[0].images
-                                                        :product.pictures[0]
+                                                        :product.Pictures[0].name
                                                     }`} alt="" className="img-fluid" />
                                             </div>
                                         </div>
@@ -200,7 +200,7 @@ class ProductItem extends Component {
                                                             <img src={`${
                                                                 product.variants?
                                                                     this.state.image?this.state.image:product.variants[0].images
-                                                                    :product.pictures[0]
+                                                                    :product.Pictures[0].name
                                                                 }`} alt="" className="img-fluid blur-up lazyload pro-img" />
                                                         </a>
                                                         <div className="media-body align-self-center text-center">

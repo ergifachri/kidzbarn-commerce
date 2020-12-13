@@ -2,7 +2,6 @@ import { createStore, applyMiddleware, compose } from 'redux';
 
 // middlewares
 import thunkMiddleware from 'redux-thunk'
-import logger from 'redux-logger'
 
 // Import custom components
 import rootReducer from '../reducers';

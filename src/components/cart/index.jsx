@@ -46,15 +46,15 @@ class cartComponent extends Component {
                                     </tr>
                                     </thead>
                                     {cartItems.map((item, index) => {
+                                        console.log('a+pictures');
+                                        console.log(item);
                                          return (
                                         <tbody key={index}>
                                             <tr>
                                                 <td>
                                                     <Link to={`${process.env.PUBLIC_URL}/left-sidebar/product/${item.id}`}>
-                                                        <img src={item.variants?
-                                                                  item.variants[0].images
-                                                                  :item.pictures[0]} alt="" />
-                                                    </Link>
+                                                        <img src={`${process.env.PUBLIC_URL}/assets/images/kids/product/${item.Pictures[0].name}`} alt="" />
+                                                     </Link>
                                                 </td>
                                                 <td><Link to={`${process.env.PUBLIC_URL}/left-sidebar/product/${item.id}`}>{item.name}</Link>
                                                     <div className="mobile-cart-content row">
@@ -153,7 +153,7 @@ class cartComponent extends Component {
 const mapStateToProps = (state) => ({
     cartItems: state.cartList.cart,
     symbol: 'IDR',
-    total: getCartTotal(state.cartList.cart)
+    total: getCartTotal(state.cartList.cart,state.discount,state.ongkir.ongkir)
 })
 
 export default connect(
